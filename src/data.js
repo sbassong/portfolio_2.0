@@ -1,96 +1,90 @@
 export const ExperienceData = [
     {
         id: 1,
-        title: "Software Engineer",
-        company: "Outreach - Full Time",
-        tenure: "December 2019 - November 2021",
+        title: "Web Developer and Email Specialist Intern",
+        company: "Center Centre - UIE",
+        tenure: "December 2021 - Present",
         duties: [
-            "Owned Kafka-based mail scheduling Rails microservice, greatly increased reliability and query efficiency",
-            "Piloted migrating all core services dashboards and alerts from Wavefront to Datadog using Terraform",
-            "Architected two new microservices in Golang for monolith decomposition",
-            "Led and attended knowledge sharing sessions in engineering",
-            "Worked directly with QA and PMs to ensure thorough unit testing, integration testing, and CircleCI end-to-end testing as well as careful continuous rollout via LaunchDarkly feature flags",
+            "Managing production of Center Centre - UIE's outgoing HTML email campaigns using MailChimp",
+            "Creating and managing UIE sites contents and medium blogpost with both WordPress and Statamic CMS platforms",
+            "Maintaining UIE sites web properties",
+            "Enthusiastically anticipating more projects in the next few months"
         ]
     },
     {
         id: 2,
-        title: "Software Engineering Intern",
-        company: "Outreach",
-        tenure: "August 2019 - December 2019",
+        title: "Software Engineer Apprentice",
+        company: "General Assembly",
+        tenure: "July 2021 - December 2021",
         duties: [
-            "Implemented user-specific time-zone functionality, one of the most requested features",
-            "Individual work and pair programming with mentor to take over ownership of all mailing-related code, a core service",
-            "sfd",
-            "Led and attended knowledge sharing sessions in engineering",
-            "Worked directly with QA and PMs to ensure thorough unit testing, integration testing, and CircleCI end-to-end testing as well as careful continuous rollout via LaunchDarkly feature flags",
+            "Developed 6+ full-stack applications with industry-leading web technology and tools such as Javascript, Python, React, Vue, Node, Express, SQL, and Flask.",
+            "Leveraged architectural modeling, prototyping, deployment platforms, cloud services, and version control tools to design and build web platforms.",
+            "Collaborated with and led engineers through pair and group projects using Scrum-focused Agile practices.",
         ]
     },
     {
         id: 3,
-        title: "Freelance Engineer",
-        company: "",
-        tenure: "August 2019 - November 2021",
+        title: "Research Assistant",
+        company: "Washington State University",
+        tenure: "July 2016 - May 2018",
         duties: [
-            "project things",
+            "Planned and conducted independent lab experiments to elucidate and resolve biomedical challenges while presenting research at symposiums, improving lab standard procedures, and managing undergraduate student researchers",
+            "Analyzed technical documentation, articles, and manuals to troubleshoot experiments and craft high quality lab protocols and records",
+            "Developed a tracking protocol of nutrients within Chlamydia trachomatis infected host cells and designed a microscope-based survey procedure for cell mechanism analysis and record keeping",
+            "Performed daily Biosafety Level 2 (BSL-2) work",
         ]
     },
     {
         id: 4,
-        title: "tech",
-        company: "usda",
-        tenure: "dates to dates",
+        title: "Undergraduate Research Assistant",
+        company: "Nevada State College",
+        tenure: "February 2012 - June 2015",
         duties: [
-            "Owned Kafka-based mail scheduling Rails microservice, greatly increased reliability and query efficiency",
-            "Piloted migrating all core services dashboards and alerts from Wavefront to Datadog using Terraform",
-            "Architected two new microservices in Golang for monolith decomposition",
-            "Led and attended knowledge sharing sessions in engineering",
-            "Worked directly with QA and PMs to ensure thorough unit testing, integration testing, and CircleCI end-to-end testing as well as careful continuous rollout via LaunchDarkly feature flags",
+            "Investigated cockroach-associated bacterial antibiotic resistance and characterization of the American cockroach's immune cell morphology using biomedical research practices",
+            "Performed BSL 2 work including: DNA extraction, polymerase chain reactions (PCR), high throughput DNA sequencing",
+            "Maintained, organized and preserved data in electronic formats and provided bi-weekly summaries of data in the form of tables, figures, and narratives to PI",
+            "Established research program at Nevada State College as one of the 3-member cohort of undergraduate research",
         ]
     },
     {
         id: 5,
-        title: "Software Engineering Intern",
-        company: "Outreach",
-        tenure: "August 2019 - December 2019",
+        title: "8th grade Science Teacher",
+        company: "Rainier Prep",
+        tenure: "January 2019 - June 2021",
         duties: [
-            "Implemented user-specific time-zone functionality, one of the most requested features",
-            "Individual work and pair programming with mentor to take over ownership of all mailing-related code, a core service",
-            "sfd",
-            "Led and attended knowledge sharing sessions in engineering",
-            "Worked directly with QA and PMs to ensure thorough unit testing, integration testing, and CircleCI end-to-end testing as well as careful continuous rollout via LaunchDarkly feature flags",
+            "Designed, planned, and taught a stellar original projects-based curriculum to a yearly cohort of 80+ students while handling administrative responsibilities and attending an accelerated teaching certification program",
+            "Improved school's science mastery outcomes based on a 3 years-average 19% score increase on Washington State's standardized comprehensive assessment of sciences",
+            "Managed a diverse 80+ group of students' STEM innovation through collaborative hands-on projects that integrate data analysis/visualization, design thinking, and field studies",
+            "Demonstrated excellent growth potential and adaptability by earning a promotion and increased responsibilities from associate to full teacher within 3 months of a 6-month transition plan",
         ]
     },
     {
         id: 6,
-        title: "tech",
-        company: "usda",
-        tenure: "dates to dates",
+        title: "Associate Teacher",
+        company: "Rainier Prep",
+        tenure: "August 2018 - January 2019",
         duties: [
-            "Owned Kafka-based mail scheduling Rails microservice, greatly increased reliability and query efficiency",
-            "Piloted migrating all core services dashboards and alerts from Wavefront to Datadog using Terraform",
-            "Architected two new microservices in Golang for monolith decomposition",
-            "Led and attended knowledge sharing sessions in engineering",
-            "Worked directly with QA and PMs to ensure thorough unit testing, integration testing, and CircleCI end-to-end testing as well as careful continuous rollout via LaunchDarkly feature flags",
+            "Co-planned and developed lessons plans and activity",
+            "Assisted with class management, lab activities, and student support",
+            "Performed administrative duties including attendance, grading, data entry, projects proofreading and editing, and lab supplies purchasing",
         ]
     },
     {
         id: 7,
-        title: "Software Engineering Intern",
-        company: "Outreach",
-        tenure: "August 2019 - December 2019",
+        title: "Teaching Assistant",
+        company: "University of Nevada, Reno",
+        tenure: "August 2015 - June 2016",
         duties: [
-            "Implemented user-specific time-zone functionality, one of the most requested features",
-            "Individual work and pair programming with mentor to take over ownership of all mailing-related code, a core service",
-            "sfd",
-            "Led and attended knowledge sharing sessions in engineering",
-            "Worked directly with QA and PMs to ensure thorough unit testing, integration testing, and CircleCI end-to-end testing as well as careful continuous rollout via LaunchDarkly feature flags",
+            "Co-lead 2 semesters of advanced lab techniques in genetics and molecular biology",
+            "planned and delivered introductory lessons",
+            "Supervised lab activities for 30+ students",
         ]
     },
     {
         id: 8,
-        title: "tech",
-        company: "usda",
-        tenure: "dates to dates",
+        title: "Course Assistant",
+        company: "Nevada State College",
+        tenure: "August 2014 - May 2015",
         duties: [
             "Owned Kafka-based mail scheduling Rails microservice, greatly increased reliability and query efficiency",
             "Piloted migrating all core services dashboards and alerts from Wavefront to Datadog using Terraform",
@@ -101,30 +95,17 @@ export const ExperienceData = [
     },
     {
         id: 9,
-        title: "Software Engineering Intern",
-        company: "Outreach",
-        tenure: "August 2019 - December 2019",
+        title: "Recreation Assistant",
+        company: "City of Henderson - Parks and Recreation Dept.",
+        tenure: "October 2012 - May 2014",
         duties: [
-            "Implemented user-specific time-zone functionality, one of the most requested features",
-            "Individual work and pair programming with mentor to take over ownership of all mailing-related code, a core service",
-            "sfd",
-            "Led and attended knowledge sharing sessions in engineering",
-            "Worked directly with QA and PMs to ensure thorough unit testing, integration testing, and CircleCI end-to-end testing as well as careful continuous rollout via LaunchDarkly feature flags",
+            "Collaborated with school administrative and departmental staff to facilitate",
+            "recreation programs for school children in grade K-5",
+            "Upheld school and state safety standards for the safety and wellbeing of students",
+            "Provided meaningful and essential tutoring sessions and mentorship to students",
+            "Effectively communicated student's progress with families on a need basis",
         ]
     },
-    {
-        id: 10,
-        title: "Software Engineering Intern",
-        company: "Outreach",
-        tenure: "August 2019 - December 2019",
-        duties: [
-            "Implemented user-specific time-zone functionality, one of the most requested features",
-            "Individual work and pair programming with mentor to take over ownership of all mailing-related code, a core service",
-            "sfd",
-            "Led and attended knowledge sharing sessions in engineering",
-            "Worked directly with QA and PMs to ensure thorough unit testing, integration testing, and CircleCI end-to-end testing as well as careful continuous rollout via LaunchDarkly feature flags",
-        ]
-    }
 ]
 
 export const ProjectData = [
@@ -142,7 +123,7 @@ export const ProjectData = [
         title: "Scienteer",
         subtitle: "Vue, Vuex, Flask, SQLAlchemy, PostgreSQL, AWS S3, JWT Auth",
         description: "A citizen science management platform which allows Science enthusiasts to find and contribute to research projects throughout the world. Front-end built using Vue Libraries. Incorporates botocore and AWS S3 to upload and serve image data. Utilizes JWT for authentication and the Google Maps API for geolocation functionality.",
-        image: "https://i.imgur.com/8b1oPAK.png",
+        image: "https://i.imgur.com/49u9nhh.png",
         link: "https://scienteer-sbassong.vercel.app/",
         github: "https://github.com/sbassong/Scienteer"
     },
@@ -157,130 +138,144 @@ export const ProjectData = [
     },
     {
         id: 4,
-        title: "Artsy-Fact",
-        subtitle: "Vue, Flask, SQLAlchemy, PostgreSQL, pyJWT Auth",
-        description: "A full-stack public forum application that enables users to discuss/rate artists and their music. First proper crack at learning and using Vue for front-end. Used Flask and PostgreSQL to build a relational backend, with SQLAlchemy as the ORM. Features authentication with pyJWT and Bcrypt. Minimum Viable Product submission for a 24hr hackathon.",
-        image: "https://i.imgur.com/Y9zYWyP.jpg",
-        link: "https://github.com/sbassong/Artsy-Fact",
-        github: "https://github.com/sbassong/Artsy-Fact",
+        title: "Portfolio V1",
+        subtitle: "ReactJS, TailwindsCSS, EmailJS, React-icons",
+        description: "First version of my portfolio upon graduating from General Assembly. Build using React, I wanted to learn TailwindsCSS and practice responsiveness. Features Email communication and some pretty nifty visuals and navigation effects.",
+        image: "https://i.imgur.com/v6WMGvJ.jpg",
+        link: "https://www.sambassong.com/",
+        github: "https://github.com/sbassong/portfolio",
     },
 ];
 
 export const SkillData = [
     {
-        title: "Ruby",
-        photo: "https://i.imgur.com/tCqg3HU.jpg",
-    },
-    {
-        title: "Rails",
-        photo: "https://i.imgur.com/pZtqsRM.png",
-    },
-    {
         title: "JavaScript",
         photo: "https://i.imgur.com/Q9P8Hac.png",
+        type: "languages"
     },
     {
-        title: "AWS",
-        photo: "https://i.imgur.com/xgkTZS0.jpg",
+        title: "Python",
+        photo: "https://i.imgur.com/aEjpOUs.png",
+        type: "languages"
     },
     {
-        title: "React.js",
-        photo: "https://i.imgur.com/WlkyT3e.png",
-    },
-    {
-        title: "Docker",
-        photo: "https://i.imgur.com/oE0z9u2.png",
-    },
-    {
-        title: "Kubernetes",
-        photo: "https://i.imgur.com/spgjouC.png",
-    },
-    {
-        title: "Go",
-        photo: "https://i.imgur.com/BpiJrEL.png",
-    },
-    {
-        title: "Datadog",
-        photo: "https://i.imgur.com/ywOb7IP.png",
-    },
-    {
-        title: "Grafana",
-        photo: "https://i.imgur.com/QpLf2yA.jpg",
-    },
-    {
-        title: "Wavefront",
-        photo: "https://i.imgur.com/y5myfSP.png",
-    },
-    {
-        title: "Elasticsearch",
-        photo: "https://i.imgur.com/AkZy7BG.png",
-    },
-    {
-        title: "PostgresQL",
-        photo: "https://i.imgur.com/JI955nx.png",
-    },
-    {
-        title: "Redis",
-        photo: "https://i.imgur.com/VgMA1R4.jpg",
-    },
-    {
-        title: "GraphQL",
-        photo: "https://i.imgur.com/dh0Tktu.png",
-    },
-    {
-        title: "Scrum",
-        photo: "https://i.imgur.com/sRxggsZ.jpg",
-    },
-    {
-        title: "Agile",
-        photo: "https://i.imgur.com/mWtiIEh.png",
-    },
-    {
-        title: "Java",
-        photo: "https://i.imgur.com/H7GlTRH.png",
-    },
-    {
-        title: "HTML",
+        title: "HTML5",
         photo: "https://i.imgur.com/f8ab8PH.png",
+        type: "languages"
     },
     {
-        title: "CSS",
+        title: "CSS3",
         photo: "https://i.imgur.com/j0NoZ95.png",
-    },
-    {
-        title: "RESTful APIs",
-        photo: "https://i.imgur.com/8AxWz68m.png",
+        type: "languages"
     },
     {
         title: "SQL",
         photo: "https://logodix.com/logo/542135.jpg",
+        type: "languages"
     },
     {
-        title: "Jira",
-        photo: "https://i.imgur.com/8voNGCw.jpg",
+        title: "NoSQL",
+        photo: "https://i.imgur.com/duR0hTQ.png",
+        type: "languages"
     },
     {
-        title: "Terraform",
-        photo: "https://i.imgur.com/BEs2EIA.jpg",
+        title: "ReactJS",
+        photo: "https://i.imgur.com/WlkyT3e.png",
+        type: "frontend"
     },
     {
-        title: "Kafka",
-        photo: "https://i.imgur.com/lBnU8p3.jpg",
+        title: "Redux",
+        photo: "https://i.imgur.com/VDXSXtU.png",
+        type: "frontend"
     },
     {
-        title: "Snowflake",
-        photo: "https://i.imgur.com/EfTWqwt.png",
+        title: "VueJS",
+        photo: "https://i.imgur.com/qz4DXir.png",
+        type: "frontend"
     },
     {
-        title: "RabbitMQ",
-        photo: "https://i.imgur.com/KoCXzav.jpg",
+        title: "Vuex",
+        photo: "https://i.imgur.com/pT1baZU.jpg",
+        type: "frontend"
     },
     {
-        title: "TypeScript",
-        photo: "https://i.imgur.com/5YzA9yA.png",
+        title: "Vuetify",
+        photo: "https://i.imgur.com/fOcjEPM.png",
+        type: "frontend"
     },
     {
-        title: "Honeycomb",
-        photo: "https://i.imgur.com/uYtRdCw.png",
-    }
+        title: "TailwindsCSS",
+        photo: "https://i.imgur.com/T9Q7a86.png",
+        type: "frontend"
+    },
+    {
+        title: "Bootstrap",
+        photo: "https://i.imgur.com/cgV9eEc.png",
+        type: "frontend"
+    },
+    {
+        title: "NodeJS",
+        photo: "https://i.imgur.com/GJrnwtm.png",
+        type: "backend"
+    },
+    {
+        title: "ExpressJS",
+        photo: "https://i.imgur.com/VgMA1R4.jpg",
+        type: "backend"
+    },
+    {
+        title: "Flask",
+        photo: "https://i.imgur.com/XcW6v5ym.png",
+        type: "backend"
+    },
+    {
+        title: "PostgresQL",
+        photo: "https://i.imgur.com/JI955nx.png",
+        type: "backend"
+    },
+    {
+        title: "MongoDB",
+        photo: "https://i.imgur.com/uJMRgGU.png",
+        type: "backend"
+    },
+    {
+        title: "WordPress",
+        photo: "https://i.imgur.com/H7GlTRH.png",
+        type: "other"
+    },
+    {
+        title: "Github",
+        photo: "https://i.imgur.com/ZjHBxKw.png",
+        type: "other"
+    },
+    {
+        title: "AWS S3",
+        photo: "https://i.imgur.com/xgkTZS0.jpg",
+        type: "other"
+    },
+    {
+        title: "RESTful APIs",
+        photo: "https://i.imgur.com/8AxWz68m.png",
+        type: "other"
+    },
+    {
+        title: "API Integration",
+        photo: "https://i.imgur.com/h4ZWbL0.jpg",
+        type: "other"
+    },
+    {
+        title: "Heroku",
+        photo: "https://i.imgur.com/a3INeUB.png",
+        type: "other"
+    },
+    {
+        title: "Vercel",
+        photo: "https://i.imgur.com/tsvrUS4.png",
+        type: "other"
+    },
+    {
+        title: "Netlify",
+        photo: "https://i.imgur.com/EAdqHYd.png",
+        type: "other"
+    },
 ]

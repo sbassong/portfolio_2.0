@@ -17,31 +17,27 @@ const Experience = () => {
 
     return (
         <div id="experience" >
-            <h1>Experience</h1>
+            <h1>Where I've made an impact</h1>
             <div className='experience-container'>         
                 <nav onClick={(e) => (e.target.id >= 1 && e.target.id <= 10) && handleClick(e)}>
                     <h1>Software Engineering</h1>
                     <div>
-                        <Link to={`/experience/1`}><p id={1}>Full time</p></Link>
-                        <Link to={`/experience/2`}><p id={2}>Internship</p></Link>
-                        <Link to={`/experience/3`}><p id={3}>Freelance</p></Link>
+                        <Link to={`/experience/1`}><p id={1}>Center Centre-UIE</p></Link>
+                        <Link to={`/experience/2`}><p id={2}>General Assembly</p></Link>
                     </div>
                     <h1>Research</h1>    
                     <div>
-                        <Link to={`/experience/4`}><p id={4}>USDA</p></Link>
-                        <Link to={`/experience/5`}><p id={5}>Research Foundation in Tropical Diseases</p></Link> 
+                        <Link to={`/experience/3`}><p id={3}>Washington State University</p></Link>
+                        <Link to={`/experience/4`}><p id={4}>Nevada State College</p></Link> 
                     </div>
-                    <h1>Leadership</h1>    
+                    <h1>Education</h1>    
                     <div>
-                        <Link to={`/experience/6`}><p id={6}>Executive DEI Council</p></Link>
-                        <Link to={`/experience/7`}><p id={7}>2 x ERG Leader</p></Link>  
-                    </div>
-                    <h1>Volunteer</h1>    
-                    <div>
-                        <Link to={`/experience/8`}><p id={8}>Ada Developers Academy</p></Link>
-                        <Link to={`/experience/9`}><p id={9}>Shelter in Code</p></Link>
-                        <Link to={`/experience/10`}><p id={10}>Pacific Science Center</p></Link>
-                    </div>
+                        <Link to={`/experience/5`}><p id={5}>Rainier Prep - Full</p></Link>
+                        <Link to={`/experience/6`}><p id={6}>Rainier Prep - Associate</p></Link>
+                        <Link to={`/experience/7`}><p id={7}>University of Nevada, Reno</p></Link>  
+                        <Link to={`/experience/8`}><p id={8}>Nevada State College</p></Link>  
+                        <Link to={`/experience/9`}><p id={9}>City of Henderson</p></Link>  
+                    </div> 
                 </nav>
                 
                 <div className='exp-cards-container'>
