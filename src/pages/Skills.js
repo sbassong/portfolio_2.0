@@ -5,7 +5,7 @@ const Skills = () => {
     return (
         <div id="skills">
             <h1>Skills &amp; Tech</h1>
-            <h1>Languages</h1>
+            <h1 className="skills-h1">Languages</h1>
             <div className="skills-container">
                 {
                     SkillData.filter(skill => skill.type === "languages").map((skill, index) => (
@@ -13,7 +13,7 @@ const Skills = () => {
                     ))
                 }
             </div>
-            <h1>Frontend</h1>
+            <h1 className="skills-h1">Frontend</h1>
             <div className="skills-container">
                 {
                     SkillData.filter(skill => skill.type === "frontend").map((skill, index) => (
@@ -21,7 +21,7 @@ const Skills = () => {
                     ))
                 }
             </div>
-            <h1>Backend &amp; Databases</h1>
+            <h1 className="skills-h1">Backend &amp; Databases</h1>
             <div className="skills-container">
                 {
                     SkillData.filter(skill => skill.type === "backend").map((skill, index) => (
@@ -29,7 +29,7 @@ const Skills = () => {
                     ))
                 }
             </div>
-            <h1>Other</h1>
+            <h1 className="skills-h1">Other</h1>
             <div className="skills-container">
                 {
                     SkillData.filter(skill => skill.type === "other").map((skill, index) => (

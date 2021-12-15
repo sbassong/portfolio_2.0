@@ -86,11 +86,11 @@ export const ExperienceData = [
         company: "Nevada State College",
         tenure: "August 2014 - May 2015",
         duties: [
-            "Owned Kafka-based mail scheduling Rails microservice, greatly increased reliability and query efficiency",
-            "Piloted migrating all core services dashboards and alerts from Wavefront to Datadog using Terraform",
-            "Architected two new microservices in Golang for monolith decomposition",
-            "Led and attended knowledge sharing sessions in engineering",
-            "Worked directly with QA and PMs to ensure thorough unit testing, integration testing, and CircleCI end-to-end testing as well as careful continuous rollout via LaunchDarkly feature flags",
+            "Assisted course instructor for 2 semesters of an introductory hybrid lecture and laboratory course on the principles of modern biology (BIOL 197)",
+            "Significantly contributed to design and set up of practical exams",
+            "Collaborated with peers and instructors to successfully exceed program outcomes as demonstrated by a 16% increased retention rate compared to previous years",
+            "Designed, organized, and led weekly group and individual supplementary instruction sessions which successfully improved students, understanding of course concepts and grades as reflected in year-end statistical evaluations",
+
         ]
     },
     {
@@ -99,8 +99,7 @@ export const ExperienceData = [
         company: "City of Henderson - Parks and Recreation Dept.",
         tenure: "October 2012 - May 2014",
         duties: [
-            "Collaborated with school administrative and departmental staff to facilitate",
-            "recreation programs for school children in grade K-5",
+            "Collaborated with school administrative and departmental staff to facilitate recreation programs for school children in grade K-5",
             "Upheld school and state safety standards for the safety and wellbeing of students",
             "Provided meaningful and essential tutoring sessions and mentorship to students",
             "Effectively communicated student's progress with families on a need basis",

@@ -12,7 +12,7 @@ const About = () => {
                 
                 <div className='profile-container'>
                     
-                    <img  src="https://i.imgur.com/6kzf7GXm.jpg" alt="sam avatar"/>
+                    <img  src="https://i.imgur.com/QGdnNtV.jpg" alt="sam avatar"/>
                     <div className="avatar-overlay"></div> 
                     <div className="avatar-frame"></div> 
                 </div>
