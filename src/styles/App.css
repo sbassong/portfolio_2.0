@@ -27,7 +27,7 @@
   height: 100%;
   width: 100%;
   font-family: 'Roboto Slab', serif;
-  font-size: 22pt;
+  font-size: 2.5vh;
   background: rgb(20, 20, 53);
   color: rgb(170, 165, 165);
   display: flex;
@@ -39,26 +39,26 @@
 input:focus {
   outline-style: outset;
   outline-color: black;
-  outline-width: 4px;
+  outline-width: .5vh;
 }
 textarea:focus {
   outline-style: outset;
   outline-color: black;
-  outline-width: 4px;
+  outline-width: .5vh;
 }
 
 button {
-  width: 80%;
+  width: 85%;
   margin: auto;
-  padding: 0.2em;
-  font-size: 22px;
+  padding: .5vh;
+  font-size: 2.5vh;
   color: #0c0e6a;
-  border-radius: 5px;
+  border-radius: 1vh;
 }
 
 button:hover {
   background-color: rgba(6, 220, 250, 0.4);
-  box-shadow: 0 0 10px #85DCFE;
+  box-shadow: 0 0 1vh #85DCFE;
 }
 
 a {
@@ -119,17 +119,17 @@ h1 {
   font-family: "Panther_Black";
   padding: .8em .6em;
   padding-top: 1em;
-  border-radius: 5px;
+  border-radius: .7vh;
 }
 
 .top-right-nav :last-child {
   border: 1px solid #85DCFE; 
-  border-radius: 5px;
+  border-radius: .7vh;
   color: #85DCFE;
 }
 
 .top-right-nav :last-child:hover {
-  box-shadow: 0 0 5px #85DCFE;
+  box-shadow: 0 0 1vh #85DCFE;
   background-color: rgba(6, 220, 250, 0.4);
   text-transform: capitalize;
   font-weight: bold;
@@ -138,7 +138,7 @@ h1 {
 
 .top-right-nav a:hover {
   color: #52cdfe;
-  box-shadow: 0 0 5px #85DCFE;
+  box-shadow: 0 0 1vh #85DCFE;
 }
 
 /* SideNav styles */
@@ -345,7 +345,6 @@ h1 {
   font-size: 3.5vh;
   margin-bottom: 0.5em;
   text-align: left;
-
 }
 
 .experience-container > nav {
@@ -520,35 +519,43 @@ h1 {
 
 /* Projects page styles */
 #projects {
-  margin: 10vh 0;
+  margin: 10vh auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
+#projects > h1 {
+  font-size: 4vh;
+  text-align: center;
+  width: 100%;
+}
 #projects > div {
-  margin: 1em auto;
-  width: 70%;
+  /* margin: 4vh 0; */
+  width: 100%;
   height: 100%;
   display: grid;  
   grid-gap: 8vh;  
-  grid-template-columns: repeat(2, 20vh);
-  grid-template-rows: repeat(2, 15vh);
+  grid-template-columns: repeat(2, 24vh);
+  grid-template-rows: repeat(2, 18vh);
 }
 @media screen and (max-width: 800px) {
   #projects > div {
     grid-gap: 5vh;  
-    grid-template-columns: repeat(2, 15vh);
-    grid-template-rows: repeat(2, 12vh);
+    grid-template-columns: repeat(2, 20vh);
+    grid-template-rows: repeat(2, 15vh);
   }
 }
 @media screen and (max-width: 600px) {
   #projects > div {
     grid-gap: 4vh;  
-    grid-template-columns: repeat(2, 12vh);
-    grid-template-rows: repeat(2, 9vh);
+    grid-template-columns: repeat(2, 15vh);
+    grid-template-rows: repeat(2, 12vh);
   }
 }
 
 .project-card {
-  display: flex;
   background-color: rgb(207, 196, 130, 0.3);
   border-radius: 1vh;
   width: 100%;
@@ -613,56 +620,64 @@ h1 {
 
 
 /* Contact page styles */
+#contact {
+  width: 100%;
+}
 .form-container {
-  height: 70vh;
   width: 50%;
-  margin: 25vh auto 10vh auto;
+  margin: 15vh auto 10vh auto;
+}
+@media screen and (max-width: 800px) {
+  .form-container {
+    width: 80%;
+  }
 }
 
 .form-container form {
   box-sizing: border-box;
-  border-radius: 10px;
-  padding: 1em 2em;
-  background-color:rgba(255, 255, 255, 0.31);;
+  border-radius: 1vh;
+  padding: 4vh;
+  background-color: rgba(143, 221, 252, 0.2);
   width: 100%;
   height: 100%;
 }
 
 .form-container form h2{
   margin: 0;
-  font-size: 35px;
+  font-size: 5vh;
+}
+@media screen and (max-width: 800px) {
+  .form-container form h2 {
+    font-size: 4vh;
+  }
 }
 
 .form-container form div{
   margin: 0.5em auto;
-  width: 80%;
+  width: 85%;
   text-align: left;
 }
 
 .form-container form label{
-  font-size: 20px;
+  font-size: 2.5vh;
 }
 
 .form-container form input{
   text-align: left;
-  height: 2em;
-  border-radius: 5px;
-  box-sizing: border-box;
-  border: 1px solid white;
+  height: 4vh;
+  border-radius: 1vh;
 }
 
 .form-container form textarea{
   text-align: left;
-  height: 12em;
-  border-radius: 5px;
+  height: 20vh;
+  border-radius: 1vh;
   box-sizing: border-box;
-  border: 1px solid white;
   resize: none;
 }
 .form-container form input,textarea{
-
   width: 100%;
-  font-size: 18px;
+  font-size: 2.2vh;
 }
 
 .landing-overlay {

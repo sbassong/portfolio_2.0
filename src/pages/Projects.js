@@ -5,7 +5,7 @@ const Projects = () => {
 
     return (
         <div id="projects">
-            <h1>check me out</h1>
+            <h1>Some projects I enjoyed building</h1>
             <div>
                 {
                     ProjectData.map((project) => (

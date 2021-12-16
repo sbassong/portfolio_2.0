@@ -8,7 +8,7 @@ const ProjectCard = ({title, description, image, link, technologies, github}) =>
 
                     <a href={link} target="_blank" rel="noreferrer">
                         <div className="project-details">
-                            Click Me!
+                            Click me to learn more
                         </div>            
                     </a>
                 </div>

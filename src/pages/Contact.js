@@ -24,7 +24,7 @@ const Contact = () => {
             Let's chat!
           </h2>
           <p>
-            Please fill out the fields below and submit to send me an email and I'll get back to you shortly.
+            Send me an email and I'll get back to you shortly.
           </p>
           <div >
             <label htmlFor="name">
