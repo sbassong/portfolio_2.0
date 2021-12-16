@@ -14,7 +14,6 @@ const About = () => {
                 <div className='profile-container'>
                     <div className="avatar-div"></div>
                     <div className="avatar-overlay"></div> 
-                    <div className="avatar-frame"></div> 
                 </div>
             </div>
         </div>

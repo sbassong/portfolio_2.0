@@ -243,7 +243,7 @@ h1 {
 
 /* About page styles */
 #about {
-  height: 85vh;
+  margin-bottom: 15vh;
 }
 #about > div {
   display: flex;
@@ -291,24 +291,8 @@ h1 {
   padding-top: 100%;
 }
 .profile-container:hover .avatar-overlay {
+  box-shadow: 0 0 10px #85DCFE;
   background-color: transparent;
-  
-}
-
-.avatar-frame {
-  border: 4px solid #85DCFE;
-  border-radius: 3%;
-  position: absolute;
-  margin-top: .5vh;
-  margin-left: .5vw;
-  top:0;
-  left:0;
-  width: 100%;
-  padding-top: 100%;
-}
-.profile-container:hover .avatar-frame   {
-  margin-top: -.5vh;
-  margin-left: -.5vw;
 }
 
 .profile-info {
@@ -346,27 +330,32 @@ h1 {
 
 /* Experience page styles */
 #experience {
-  height: 85vh;
+  margin-bottom: 10vh;
 }
 
 .experience-container {
   display: flex;
-  justify-content: space-evenly;
-  width: 60%;
-  margin: 2em auto;
-  padding: 1.5em;
+  width: 70%;
+  margin: 5vh auto;
+  padding: 4vh;
   border: 3px solid #85DCFE;
   border-radius: 10px;
 } 
 .experience-container h1 {
-  font-size: 20pt;
+  font-size: 3.5vh;
   margin-bottom: 0.5em;
   text-align: left;
 
 }
+
+.experience-container > nav {
+  margin-right: 3vw;
+  width: 35%
+}
+
 .experience-container p,li {
-  font-size: 1.3rem;
-  margin: 0.2em;
+  font-size: 2vh;
+  margin: 0.3vh;
   text-align: left;
   color: white;
   width: auto;
@@ -381,19 +370,16 @@ h1 {
 
 .exp-cards-container {
   width: 65%;
-  margin-left: 0;
   border-radius: 10px;
-  padding: 1em 1.5em;
+  padding: 2vh 3vh;
   background-color: rgba(143, 221, 252, 0.1);
 }
 
 .experience-card-wrapper ul {
   margin: 0;
-  margin-left: 1em;
   padding: 0;
   list-style: none;
   display: grid;
-  gap: 1rem;
 }
 
 .experience-card-wrapper ul li {
@@ -401,7 +387,7 @@ h1 {
   grid-template-columns: 0 1fr;
   gap: 1.55em;
   align-items: start;
-  font-size: 1.25rem;
+  font-size: 2vh;
   line-height: 1.25;
   color: rgb(170, 165, 165);
 }
@@ -412,7 +398,79 @@ h1 {
 }
 
 .experience-card-wrapper h1 {
-  margin-bottom: .5em;
+  margin-bottom: 1vh;
+}
+
+@media screen and (max-width: 800px) {
+  #experience > h1 {
+    width: 80%;
+    font-size: 4vh;
+    margin: 0 auto;
+  }
+
+  .experience-container {
+    width: 90%;
+    padding: 1.5vh;
+  }
+
+  .experience-container h1 {
+    font-size: 2.2vh;
+  }
+  
+  .experience-container p,li {
+    font-size: 1.7vh;
+    margin: .1vh;
+  }
+
+  .exp-cards-container {
+    padding: 1vh 1.5vh;
+  }
+
+  .experience-card-wrapper ul li {
+  gap: 1.1em;
+  align-items: start;
+  font-size: 1.5vh;
+  line-height: .75;
+  color: rgb(170, 165, 165);
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #experience > h1 {
+    width: 90%;
+    font-size: 3vh;
+    margin: 0 auto;
+  }
+
+  .experience-container {
+    width: 90%;
+    padding: 1vh;
+  }
+
+  .experience-container h1 {
+    font-size: 2vh;
+  }
+  
+  .experience-container p,li {
+    font-size: 1.5vh;
+    margin: .1vh;
+  }
+
+  .exp-cards-container {
+    padding: .8vh 1.3vh;
+  }
+
+  .experience-card-wrapper ul li {
+  gap: 1.1em;
+  align-items: start;
+  font-size: 1.3vh;
+  line-height: .75;
+  color: rgb(170, 165, 165);
+  }
+  .experience-card-wrapper ul li:before {
+    content: url(https://i.imgur.com/wrZRb2V.png?1);
+    font-size: .5em;
+  }
 }
 
 /* Skills page styles */
@@ -421,7 +479,7 @@ h1 {
 }
 
 .skills-container {
-  margin: 1em auto;
+  margin: 5vh auto;
   width: 90%;
   display: grid;  
   grid-gap: 1.5em;  
