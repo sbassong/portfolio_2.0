@@ -1,7 +1,8 @@
 const SkillCard = ( {title, photo} ) => {
+
     return (
         <div>
-            <img src={photo} alt=""/>
+            <div><img className="skill-img" src={photo} alt=""/></div>
             <p>{title}</p>
         </div>
     )
