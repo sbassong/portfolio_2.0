@@ -291,7 +291,7 @@ h1 {
   padding-top: 100%;
 }
 .profile-container:hover .avatar-overlay {
-  box-shadow: 0 0 10px #85DCFE;
+  box-shadow: 0 0 1.5vh #85DCFE;
   background-color: transparent;
 }
 
@@ -339,7 +339,7 @@ h1 {
   margin: 5vh auto;
   padding: 4vh;
   border: 3px solid #85DCFE;
-  border-radius: 10px;
+  border-radius: .9vh;
 } 
 .experience-container h1 {
   font-size: 3.5vh;
@@ -355,7 +355,7 @@ h1 {
 
 .experience-container p,li {
   font-size: 2vh;
-  margin: 0.3vh;
+  margin: .3vh;
   text-align: left;
   color: white;
   width: auto;
@@ -364,13 +364,13 @@ h1 {
 
 .experience-container nav p:hover {
   color: #52cdfe;
-  border-radius: 5px;
+  border-radius: .5vh;
   background-color: rgba(143, 221, 252, 0.1);
 }
 
 .exp-cards-container {
   width: 65%;
-  border-radius: 10px;
+  border-radius: .7vh;
   padding: 2vh 3vh;
   background-color: rgba(143, 221, 252, 0.1);
 }
@@ -430,10 +430,10 @@ h1 {
     gap: 1.1em;
     align-items: start;
     font-size: 1.5vh;
-    line-height: .75;
+    line-height: 1;
     color: rgb(170, 165, 165);
   }
-  
+
   .experience-card-wrapper ul li:before {
     content: url(https://i.imgur.com/wrZRb2V.png?1);
     font-size: .5em;
@@ -469,7 +469,6 @@ h1 {
   gap: 1.1em;
   align-items: start;
   font-size: 1.3vh;
-  line-height: .75;
   color: rgb(170, 165, 165);
   }
 }
@@ -483,8 +482,8 @@ h1 {
   margin: 5vh auto;
   width: 90%;
   display: grid;  
-  grid-gap: 1.5em;  
-  grid-template-columns: repeat(auto-fit, minmax(14px, 8%));
+  grid-gap: 1.8em;  
+  grid-template-columns: repeat(auto-fit, minmax(14px, 9%));
   grid-template-rows: auto;
   font-size: 1.5vh;
 }
@@ -521,30 +520,41 @@ h1 {
 
 /* Projects page styles */
 #projects {
-  margin: 2em 0;
-  /* height: 100%; */
-  height: 100%;
+  margin: 10vh 0;
 }
 
 #projects > div {
   margin: 1em auto;
-  width: 90%;
+  width: 70%;
   height: 100%;
   display: grid;  
-  grid-gap: 1em;  
-  grid-template-columns: repeat(2, minmax(300px, 600px));
-  grid-template-rows: repeat(auto-fit, minmax(168.75px, 337.5px));
-
+  grid-gap: 8vh;  
+  grid-template-columns: repeat(2, 20vh);
+  grid-template-rows: repeat(2, 15vh);
+}
+@media screen and (max-width: 800px) {
+  #projects > div {
+    grid-gap: 5vh;  
+    grid-template-columns: repeat(2, 15vh);
+    grid-template-rows: repeat(2, 12vh);
+  }
+}
+@media screen and (max-width: 600px) {
+  #projects > div {
+    grid-gap: 4vh;  
+    grid-template-columns: repeat(2, 12vh);
+    grid-template-rows: repeat(2, 9vh);
+  }
 }
 
 .project-card {
   display: flex;
   background-color: rgb(207, 196, 130, 0.3);
-  border-radius: 5px;
+  border-radius: 1vh;
   width: 100%;
   height: 100%;
-  margin: 2em auto;
-  padding:0.5em;
+  margin: 2vh auto;
+  padding: .5vh;
 }
 
 .project-wrapper {
@@ -558,17 +568,16 @@ h1 {
   position: sticky;
   height: 100%;
   width: 100%;
-  border-radius: 5px;
+  border-radius: 1vh;
   inset: 0;
   top: 0;
   left: 0;
 }
 
 .project-wrapper > a {
-  /* position: relative; */
   height: 100%;
   width: 100%;
-  border-radius: 5px;
+  border-radius: 1vh;
 }
 
 .project-details {
@@ -576,22 +585,18 @@ h1 {
   top: 0;
   left: 0;
   z-index: 10;
-  border-radius: 5px;
+  border-radius: 1vh;
   height: 100%;
   width: 100%;
   opacity: 0;
-  background-color: rgba(0, 0, 0, 0.7);
-}
-
-.project-details h1 {
-  color: #52cdfe;
+  background-color: rgba(6, 220, 250, 0.5);
 }
 
 .project-details:hover {
   opacity: 1;
 }
 
-.technologies {
+/* .technologies {
   font-size: 24pt;
   color: white;
   margin-bottom: 0.5em;
@@ -604,7 +609,7 @@ h1 {
   color:rgb(207, 196, 130);
   text-align: left;
   margin: 0.5em;
-}
+} */
 
 
 /* Contact page styles */
