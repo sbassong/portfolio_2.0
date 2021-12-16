@@ -427,11 +427,16 @@ h1 {
   }
 
   .experience-card-wrapper ul li {
-  gap: 1.1em;
-  align-items: start;
-  font-size: 1.5vh;
-  line-height: .75;
-  color: rgb(170, 165, 165);
+    gap: 1.1em;
+    align-items: start;
+    font-size: 1.5vh;
+    line-height: .75;
+    color: rgb(170, 165, 165);
+  }
+  
+  .experience-card-wrapper ul li:before {
+    content: url(https://i.imgur.com/wrZRb2V.png?1);
+    font-size: .5em;
   }
 }
 
@@ -467,10 +472,6 @@ h1 {
   line-height: .75;
   color: rgb(170, 165, 165);
   }
-  .experience-card-wrapper ul li:before {
-    content: url(https://i.imgur.com/wrZRb2V.png?1);
-    font-size: .5em;
-  }
 }
 
 /* Skills page styles */
@@ -483,9 +484,15 @@ h1 {
   width: 90%;
   display: grid;  
   grid-gap: 1.5em;  
-  grid-template-columns: repeat(auto-fit, minmax(15px, 10%));
+  grid-template-columns: repeat(auto-fit, minmax(14px, 8%));
   grid-template-rows: auto;
-  font-size: 2vh;
+  font-size: 1.5vh;
+}
+
+@media screen and (max-width: 600px) {
+  .skills-container {
+    font-size: 1.2vh;
+  }
 }
 
 .skills-container>div {
