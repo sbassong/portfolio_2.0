@@ -32,7 +32,7 @@ const Landing = () => {
         <h1 className="land-h1-2">I build <span className="teal">equity-minded and accessible</span> technologies.</h1>
         <p>I am a <span className="teal">{typewriter}</span> full-stack software engineer specializing front-end design and development. Currently, I am focused on making awesomeness as a <span className="teal">Web Developer Intern</span> at <span className="teal">Center Centre-UIE</span>. </p>
       </div>
-</div>
+    </div>
   )
 }
 

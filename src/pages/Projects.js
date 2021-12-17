@@ -6,6 +6,7 @@ const Projects = () => {
     return (
         <div id="projects">
             <h1>Some projects I enjoyed building</h1>
+            <p>Click on the cards to find out more</p>
             <div>
                 {
                     ProjectData.map((project) => (

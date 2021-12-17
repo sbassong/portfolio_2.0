@@ -22,6 +22,11 @@
   display: flex;
   width: 100%;
 }
+@media screen and (max-width: 400px) {
+  .bottom-app {
+    flex-direction: column;
+  }
+}
 
 #main {
   height: 100%;
@@ -36,6 +41,12 @@
   align-items: center;
 }
 
+#main > div >h1 {
+  width: 100%;
+  font-size: 4vh;
+  margin: 0 auto;
+
+}
 input:focus {
   outline-style: outset;
   outline-color: black;
@@ -113,7 +124,7 @@ h1 {
   justify-content: center;
 }
 
-.top-right-nav a {
+.top-right-nav * {
   margin: 0 1vh;
   color: #85DCFE;
   font-size: 1.5vh;
@@ -131,7 +142,7 @@ h1 {
   .top-left-nav img{
     width: 25vw;
   }
-  .top-right-nav a {
+  .top-right-nav * {
     font-size: 1vh;
     margin: 0 .5vh;
   }
@@ -140,7 +151,7 @@ h1 {
   .top-right-nav{
     justify-content: initial;
   }
-  .top-right-nav a {
+  .top-right-nav * {
     margin: 0vh;
   }
 }
@@ -161,10 +172,9 @@ h1 {
   background-color: rgba(6, 220, 250, 0.4);
   text-transform: capitalize;
   font-weight: bold;
-  font-family: "Panther_Black"
 }
 
-.top-right-nav a:hover {
+.top-right-nav *:hover {
   color: #52cdfe;
   box-shadow: 0 0 1vh #85DCFE;
 }
@@ -222,7 +232,6 @@ h1 {
 
 /* landing page styles */
 #landing {
-  height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -231,8 +240,8 @@ h1 {
 }
 
 .land-intro {
-  width: 60%;
-  margin-top: -1.5em;
+  width: 55%;
+  margin: 25vh auto;
   color: rgb(170, 165, 165)
 }
 .land-intro * {
@@ -244,9 +253,18 @@ h1 {
   font-size: 2.5vh;
 }
 .land-h1-2 {
-  font-size: 5.5vh;
-  margin: .8em 0;
+  font-size: 6vh;
+  margin: 4vh 0;
   color: rgb(170, 165, 165)
+}
+@media screen and (max-width: 400px) {
+  .land-intro {
+    margin-bottom: 10vh;
+  }
+  .land-h1-2 {
+    font-size: 4vh;
+    margin: 3vh 0;
+  }
 }
 
 .land-h1-2 span {
@@ -283,19 +301,22 @@ h1 {
 }
 
 /* About page styles */
-#about {
-  margin-bottom: 15vh;
-}
-#about > div {
-  display: flex;
-  width: 70%;
-  margin: 0 auto 0 auto;
+#about > h1{
+  margin-top: 15vh;
 }
 
+.about-container {
+  display: flex;
+  width: 60%;
+  margin: 2vh auto 15vh auto;
+  justify-content: space-around;
+}
+
+
 .profile-container {
-  margin: auto .5em;
+  margin: auto 0 auto 2vh;
   border-radius: 3%;
-  width: 30%;
+  width: 30vh;
   height: 100%;
   position: relative;
 }
@@ -337,9 +358,9 @@ h1 {
 }
 
 .profile-info {
-  width: 70%;
-  margin: auto 1em;
-  margin-right: 2em;
+  width: 45%;
+  margin: auto 0;
+  margin-right: 4vh;
   align-self: left;
   font-size: 2.3vh;
 }
@@ -365,32 +386,32 @@ h1 {
   }
 
   .profile-container {
-  margin: 1em;
+    margin: 2vh;
+    width: 20vh;
   }
 }
 
 /* Experience page styles */
-#experience {
-  margin-bottom: 10vh;
+#experience > h1{
+  margin-top: 20vh;
 }
 
 .experience-container {
   display: flex;
   width: 70%;
-  margin: 5vh auto;
+  margin: 5vh auto 20vh auto;
   padding: 4vh;
   border: 3px solid #85DCFE;
   border-radius: .9vh;
 } 
 .experience-container h1 {
   font-size: 3.5vh;
-  margin-bottom: 0.5em;
   text-align: left;
 }
 
 .experience-container > nav {
   margin-right: 3vw;
-  width: 35%
+  width: 35%;
 }
 
 .experience-container p,li {
@@ -481,11 +502,11 @@ h1 {
 }
 
 @media screen and (max-width: 400px) {
-  #experience > h1 {
+  /* #experience > h1 {
     width: 90%;
     font-size: 3vh;
     margin: 0 auto;
-  }
+  } */
 
   .experience-container {
     width: 90%;
@@ -515,17 +536,21 @@ h1 {
 
 /* Skills page styles */
 #skills {
-  width: 75%;
+  width: 70%;
+}
+
+#skills > h1 {
+  margin-top: 20vh;
 }
 
 .skills-container {
   margin: 5vh auto;
   width: 90%;
   display: grid;  
-  grid-gap: 1.8em;  
-  grid-template-columns: repeat(auto-fit, minmax(14px, 9%));
+  grid-gap: 3vh;  
+  grid-template-columns: repeat(auto-fit, minmax(14px, 8%));
   grid-template-rows: auto;
-  font-size: 1.5vh;
+  font-size: 1.7vh;
 }
 
 @media screen and (max-width: 600px) {
@@ -560,7 +585,7 @@ h1 {
 
 /* Projects page styles */
 #projects {
-  margin: 10vh auto;
+  margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -568,18 +593,18 @@ h1 {
 }
 
 #projects > h1 {
-  font-size: 4vh;
-  text-align: center;
-  width: 100%;
+  font-size: 5vh;
 }
+
 #projects > div {
-  /* margin: 4vh 0; */
+  margin: 2vh auto 20vh auto;
   width: 100%;
-  height: 100%;
   display: grid;  
   grid-gap: 8vh;  
   grid-template-columns: repeat(2, 24vh);
   grid-template-rows: repeat(2, 18vh);
+  justify-content: center;
+  align-items: center;
 }
 @media screen and (max-width: 800px) {
   #projects > div {
@@ -644,21 +669,6 @@ h1 {
   opacity: 1;
 }
 
-/* .technologies {
-  font-size: 24pt;
-  color: white;
-  margin-bottom: 0.5em;
-  padding-bottom: 0.5em;
-  border-bottom: #D7B554 2px solid;
-}
-
-.description {
-  font-weight: bold;
-  color:rgb(207, 196, 130);
-  text-align: left;
-  margin: 0.5em;
-} */
-
 
 /* Contact page styles */
 #contact {
@@ -666,7 +676,7 @@ h1 {
 }
 .form-container {
   width: 50%;
-  margin: 15vh auto 10vh auto;
+  margin: 20vh auto 10vh auto;
 }
 @media screen and (max-width: 800px) {
   .form-container {
@@ -698,6 +708,14 @@ h1 {
   width: 85%;
   text-align: left;
 }
+@media screen and (max-width: 800px) {
+  .form-container form div {
+    width: 100%;
+  }
+  button {
+    width: 100%;
+  }
+}
 
 .form-container form label{
   font-size: 2.5vh;
@@ -724,7 +742,7 @@ h1 {
 .landing-overlay {
   width: 100%;
   height: 100vh;
-  position:fixed;
+  position: fixed;
   top: 0;
   left: 0;
   z-index:30;
@@ -740,3 +758,50 @@ h1 {
 }
 
 
+/* bottom Nav styles */
+.bottom-nav-container {
+  position: sticky;
+  background: rgb(7,8,60);
+  background: -moz-linear-gradient(0deg, rgba(7,8,60,1) 0%, rgba(20,20,53,1) 100%);
+  background: -webkit-linear-gradient(0deg, rgba(7,8,60,1) 0%, rgba(20,20,53,1) 100%);
+  background: linear-gradient(0deg, rgba(7,8,60,1) 0%, rgba(20,20,53,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#07083c",endColorstr="#141435",GradientType=1);
+  width: 100%;
+  z-index: 20;
+  bottom: 0;
+}
+
+.bottom-nav-wrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  margin: .5vh auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.bottom-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1vh;
+}
+
+.bottom-nav a {
+  display: table;
+  margin: .5vh 2vh;
+  width: 4vh;
+  height: 4vh;
+}
+
+.bottom-nav a * {
+  display:table-cell;
+  text-align: center;
+  width: 100%;
+  height: 85%;
+  color: #52cdfe;
+}
+
+.bottom-nav a *:hover {
+  height: 100%;
+}

@@ -2,7 +2,7 @@ import { VscGithubAlt } from "react-icons/vsc"
 import { AiOutlineLinkedin} from "react-icons/ai"
 import { MdOutlineEmail } from "react-icons/md"
 
-const SideNav = () => {
+const LeftSideNav = () => {
 
     return (
         <div className="side-nav-container">
@@ -17,4 +17,4 @@ const SideNav = () => {
     )
 }
 
-export default SideNav
+export default LeftSideNav

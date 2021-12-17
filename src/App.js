@@ -7,8 +7,9 @@ import Skills from './pages/Skills'
 import Projects from './pages/Projects'
 import Contact from './pages/Contact'
 
-import SideNav from './components/SideNav'
+import LeftSideNav from './components/LeftSideNav'
 import TopNav from './components/TopNav';
+import BottomNav from './components/BottomNav';
 
 
 const overlay = (
@@ -19,29 +20,51 @@ const overlay = (
   </div>
 )
 
-const current = (
-  <div className="App">
-    <TopNav />
-    <div className="bottom-app">
-      <SideNav />
-      <main id="main">
-        <Landing/>
-        <About/>
-        <Experience/>
-        <Skills/>
-        <Projects/>
-        <Contact/>
-      </main>
-    </div>  
-  </div>
-)
 
 
 function App() {
   const [rendered, setRendered] = useState(overlay)
-  
+  const [windowDimension, detectHW] = useState({
+  winWidth: window.innerWidth,
+  winHeight: window.innerHeight,
+})
+
+const current = (
+  <div className="App">
+    <TopNav windowDimension={windowDimension}/>
+    <div className="bottom-app">
+      { windowDimension.winWidth >= 400 &&  <LeftSideNav /> }
+      <main id="main">
+        <Landing/>
+        <About/>
+        <Experience/>
+        <Projects/>
+        <Skills/>
+        <Contact/>
+      </main>
+      { windowDimension.winWidth < 400 &&  <BottomNav /> }
+    </div>  
+  </div>
+)
+
+  const detectSize = () => {
+  detectHW({
+      winWidth: window.innerWidth,
+      winHeight: window.innerHeight,
+  })
+  }
+
+  // for resizing
   useEffect(() => {
-    const timer = setTimeout(() => setRendered(current), 3700);
+      window.addEventListener('resize', detectSize)
+      return () => {
+      window.removeEventListener('resize', detectSize)
+      }
+  }, [windowDimension])
+
+  // for landing animation
+  useEffect(() => {
+    const timer = setTimeout(() => setRendered(current), 1000);
     return () => clearTimeout(timer);
   }, []);
 
