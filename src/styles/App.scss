@@ -864,17 +864,10 @@ button:hover {
     .overlay-content {
         background: rgb(20, 20, 53);
         padding: 4vh;
-        max-width: 50vw;
         position: relative;
         margin: auto;
         transition: opacity 0.85s;
         border-radius: .7vh;
-
-        @media screen and (max-width: 800px) {
-          .overlay-content {
-            max-width: 90vw
-          }
-        }
 
         &.with-outline:focus {
             outline: 2px solid #0366d6;
@@ -913,6 +906,15 @@ button:hover {
     &.overlay-closing {
         opacity: 0;
     }
+}
+.overlay-content {
+  max-width: 60vw;
+}
+
+@media screen and (max-width: 800px) {
+  .overlay-content {
+    max-width: 90vw;
+  }
 }
 
 .scroll-lock {
