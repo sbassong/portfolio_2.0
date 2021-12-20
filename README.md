@@ -22,7 +22,7 @@
 #### 
 1. Run `npm install` to install necessary dependencies in .
 2. Run `npm start` to start react app server
-3. Head to `http://localhost:3000/` on your favorite browser to check out the render
+3. Head to `http://localhost:3000/` on your favorite browser to check out the client
 
 4. alternatively, use the [deployed link](https://www.sambassong.com/)...
 ***
@@ -35,5 +35,5 @@
 
 ### ***Credits***
 #### Pictures: [DuckDuckGoSearch](https://duckduckgo.com), [Wallpapercave](https://wallpapercave.com/space-needle-wallpaper)
-#### Inspiration: [Brittany Chiang](https://brittanychiang.com/), [Sam Bassong](https://www.sambassong.com/)
+#### Inspiration: [Brittany Chiang](https://brittanychiang.com/), [Sam Bassong](portfolio-jkj4905x8-sbassong.vercel.app), [Tran Le](https://tranle.dev/)
 
