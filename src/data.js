@@ -2,7 +2,7 @@ export const ExperienceData = [
     {
         id: 1,
         title: "Web Developer and Email Specialist Intern",
-        company: "Center Centre - UIE",
+        company: "Center Centre-UIE",
         tenure: "December 2021 - Present",
         duties: [
             "Managing production of Center Centre - UIE's outgoing HTML email campaigns using MailChimp",
@@ -48,7 +48,7 @@ export const ExperienceData = [
     },
     {
         id: 5,
-        title: "8th grade Science Teacher",
+        title: "8th Grade Science Teacher",
         company: "Rainier Prep",
         tenure: "January 2019 - June 2021",
         duties: [
@@ -111,7 +111,7 @@ export const ProjectData = [
     {
         id: 1,
         title: "GameStart",
-        subtitle: "PostgresSQL, Express.js, ReactJS, Node.js, JWT Auth, Bootstrap",
+        subtitle: "PostgreSQL, ExpressJS, ReactJS, NodeJS, JWT Auth, Bootstrap",
         description: "An e-commerce full-stack platform where users can shop for games. Feature-packed and user-focused web application built using the PERN stack: Postgres to leverage relational querying, Express and Node.js for a stable server, React and UI libraries to optimize the client-side experience. Leverages Bcrypt and Json Web Token authentication to ensure the user’s confidentiality.",
         image: "https://i.imgur.com/4fcEFrd.jpg",
         link: "https://peaceful-everglades-79165.herokuapp.com/",
@@ -120,7 +120,7 @@ export const ProjectData = [
     {
         id: 2,
         title: "Scienteer",
-        subtitle: "Vue, Vuex, Flask, SQLAlchemy, PostgreSQL, AWS S3, JWT Auth",
+        subtitle: "Vue, Vuex, Flask, PostgreSQL, AWS S3, JWT Auth",
         description: "A citizen science management platform which allows Science enthusiasts to find and contribute to research projects throughout the world. Front-end built using Vue Libraries. Incorporates botocore and AWS S3 to upload and serve image data. Utilizes JWT for authentication and the Google Maps API for geolocation functionality.",
         image: "https://i.imgur.com/49u9nhh.png",
         link: "https://scienteer-sbassong.vercel.app/",
@@ -129,7 +129,7 @@ export const ProjectData = [
     {
         id: 3,
         title: "Amphi",
-        subtitle: "MongoDB + Mongoose, Express.js, ReactJS, Node.js, React-rainbow UI",
+        subtitle: "MongoDB, ExpressJS, ReactJS, Node.js, React-rainbow UI",
         description: "An events search web application and API which leverages the MERN stack to create an engaging and intuitive user experience. Utilized the MERN stack to implement a rich application featuring: routing and state management with React Hooks, rapid querying via MongoDB, and engaging user interface with the help of React-rainbow and React-icons libraries.",
         image: "https://i.imgur.com/3NCGdgW.png",
         link: "https://fast-cove-17382.herokuapp.com/",
@@ -137,8 +137,8 @@ export const ProjectData = [
     },
     {
         id: 4,
-        title: "Portfolio V1",
-        subtitle: "ReactJS, TailwindsCSS, EmailJS, React-icons",
+        title: "Portfolio 1.0",
+        subtitle: "ReactJS, TailwindCSS, EmailJS, React-icons",
         description: "First version of my portfolio upon graduating from General Assembly. Build using React, I wanted to learn TailwindsCSS and practice responsiveness. Features Email communication and some pretty nifty visuals and navigation effects.",
         image: "https://i.imgur.com/v6WMGvJ.jpg",
         link: "https://www.sambassong.com/",
@@ -203,7 +203,7 @@ export const SkillData = [
         type: "frontend"
     },
     {
-        title: "TailwindsCSS",
+        title: "Tailwind CSS",
         photo: "https://i.imgur.com/T9Q7a86.png",
         type: "frontend"
     },

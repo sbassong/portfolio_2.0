@@ -18,19 +18,16 @@ const Contact = () => {
 
   return (
     <section className="contact" id='contact'>
+      <h1>Let's chat!</h1>
+      <p>Send me an email and I'll get back to you shortly.</p>
       <div className='form-container'>
         <form ref={form} onSubmit={handleSubmit} name="contact">
-          <h2>
-            Let's chat!
-          </h2>
-          <p>
-            Send me an email and I'll get back to you shortly.
-          </p>
           <div >
             <label htmlFor="name">
               Name
             </label>
-            <input
+            <textarea 
+              className="input"
               type="text"
               id="name"
               name="name"
@@ -40,7 +37,8 @@ const Contact = () => {
             <label htmlFor="email">
               Email
             </label>
-            <input
+            <textarea 
+              className="input"
               type="email"
               id="email"
               name="email"

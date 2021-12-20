@@ -4,7 +4,8 @@ import { SkillData } from "../data";
 const Skills = () => {
     return (
         <div id="skills">
-            <h1>Skills &amp; Tech</h1>
+            <h1>Stack</h1>
+            <p>Techs I enjoy using regularly</p>
             <div className="skills-container">
                 {
                     SkillData && SkillData.map((skill, index) => (

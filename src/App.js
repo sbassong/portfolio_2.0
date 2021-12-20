@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import './styles/App.css';
+import './styles/App.scss';
 import Landing from './pages/Landing'
 import About from './pages/About'
 import Experience from './pages/Experience'
@@ -19,7 +19,6 @@ const overlay = (
       </div>
   </div>
 )
-
 
 
 function App() {
@@ -66,7 +65,7 @@ const current = (
   useEffect(() => {
     const timer = setTimeout(() => setRendered(current), 1000);
     return () => clearTimeout(timer);
-  }, []);
+  });
 
   return (
     rendered

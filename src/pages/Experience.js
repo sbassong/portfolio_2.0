@@ -17,7 +17,8 @@ const Experience = () => {
 
     return (
         <div id="experience" >
-            <h1>Where I made an impact as</h1>
+            <h1>Experience</h1>
+            <p>Workplaces where I've made an impact</p>
             <div className='experience-container'>         
                 <nav onClick={(e) => (e.target.id >= 1 && e.target.id <= 10) && handleClick(e)}>
                     <h1>Software Engineer</h1>
