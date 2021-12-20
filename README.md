@@ -29,7 +29,9 @@
 
 ### ***Future Updates***
 
-- [ ] implement screen responsiveness
+- [x] implement full screen responsiveness
+- [] Improve overlay functionality
+- [] Replace skills with better icons.
 
 ***
 
