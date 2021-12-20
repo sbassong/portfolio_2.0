@@ -239,7 +239,7 @@ export const SkillData = [
     },
     {
         title: "WordPress",
-        photo: "https://i.imgur.com/H7GlTRH.png",
+        photo: "https://i.imgur.com/CPFx7cW.png",
         type: "other"
     },
     {
