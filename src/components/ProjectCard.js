@@ -19,8 +19,8 @@ const ProjectCard = ({project}) => {
                 <div className="project-details"></div> 
             </div>
 
-            <Overlay  configs={configs} isOpen={isOpen}  >
-                <ProjectPage closeOverlay={() => toggleIsOpen(false)} title={project.title} description={project.description} image={project.image} link={project.link} technologies={project.technologies} subtitle={project.subtitle}/> 
+            <Overlay  configs={configs} isOpen={isOpen}  closeOverlay={() => toggleIsOpen(false)}>
+                <ProjectPage closeOverlay={() => toggleIsOpen(false)} title={project.title} description={project.description} github={project.github} link={project.link} technologies={project.technologies} subtitle={project.subtitle}/> 
             </Overlay>
         </div>
     )
