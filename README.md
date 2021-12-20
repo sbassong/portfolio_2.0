@@ -1,4 +1,4 @@
-###  [Portfolio](https://www.sambassong.com/) | [Portfolio_2.0](https://www.sambassong.com/) | [GitHub](https://github.com/sbassong) | [LinkedIn](https://www.linkedin.com/in/sambassong/)
+###  [Portfolio](https://www.sambassong.com/) | [Portfolio_1.0](portfolio-jkj4905x8-sbassong.vercel.app) | [GitHub](https://github.com/sbassong) | [LinkedIn](https://www.linkedin.com/in/sambassong/)
 ### By: Sam Bassong
 
 ***
