@@ -3,7 +3,7 @@ const ProjectPage= ({title, description, link, subtitle, github, closeOverlay}) 
 
 
     return (
-      <div className="project-page overlay-wrapper">
+      <div className="project-page overlay-wrapper" onKeyPress={(e) => e.key === "Escape" && closeOverlay}>
         <div className="backdrop"></div>
         <div className="details-cont overlay-content">
           <img src="https://i.imgur.com/cdUyJgN.png" alt="close-x" role="button" onClick={closeOverlay} className="overlay-close" />
