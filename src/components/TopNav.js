@@ -19,7 +19,7 @@ const TopNav = ({windowDimension}) => {
                     <a href="#experience">Experience</a>
                     <a href="#projects">Projects</a>
                     <a href="#skills">Stack</a>
-                    <a href="https://drive.google.com/file/d/1ruYivOxyEAx23ca7YJUp9b8yK3l9tgAy/view?usp=sharing" target="_blank" rel="noreferrer">Resume</a>
+                    <a href="https://drive.google.com/file/d/1jDSvXbmOqkpDMiOHBlVvXfsqMJCcT2Wr/view?usp=sharing" target="_blank" rel="noreferrer">Resume</a>
                 </nav>
             </div>
         </div>
