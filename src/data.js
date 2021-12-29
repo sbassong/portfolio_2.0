@@ -190,7 +190,7 @@ export const SkillData = [
     },
     {
         title: "VueJS",
-        photo: "https://i.imgur.com/j5ZKbh5.jpg",
+        photo: "https://i.imgur.com/9Bg1NJB.png",
         type: "frontend"
     },
     {
@@ -220,7 +220,7 @@ export const SkillData = [
     },
     {
         title: "ExpressJS",
-        photo: "https://i.imgur.com/vDo5bUA.png",
+        photo: "https://i.imgur.com/4edoBxS.png",
         type: "backend"
     },
     {
@@ -229,7 +229,7 @@ export const SkillData = [
         type: "backend"
     },
     {
-        title: "PostgresQL",
+        title: "PostgreSQL",
         photo: "https://i.imgur.com/JI955nx.png",
         type: "backend"
     },
@@ -260,12 +260,12 @@ export const SkillData = [
     },
     {
         title: "API Integration",
-        photo: "https://i.imgur.com/h4ZWbL0.jpg",
+        photo: "https://i.imgur.com/Md2rRRN.png",
         type: "other"
     },
     {
         title: "Heroku",
-        photo: "https://i.imgur.com/DN8h8N1.jpg",
+        photo: "https://i.imgur.com/OwEKvMR.png",
         type: "other"
     },
     {
