@@ -5,10 +5,10 @@ export const ExperienceData = [
         company: "Center Centre-UIE",
         tenure: "December 2021 - Present",
         duties: [
-            "Managing production of Center Centre - UIE's outgoing HTML email campaigns using MailChimp",
-            "Creating and managing UIE sites contents and medium blogpost with both WordPress and Statamic CMS platforms",
-            "Maintaining UIE sites web properties",
-            "Enthusiastically anticipating more projects in the next few months"
+            "Creating features and maintaining web properties across a cluster of Center Centre-UIE sites using React, HTML, CSS, and WordPress ",
+            "Producing and coding UIE's outgoing email campaigns using HTML, CSS, CRMs, and CMS",
+            "Managing UIE sites contents and medium blogpost with both WordPress and Statamic CMS platforms",
+            "Optimizing UIE’s web development operations building an internal CSS framework, an HTML snippet library, and landing page templates with a multi-disciplinary remote team"
         ]
     },
     {
@@ -17,9 +17,9 @@ export const ExperienceData = [
         company: "General Assembly",
         tenure: "July 2021 - December 2021",
         duties: [
-            "Developed 6+ full-stack applications with industry-leading web technology and tools such as Javascript, Python, React, Vue, Node, Express, SQL, and Flask.",
-            "Leveraged architectural modeling, prototyping, deployment platforms, cloud services, and version control tools to design and build web platforms.",
-            "Collaborated with and led engineers through pair and group projects using Scrum-focused Agile practices.",
+            "Engineered 6+ full-stack platforms with industry-leading JavaScript and Python technologies",
+            "Applied engineering best practices including architectural modeling, testing, deployment, version control, code maintenance, documentation, and responsive design",
+            "Collaborated with peers to pitch, devise, and build products during Agile coding sprints",
         ]
     },
     {
@@ -28,10 +28,11 @@ export const ExperienceData = [
         company: "Washington State University",
         tenure: "July 2016 - May 2018",
         duties: [
-            "Planned and conducted independent lab experiments to elucidate and resolve biomedical challenges while presenting research at symposiums, improving lab standard procedures, and managing undergraduate student researchers",
-            "Analyzed technical documentation, articles, and manuals to troubleshoot experiments and craft high quality lab protocols and records",
-            "Developed a tracking protocol of nutrients within Chlamydia trachomatis infected host cells and designed a microscope-based survey procedure for cell mechanism analysis and record keeping",
-            "Performed daily Biosafety Level 2 (BSL-2) work",
+            "Planned and conducted independent experiments to solve biomedical challenges including emerging infectious diseases and microbial antibiotic resistance",
+            "Analyzed data and maintained documentation to troubleshoot and standardize procedures",
+            "Developed a tracking protocol of nutrients within Chlamydia trachomatis infected host cells",
+            "Designed a microscope-based survey procedure for cell mechanism analysis and record keeping",
+            "Communicated research data at symposiums and managed undergraduate researchers",
         ]
     },
     {
@@ -55,7 +56,7 @@ export const ExperienceData = [
             "Designed, planned, and taught a stellar original projects-based curriculum to a yearly cohort of 80+ students while handling administrative responsibilities and attending an accelerated teaching certification program",
             "Improved school's science mastery outcomes based on a 3 years-average 19% score increase on Washington State's standardized comprehensive assessment of sciences",
             "Managed a diverse 80+ group of students' STEM innovation through collaborative hands-on projects that integrate data analysis/visualization, design thinking, and field studies",
-            "Demonstrated excellent growth potential and adaptability by earning a promotion and increased responsibilities from associate to full teacher within 3 months of a 6-month transition plan",
+            "Demonstrated excellent growth and adaptability by earning a promotion and increased responsibilities from associate to full teacher within 3 months of a 6-month transition plan",
         ]
     },
     {
@@ -112,7 +113,7 @@ export const ProjectData = [
         id: 1,
         title: "GameStart",
         subtitle: "PostgreSQL, ExpressJS, ReactJS, NodeJS, JWT Auth, Bootstrap",
-        description: "An e-commerce full-stack platform where users can shop for games. Feature-packed and user-focused web application built using the PERN stack: Postgres to leverage relational querying, Express and Node.js for a stable server, React and UI libraries to optimize the client-side experience. Leverages Bcrypt and Json Web Token authentication to ensure the user’s confidentiality.",
+        description: "A e-commerce full stack platform where users can shop for games. Feature-packed and user-focused web application built using the PERN stack: Postgres to leverage relational querying, Express and Node.js for a stable server, React and UI libraries to optimize the client-side experience. Leverages Bcrypt and Json Web Token authentication to ensure the user’s confidentiality.",
         image: "https://i.imgur.com/4fcEFrd.jpg",
         link: "https://peaceful-everglades-79165.herokuapp.com/",
         github: "https://github.com/sbassong/GameStart"
@@ -121,7 +122,7 @@ export const ProjectData = [
         id: 2,
         title: "Scienteer",
         subtitle: "Vue, Vuex, Flask, PostgreSQL, AWS S3, JWT Auth",
-        description: "A citizen science management platform which allows Science enthusiasts to find and contribute to research projects throughout the world. Front-end built using Vue Libraries. Incorporates botocore and AWS S3 to upload and serve image data. Utilizes JWT for authentication and the Google Maps API for geolocation functionality.",
+        description: "A citizen science management platform which allows Science enthusiasts to find and contribute to research projects throughout the world. Front-end built using Vue Libraries including Vuex for state management. Integrated AWS S3 for image and file storage. Utilizes JWT for authentication and the Google Maps API for geocaching functionality.",
         image: "https://i.imgur.com/49u9nhh.png",
         link: "https://scienteer-sbassong.vercel.app/",
         github: "https://github.com/sbassong/Scienteer"
@@ -130,7 +131,7 @@ export const ProjectData = [
         id: 3,
         title: "Amphi",
         subtitle: "MongoDB, ExpressJS, ReactJS, Node.js, React-rainbow UI",
-        description: "An events search web application and API which leverages the MERN stack to create an engaging and intuitive user experience. Utilized the MERN stack to implement a rich application featuring: routing and state management with React Hooks, rapid querying via MongoDB, and engaging user interface with the help of React-rainbow and React-icons libraries.",
+        description: "An event search database which leverages the MERN stack to create an engaging and intuitive user experience. Utilized the MERN stack to implement a rich application featuring: routing and state management with React Hooks, rapid querying via MongoDB's document-oriented model, and a responsive user interface with React and SCSS.",
         image: "https://i.imgur.com/3NCGdgW.png",
         link: "https://fast-cove-17382.herokuapp.com/",
         github: "https://github.com/sbassong/Amphi_MERN"
@@ -139,7 +140,7 @@ export const ProjectData = [
         id: 4,
         title: "Portfolio 1.0",
         subtitle: "ReactJS, TailwindCSS, EmailJS, React-icons",
-        description: "First version of my portfolio upon graduating from General Assembly. Build using React, I wanted to learn TailwindsCSS and practice responsiveness. Features Email communication and some pretty nifty visuals and navigation effects.",
+        description: "First version of my portfolio upon graduating from General Assembly. Built using React, I wanted to learn TailwindCSS and practice responsiveness. Features Email communication and some pretty nifty visuals and navigation effects.",
         image: "https://i.imgur.com/v6WMGvJ.jpg",
         link: "https://www.sambassong.com/",
         github: "https://github.com/sbassong/portfolio",
@@ -189,12 +190,12 @@ export const SkillData = [
     },
     {
         title: "VueJS",
-        photo: "https://i.imgur.com/qz4DXir.png",
+        photo: "https://i.imgur.com/j5ZKbh5.jpg",
         type: "frontend"
     },
     {
         title: "Vuex",
-        photo: "https://i.imgur.com/pT1baZU.jpg",
+        photo: "https://i.imgur.com/XJYFF37.png",
         type: "frontend"
     },
     {
@@ -219,12 +220,12 @@ export const SkillData = [
     },
     {
         title: "ExpressJS",
-        photo: "https://i.imgur.com/VgMA1R4.jpg",
+        photo: "https://i.imgur.com/vDo5bUA.png",
         type: "backend"
     },
     {
         title: "Flask",
-        photo: "https://i.imgur.com/XcW6v5ym.png",
+        photo: "https://i.imgur.com/iPjgH6I.png",
         type: "backend"
     },
     {
@@ -234,7 +235,7 @@ export const SkillData = [
     },
     {
         title: "MongoDB",
-        photo: "https://i.imgur.com/uJMRgGU.png",
+        photo: "https://i.imgur.com/RJASm12.png",
         type: "backend"
     },
     {
@@ -253,8 +254,8 @@ export const SkillData = [
         type: "other"
     },
     {
-        title: "RESTful APIs",
-        photo: "https://i.imgur.com/8AxWz68m.png",
+        title: "REST APIs",
+        photo: "https://i.imgur.com/YB1qxfI.png",
         type: "other"
     },
     {
@@ -264,12 +265,12 @@ export const SkillData = [
     },
     {
         title: "Heroku",
-        photo: "https://i.imgur.com/a3INeUB.png",
+        photo: "https://i.imgur.com/DN8h8N1.jpg",
         type: "other"
     },
     {
         title: "Vercel",
-        photo: "https://i.imgur.com/tsvrUS4.png",
+        photo: "https://i.imgur.com/2eY0NH1.png",
         type: "other"
     },
     {
