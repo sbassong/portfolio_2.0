@@ -133,8 +133,8 @@ export const ProjectData = [
         subtitle: "MongoDB, ExpressJS, ReactJS, Node.js, React-rainbow UI",
         description: "An event search database which leverages the MERN stack to create an engaging and intuitive user experience. Utilized the MERN stack to implement a rich application featuring: routing and state management with React Hooks, rapid querying via MongoDB's document-oriented model, and a responsive user interface with React and SCSS.",
         image: "https://i.imgur.com/3NCGdgW.png",
-        link: "https://fast-cove-17382.herokuapp.com/",
-        github: "https://github.com/sbassong/Amphi_MERN"
+        link: "https://amphi.herokuapp.com/",
+        github: "https://github.com/sbassong/amphi"
     },
     {
         id: 4,
@@ -142,7 +142,7 @@ export const ProjectData = [
         subtitle: "ReactJS, TailwindCSS, EmailJS, React-icons",
         description: "First version of my portfolio upon graduating from General Assembly. Built using React, I wanted to learn TailwindCSS and practice responsiveness. Features Email communication and some pretty nifty visuals and navigation effects.",
         image: "https://i.imgur.com/v6WMGvJ.jpg",
-        link: "https://www.sambassong.com/",
+        link: "https://portfolio-sbassong.vercel.app/",
         github: "https://github.com/sbassong/portfolio",
     },
 ];
