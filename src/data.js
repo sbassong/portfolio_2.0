@@ -111,15 +111,24 @@ export const ExperienceData = [
 export const ProjectData = [
     {
         id: 1,
+        title: "Amphi",
+        subtitle: "MongoDB, ExpressJS, React, Node.js, React-rainbow UI",
+        description: "An event search database which leverages the MERN stack to create an engaging and intuitive user experience. Utilized the MERN stack to implement a rich application featuring: routing and state management with React Hooks, rapid querying via MongoDB's document-oriented model, and a responsive user interface styled with CSS",
+        image: "https://i.imgur.com/VFOix4s.png",
+        link: "https://amphi.herokuapp.com/",
+        github: "https://github.com/sbassong/amphi"
+    },
+    {
+        id: 2,
         title: "GameStart",
-        subtitle: "PostgreSQL, ExpressJS, ReactJS, NodeJS, JWT Auth, Bootstrap",
+        subtitle: "PostgreSQL, Express.js, React, Node.js, JWT Auth, Bootstrap",
         description: "A e-commerce full stack platform where users can shop for games. Feature-packed and user-focused web application built using the PERN stack: Postgres to leverage relational querying, Express and Node.js for a stable server, React and UI libraries to optimize the client-side experience. Leverages Bcrypt and Json Web Token authentication to ensure the user’s confidentiality.",
         image: "https://i.imgur.com/4fcEFrd.jpg",
         link: "https://peaceful-everglades-79165.herokuapp.com/",
         github: "https://github.com/sbassong/GameStart"
     },
     {
-        id: 2,
+        id: 3,
         title: "Scienteer",
         subtitle: "Vue, Vuex, Flask, PostgreSQL, AWS S3, JWT Auth",
         description: "A citizen science management platform which allows Science enthusiasts to find and contribute to research projects throughout the world. Front-end built using Vue Libraries including Vuex for state management. Integrated AWS S3 for image and file storage. Utilizes JWT for authentication and the Google Maps API for geocaching functionality.",
@@ -128,18 +137,9 @@ export const ProjectData = [
         github: "https://github.com/sbassong/Scienteer"
     },
     {
-        id: 3,
-        title: "Amphi",
-        subtitle: "MongoDB, ExpressJS, ReactJS, Node.js, React-rainbow UI",
-        description: "An event search database which leverages the MERN stack to create an engaging and intuitive user experience. Utilized the MERN stack to implement a rich application featuring: routing and state management with React Hooks, rapid querying via MongoDB's document-oriented model, and a responsive user interface with React and SCSS.",
-        image: "https://i.imgur.com/3NCGdgW.png",
-        link: "https://amphi.herokuapp.com/",
-        github: "https://github.com/sbassong/amphi"
-    },
-    {
         id: 4,
-        title: "Portfolio 1.0",
-        subtitle: "ReactJS, TailwindCSS, EmailJS, React-icons",
+        title: "Portfolio V1.0",
+        subtitle: "React, TailwindCSS, Email.js, React-icons",
         description: "First version of my portfolio upon graduating from General Assembly. Built using React, I wanted to learn TailwindCSS and practice responsiveness. Features Email communication and some pretty nifty visuals and navigation effects.",
         image: "https://i.imgur.com/v6WMGvJ.jpg",
         link: "https://portfolio-sbassong.vercel.app/",
