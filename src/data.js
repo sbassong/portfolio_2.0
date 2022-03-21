@@ -1,18 +1,28 @@
 export const ExperienceData = [
     {
         id: 1,
-        title: "Web Developer and Email Specialist Intern",
-        company: "Center Centre-UIE",
-        tenure: "December 2021 - Present",
+        title: "Jr. Software Engineer",
+        company: "Locana",
+        tenure: "April 2022 - Present",
         duties: [
-            "Creating features and maintaining web properties across a cluster of Center Centre-UIE sites using React, HTML, CSS, and WordPress ",
-            "Producing and coding UIE's outgoing email campaigns using HTML, CSS, CRMs, and CMS",
-            "Managing UIE sites contents and medium blogpost with both WordPress and Statamic CMS platforms",
-            "Optimizing UIE’s web development operations building an internal CSS framework, an HTML snippet library, and landing page templates with a multi-disciplinary remote team"
+            "Solving our clients' challenging by building innovative applications based on spatial data",
+            "Leveraging modern technologies including React, Redux, Node.js, PostgreSQL, MongoDB, AWS, and various geospatial tools",
+            "Developing solutions on the forefront of open source technologies"
         ]
     },
     {
         id: 2,
+        title: "Web Developer and Email Specialist Intern",
+        company: "Center Centre-UIE",
+        tenure: "December 2021 - April 2022",
+        duties: [
+            "Improved company's marketing efforts through building and maintaining web features and properties across a cluster of Center Centre-UIE sites using React, HTML, CSS, CRM, and WordPress",
+            "Managed production of company's marketing email campaigns while leveraging HTML, CSS, and marketing platforms",
+            "Optimized Center Centre’s web development operations by building an internal CSS framework and HTML snippet library, as well as improving company's documentation"
+        ]
+    },
+    {
+        id: 3,
         title: "Software Engineer Apprentice",
         company: "General Assembly",
         tenure: "July 2021 - December 2021",
@@ -23,7 +33,7 @@ export const ExperienceData = [
         ]
     },
     {
-        id: 3,
+        id: 4,
         title: "Research Assistant",
         company: "Washington State University",
         tenure: "July 2016 - May 2018",
@@ -36,7 +46,7 @@ export const ExperienceData = [
         ]
     },
     {
-        id: 4,
+        id: 5,
         title: "Undergraduate Research Assistant",
         company: "Nevada State College",
         tenure: "February 2012 - June 2015",
@@ -48,7 +58,7 @@ export const ExperienceData = [
         ]
     },
     {
-        id: 5,
+        id: 6,
         title: "8th Grade Science Teacher",
         company: "Rainier Prep",
         tenure: "January 2019 - June 2021",
@@ -60,7 +70,7 @@ export const ExperienceData = [
         ]
     },
     {
-        id: 6,
+        id: 7,
         title: "Associate Teacher",
         company: "Rainier Prep",
         tenure: "August 2018 - January 2019",
@@ -71,7 +81,7 @@ export const ExperienceData = [
         ]
     },
     {
-        id: 7,
+        id: 8,
         title: "Teaching Assistant",
         company: "University of Nevada, Reno",
         tenure: "August 2015 - June 2016",
@@ -82,7 +92,7 @@ export const ExperienceData = [
         ]
     },
     {
-        id: 8,
+        id: 9,
         title: "Course Assistant",
         company: "Nevada State College",
         tenure: "August 2014 - May 2015",
@@ -95,7 +105,7 @@ export const ExperienceData = [
         ]
     },
     {
-        id: 9,
+        id: 10,
         title: "Recreation Assistant",
         company: "City of Henderson - Parks and Recreation Dept.",
         tenure: "October 2012 - May 2014",
@@ -138,12 +148,12 @@ export const ProjectData = [
     },
     {
         id: 4,
-        title: "Portfolio V1.0",
-        subtitle: "React, TailwindCSS, Email.js, React-icons",
-        description: "First version of my portfolio upon graduating from General Assembly. Built using React, I wanted to learn TailwindCSS and practice responsiveness. Features Email communication and some pretty nifty visuals and navigation effects.",
-        image: "https://i.imgur.com/v6WMGvJ.jpg",
-        link: "https://portfolio-sbassong.vercel.app/",
-        github: "https://github.com/sbassong/portfolio",
+        title: "Center Centre Landing (AGILE)",
+        subtitle: "HTML, CSS",
+        description: "Built with HTML and CSS, this landing page is used by hundreds of monthly UX leaders looking to join the AGILE sessions hosted by UX Guru, Jared Spool. Fully responsive, the page's careful design and development was driven by the desire to provide an excellent user experience",
+        image: "https://i.imgur.com/i9JvZvr.png",
+        link: "https://agile.centercentre.com/",
+        github: "https://github.com/uie-com/intensiveAgile",
     },
 ];
 
