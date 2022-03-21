@@ -20,24 +20,25 @@ const Experience = () => {
             <h1>Experience</h1>
             <p>Workplaces where I've made an impact</p>
             <div className='experience-container'>         
-                <nav onClick={(e) => (e.target.id >= 1 && e.target.id <= 10) && handleClick(e)}>
+                <nav onClick={(e) => (e.target.id >= 1 && e.target.id <= 11) && handleClick(e)}>
                     <h1>Software Engineer</h1>
                     <div>
-                        <Link to={`/experience/1`}><p id={1}>Center Centre-UIE</p></Link>
-                        <Link to={`/experience/2`}><p id={2}>General Assembly</p></Link>
+                        <Link to={`/experience/1`}><p id={1}>Locana</p></Link>
+                        <Link to={`/experience/2`}><p id={2}>Center Centre-UIE</p></Link>
+                        <Link to={`/experience/3`}><p id={3}>General Assembly</p></Link>
                     </div>
                     <h1>Researcher</h1>    
                     <div>
-                        <Link to={`/experience/3`}><p id={3}>Washington State University</p></Link>
-                        <Link to={`/experience/4`}><p id={4}>Nevada State College</p></Link> 
+                        <Link to={`/experience/4`}><p id={4}>Washington State University</p></Link>
+                        <Link to={`/experience/5`}><p id={5}>Nevada State College</p></Link> 
                     </div>
                     <h1>Educator</h1>    
                     <div>
-                        <Link to={`/experience/5`}><p id={5}>Rainier Prep - Full</p></Link>
-                        <Link to={`/experience/6`}><p id={6}>Rainier Prep - Associate</p></Link>
-                        <Link to={`/experience/7`}><p id={7}>University of Nevada, Reno</p></Link>  
-                        <Link to={`/experience/8`}><p id={8}>Nevada State College</p></Link>  
-                        <Link to={`/experience/9`}><p id={9}>City of Henderson</p></Link>  
+                        <Link to={`/experience/6`}><p id={6}>Rainier Prep - Full</p></Link>
+                        <Link to={`/experience/7`}><p id={7}>Rainier Prep - Associate</p></Link>
+                        <Link to={`/experience/8`}><p id={8}>University of Nevada, Reno</p></Link>  
+                        <Link to={`/experience/9`}><p id={9}>Nevada State College</p></Link>  
+                        <Link to={`/experience/10`}><p id={10}>City of Henderson</p></Link>  
                     </div> 
                 </nav>
                 
