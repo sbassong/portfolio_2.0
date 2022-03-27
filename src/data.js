@@ -103,7 +103,6 @@ export const ExperienceData = [
             "Significantly contributed to design and set up of practical exams",
             "Collaborated with peers and instructors to successfully exceed program outcomes as demonstrated by a 16% increased retention rate compared to previous years",
             "Designed, organized, and led weekly group and individual supplementary instruction sessions which successfully improved students, understanding of course concepts and grades as reflected in year-end statistical evaluations",
-
         ]
     },
     {
@@ -124,8 +123,8 @@ export const ProjectData = [
     {
         id: 1,
         title: "Amphi",
-        subtitle: "MongoDB, ExpressJS, React, Node.js, React-rainbow UI",
-        description: "An event search database which leverages the MERN stack to create an engaging and intuitive user experience. Utilized the MERN stack to implement a rich application featuring: routing and state management with React Hooks, rapid querying via MongoDB's document-oriented model, and a responsive user interface styled with CSS",
+        subtitle: "MongoDB, Express.js, React, Node.js, CSS",
+        description: "A musical artists finder which enables users to search for their favorite artists or add them to a growing database. Amphi leverages the MERN stack to build an engaging and intuitive user experience. The platform was developed using a React app with modern routing and hooks as well as functional components. It leverages the document-oriented model of a MongoDB database to feature rapid querying served through Node and Express.js. The UI's styling and responsiveness is implemented entirely with CSS",
         image: "https://i.imgur.com/VFOix4s.png",
         link: "https://amphi.herokuapp.com/",
         github: "https://github.com/sbassong/amphi"
@@ -133,8 +132,8 @@ export const ProjectData = [
     {
         id: 2,
         title: "GameStart",
-        subtitle: "PostgreSQL, Express.js, React, Node.js, JWT Auth, Bootstrap",
-        description: "A e-commerce full stack platform where users can shop for games. Feature-packed and user-focused web application built using the PERN stack: Postgres to leverage relational querying, Express and Node.js for a stable server, React and UI libraries to optimize the client-side experience. Leverages Bcrypt and Json Web Token authentication to ensure the user’s confidentiality.",
+        subtitle: "PostgreSQL, Express.js, React, Node.js, JWT Auth, CSS, UI framework",
+        description: "A full-stack e-commerce platform for game enthusiasts. GameStart is a feature-packed and user-focused web application built using the PERN stack: a PostgreSQL database allowing for complex relational querying and an Express.js server built on Node.js which connects our database to a React.js frontend app responsively designed and implemented with a UI framework and CSS. Features authorization and session validation via Bcrypt and Json Web Token Auth to ensure the user’s confidentiality.",
         image: "https://i.imgur.com/4fcEFrd.jpg",
         link: "https://peaceful-everglades-79165.herokuapp.com/",
         github: "https://github.com/sbassong/GameStart"
@@ -143,7 +142,7 @@ export const ProjectData = [
         id: 3,
         title: "Scienteer",
         subtitle: "Vue, Vuex, Flask, PostgreSQL, AWS S3, JWT Auth",
-        description: "A citizen science management platform, Scienteer connects researchers with science enthusiasts looking to get involved and volunteer in the scientific community. Volunteer scientists (scienteers) can find and contribute to research projects throughout the world. The frontend is built as a Vue app and features Vuex for state management. The Flask backend integrates AWS S3 for image and file storage, JWT and botocore libraries for authentication, and a PostgreSQL database.",
+        description: "A citizen science management platform, Scienteer connects researchers with science enthusiasts looking to get involved and volunteer in the scientific community. Volunteer scientists (scienteers) can find and contribute to research projects throughout the world. The frontend is built as a Vue app and features Vuex for state management. The Flask backend integrates AWS S3 for image and file storage, JWT and botocore libraries for Auth, and a PostgreSQL database. Scienteer will only get better!",
         image: "https://i.imgur.com/49u9nhh.png",
         link: "https://scienteer-sbassong.vercel.app/",
         github: "https://github.com/sbassong/Scienteer"
@@ -152,7 +151,7 @@ export const ProjectData = [
         id: 4,
         title: "Center Centre Landing (AGILE)",
         subtitle: "HTML, CSS",
-        description: "Built with HTML and CSS, this landing page is used by hundreds of monthly UX leaders looking to join the AGILE sessions hosted by UX Guru, Jared Spool. Fully responsive, the page's careful design and development was driven by the desire to provide an excellent user experience",
+        description: "Built with HTML and CSS, this landing page is used by hundreds of monthly UX leaders seeking to transform their Agile UX strategy through programs let by by UX Guru, Jared Spool. Fully responsive, the page's careful design and development was driven by the desire to provide an excellent user experience.",
         image: "https://i.imgur.com/i9JvZvr.png",
         link: "https://agile.centercentre.com/",
         github: "https://github.com/uie-com/intensiveAgile",
