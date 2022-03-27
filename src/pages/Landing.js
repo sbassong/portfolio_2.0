@@ -26,7 +26,7 @@ const typewriter = (
 const Landing = () => {
 
   return (
-    <div id='landing'>
+    <div id='landing' className="page">
       <div className="land-intro" >
         <h1 className="land-h1-1">Hi, I'm Sam.</h1>
         <h1 className="land-h1-2">I build <span className="teal">equity-minded and accessible</span> technologies.</h1>

@@ -17,7 +17,7 @@ const Contact = () => {
   }
 
   return (
-    <section className="contact" id='contact'>
+    <section className="contact page" id='contact'>
       <h1>Let's chat!</h1>
       <p>Send me an email and I'll get back to you shortly.</p>
       <div className='form-container'>
