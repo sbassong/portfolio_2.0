@@ -9,6 +9,17 @@ html {
   background-size: cover;
 }
 
+/* Hide scrollbar for Chrome, Safari and Opera */
+html::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+html {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
 * {
   box-sizing: border-box;
   text-align: center;
@@ -410,7 +421,7 @@ h1 {
 .experience-container {
   display: flex;
   width: 70%;
-  margin: 5vh auto 20vh auto;
+  margin: 5vh auto 15vh auto;
   padding: 2vh;
 } 
 .experience-container h1 {
@@ -544,6 +555,10 @@ h1 {
 }
 
 /* Skills page styles */
+#skills {
+  padding-bottom: 5vh;
+}
+
 #skills > h1 {
   margin-top: 20vh;
 }
@@ -621,6 +636,10 @@ h1 {
 
 
 /* Projects page styles */
+#projects {
+  padding-bottom: 10vh;
+}
+
 #projects > h1 {
   font-size: 5vh;
 }
