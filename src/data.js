@@ -5,8 +5,8 @@ export const ExperienceData = [
         company: "Locana",
         tenure: "April 2022 - Present",
         duties: [
-            "Solving our clients' challenging by building innovative applications based on spatial data",
-            "Leveraging modern technologies including React, Redux, Node.js, PostgreSQL, MongoDB, AWS, and various geospatial tools",
+            "Building innovative geospatial data-based applications to solve partners location challenges",
+            "Leveraging modern technologies including React, Redux, Node.js, PostgreSQL, MongoDB, AWS, and multiple geolocation APIs",
             "Developing solutions on the forefront of open source technologies"
         ]
     },
@@ -16,9 +16,10 @@ export const ExperienceData = [
         company: "Center Centre-UIE",
         tenure: "December 2021 - April 2022",
         duties: [
-            "Improved company's marketing efforts through building and maintaining web features and properties across a cluster of Center Centre-UIE sites using React, HTML, CSS, CRM, and WordPress",
-            "Managed production of company's marketing email campaigns while leveraging HTML, CSS, and marketing platforms",
-            "Optimized Center Centre’s web development operations by building an internal CSS framework and HTML snippet library, as well as improving company's documentation"
+            "Improved marketing efforts through independent web development projects, including the landing page for Intensive programs (GOALS, AGILE), sales pages for CCUXS and MCR programs), articles ads for UIE sites, etc...",
+            "Managed production of marketing email campaigns while leveraging HTML, CSS, and marketing platforms",
+            "Optimized web development operations by building a CSS framework and a library of modular HTML email templates",
+            "Increased web dev documentation by ~15% with high quality video tutorials, detailed guides and templates, and a reimagined intern onboarding process",
         ]
     },
     {
@@ -27,9 +28,10 @@ export const ExperienceData = [
         company: "General Assembly",
         tenure: "July 2021 - December 2021",
         duties: [
-            "Engineered 6+ full-stack platforms with industry-leading JavaScript and Python technologies",
+            "Developed 6+ full-stack, backend, and frontend platforms with modern and emerging JavaScript and Python technologies including React, Vue, Node.js, Flask, PostgreSQL, MongoDB, ORMs, etc...",
             "Applied engineering best practices including architectural modeling, testing, deployment, version control, code maintenance, documentation, and responsive design",
-            "Collaborated with peers to pitch, devise, and build products during Agile coding sprints",
+            "Led and collaborated with peers to pitch, devise, and build projects during Agile coding sprints",
+            "Participated in daily standups and additional self-development events"
         ]
     },
     {
@@ -87,8 +89,8 @@ export const ExperienceData = [
         tenure: "August 2015 - June 2016",
         duties: [
             "Co-lead 2 semesters of advanced lab techniques in genetics and molecular biology",
-            "planned and delivered introductory lessons",
-            "Supervised lab activities for 30+ students",
+            "Supervised lab activities for 30+ students via demonstrations and hands-on training",
+            "Planned and delivered introductory lessons",
         ]
     },
     {
@@ -141,7 +143,7 @@ export const ProjectData = [
         id: 3,
         title: "Scienteer",
         subtitle: "Vue, Vuex, Flask, PostgreSQL, AWS S3, JWT Auth",
-        description: "A citizen science management platform which allows Science enthusiasts to find and contribute to research projects throughout the world. Front-end built using Vue Libraries including Vuex for state management. Integrated AWS S3 for image and file storage. Utilizes JWT for authentication and the Google Maps API for geocaching functionality.",
+        description: "A citizen science management platform, Scienteer connects researchers with science enthusiasts looking to get involved and volunteer in the scientific community. Volunteer scientists (scienteers) can find and contribute to research projects throughout the world. The frontend is built as a Vue app and features Vuex for state management. The Flask backend integrates AWS S3 for image and file storage, JWT and botocore libraries for authentication, and a PostgreSQL database.",
         image: "https://i.imgur.com/49u9nhh.png",
         link: "https://scienteer-sbassong.vercel.app/",
         github: "https://github.com/sbassong/Scienteer"
