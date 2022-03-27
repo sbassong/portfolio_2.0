@@ -119,7 +119,37 @@ export const ExperienceData = [
     },
 ]
 
-export const ProjectData = [
+export const professionalProjectsData = [
+    {
+        id: 1,
+        title: "Agile UX Intensive - landing page",
+        subtitle: "HTML, CSS",
+        description: "Built with HTML and CSS, this landing page is used by hundreds of monthly UX leaders seeking to transform their Agile UX strategy through programs let by by UX Guru, Jared Spool. Fully responsive, the page's careful design and development was driven by the desire to provide an excellent user experience.",
+        image: "https://i.imgur.com/i9JvZvr.png",
+        link: "https://agile.centercentre.com/",
+        github: "https://github.com/uie-com/intensiveAgile",
+    },
+    {
+        id: 2,
+        title: "CCUXS MCR program - Checkout",
+        subtitle: "HTML, GoHighLevel CRM, CSS, JavaScript",
+        description: "A sample of many sales page I built for Center Centre's UX Strategy program, this checkout page enables UX leaders and their team enroll in limited UX strategy programs offered by Dr Leslie Jansen-Inman and Jared Spool. The page is implemented with customer relationship management tool and some custom HTML, CSS, and JavaScript code.",
+        image: "https://i.imgur.com/gQOp8wz.png",
+        link: "https://strategyprogram.centercentre.com/ccuxs-program-mcr-8495",
+        github: "https://github.com/sbassong",
+    },
+    {
+        id: 3,
+        title: "Agile UX Intensive - Learner program sign up",
+        subtitle: "HTML, CRM, CSS, JavaScript",
+        description: "A sample page part of the user-workflow UX leaders use to navigate through their intensive experience enrollment. The page is built with a CRM, HTML, CSS, and JavaScript.",
+        image: "https://i.imgur.com/QrsR2h1.png",
+        link: "https://agilelearner.centercentre.com/uxlearner",
+        github: "https://github.com/sbassong",
+    },
+];
+
+export const personalProjectsData = [
     {
         id: 1,
         title: "Amphi",
@@ -147,18 +177,9 @@ export const ProjectData = [
         link: "https://scienteer-sbassong.vercel.app/",
         github: "https://github.com/sbassong/Scienteer"
     },
-    {
-        id: 4,
-        title: "Center Centre Landing (AGILE)",
-        subtitle: "HTML, CSS",
-        description: "Built with HTML and CSS, this landing page is used by hundreds of monthly UX leaders seeking to transform their Agile UX strategy through programs let by by UX Guru, Jared Spool. Fully responsive, the page's careful design and development was driven by the desire to provide an excellent user experience.",
-        image: "https://i.imgur.com/i9JvZvr.png",
-        link: "https://agile.centercentre.com/",
-        github: "https://github.com/uie-com/intensiveAgile",
-    },
 ];
 
-export const SkillData = [
+export const skillsData = [
     {
         title: "JavaScript",
         photo: "https://i.imgur.com/Q9P8Hac.png",
