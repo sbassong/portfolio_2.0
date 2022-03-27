@@ -1,5 +1,5 @@
+import { skillsData } from "../data";
 import SkillCard from "../components/SkillCard";
-import { SkillData } from "../data";
 
 const Skills = () => {
     return (
@@ -9,7 +9,7 @@ const Skills = () => {
             <h2>Languages</h2>
             <div className="skills-container">
                 {
-                    SkillData && SkillData.filter(skill => skill.type === "languages").map((skill, index) => (
+                    skillsData && skillsData.filter(skill => skill.type === "languages").map((skill, index) => (
                         <SkillCard key={index} title={skill.title} photo={skill.photo} />
                     ))
                 }
@@ -17,7 +17,7 @@ const Skills = () => {
             <h2>Frontend</h2>
             <div className="skills-container">
                 {
-                    SkillData && SkillData.filter(skill => skill.type === "frontend").map((skill, index) => (
+                    skillsData && skillsData.filter(skill => skill.type === "frontend").map((skill, index) => (
                         <SkillCard key={index} title={skill.title} photo={skill.photo} />
                     ))
                 }
@@ -25,7 +25,7 @@ const Skills = () => {
             <h2>Backend &amp; Databases</h2>
             <div className="skills-container">
                 {
-                    SkillData && SkillData.filter(skill => skill.type === "backend").map((skill, index) => (
+                    skillsData && skillsData.filter(skill => skill.type === "backend").map((skill, index) => (
                         <SkillCard key={index} title={skill.title} photo={skill.photo} />
                     ))
                 }
@@ -33,7 +33,7 @@ const Skills = () => {
             <h2>Other</h2>
             <div className="skills-container">
                 {
-                    SkillData && SkillData.filter(skill => skill.type === "other").map((skill, index) => (
+                    skillsData && skillsData.filter(skill => skill.type === "other").map((skill, index) => (
                         <SkillCard key={index} title={skill.title} photo={skill.photo} />
                     ))
                 }

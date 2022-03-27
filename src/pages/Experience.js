@@ -1,7 +1,7 @@
-import { Route, Routes, Link } from "react-router-dom"
 import { useState } from "react"
-import ExperienceCard from '../components/ExperienceCard'
+import { Route, Routes, Link } from "react-router-dom"
 import { ExperienceData } from '../data'
+import ExperienceCard from '../components/ExperienceCard'
 
 const Experience = () => {
     const [clickedJob, setClickedJob] = useState(ExperienceData[0])

@@ -1,4 +1,4 @@
-import { ProjectData } from "../data"
+import { professionalProjectsData, personalProjectsData } from "../data"
 import ProjectCard from "../components/ProjectCard"
 
 const Projects = () => {
@@ -6,21 +6,17 @@ const Projects = () => {
     return (
         <div id="projects">
             <h1>Featured Projects</h1>
-            <p>Some projects I loved building. Select a card to learn more!</p>
+            <p>Appplications I loved building. Click cards to learn more!</p>
+
+            <h3>Professional projects</h3>
             <div>
-                {
-                    ProjectData.map((project) => (
-                        <ProjectCard key={project.id} project={project}/>
-                    ))
-                }
+                { professionalProjectsData.map((project) => <ProjectCard key={project.id} project={project}/>) }
             </div>
-            
-            {/* <figure class="c4-izmir">
-                <img src="https://source.unsplash.com/FaPxZ88yZrw/400x300" alt="Sample" />
-                <figcaption>
-                    <h3>Some sample text</h3>
-                </figcaption>
-            </figure> */}
+
+            <h3>Passion projects</h3>
+            <div>
+                { personalProjectsData.map((project) => <ProjectCard key={project.id} project={project}/>) }
+            </div>
         </div>
     )
     
