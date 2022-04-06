@@ -5,9 +5,9 @@ export const ExperienceData = [
         company: "Locana",
         tenure: "April 2022 - Present",
         duties: [
-            "Building innovative geospatial data-based applications to solve partners location challenges",
+            "Building innovative geospatial data-based applications to solve partners' location challenges",
             "Leveraging modern technologies including React, Redux, Node.js, PostgreSQL, MongoDB, AWS, and multiple geolocation APIs",
-            "Developing solutions on the forefront of open source technologies"
+            "Developing solutions at the forefront of open source technologies"
         ]
     },
     {
@@ -19,7 +19,7 @@ export const ExperienceData = [
             "Improved marketing efforts through independent web development projects, including the landing page for Intensive programs (GOALS, AGILE), sales pages for CCUXS and MCR programs), articles ads for UIE sites, etc...",
             "Managed production of marketing email campaigns while leveraging HTML, CSS, and marketing platforms",
             "Optimized web development operations by building a CSS framework and a library of modular HTML email templates",
-            "Increased web dev documentation by ~15% with high quality video tutorials, detailed guides and templates, and a reimagined intern onboarding process",
+            "Increased web dev documentation by ~15% with high-quality video tutorials, detailed guides and templates, and a reimagined intern onboarding process",
         ]
     },
     {
@@ -124,7 +124,7 @@ export const professionalProjectsData = [
         id: 1,
         title: "Agile UX Intensive - landing page",
         subtitle: "HTML, CSS",
-        description: "Built with HTML and CSS, this landing page is used by hundreds of monthly UX leaders seeking to transform their Agile UX strategy through programs let by by UX Guru, Jared Spool. Fully responsive, the page's careful design and development was driven by the desire to provide an excellent user experience.",
+        description: "Built with HTML and CSS, this landing page is used by hundreds of monthly UX leaders seeking to transform their Agile UX strategy through programs led by UX Guru, Jared Spool. Fully responsive, the page's careful design and development was driven by the desire to provide an excellent user experience.",
         image: "https://i.imgur.com/i9JvZvr.png",
         link: "https://agile.centercentre.com/",
         github: "https://github.com/uie-com/intensiveAgile",
@@ -136,7 +136,7 @@ export const professionalProjectsData = [
         description: "A sample of many sales page I built for Center Centre's UX Strategy program, this checkout page enables UX leaders and their team enroll in limited UX strategy programs offered by Dr Leslie Jansen-Inman and Jared Spool. The page is implemented with customer relationship management tool and some custom HTML, CSS, and JavaScript code.",
         image: "https://i.imgur.com/gQOp8wz.png",
         link: "https://strategyprogram.centercentre.com/ccuxs-program-mcr-8495",
-        github: "https://github.com/sbassong",
+        github: "https://github.com/sbassong", 
     },
     {
         id: 3,
