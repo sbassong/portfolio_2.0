@@ -742,7 +742,7 @@ h1 {
 }
 
 .form-container {
-  width: 50%;
+  width: 60%;
   margin: 7vh auto 10vh auto;
   color: #52cdfe;
 }
@@ -793,13 +793,11 @@ textarea {
   color: #52cdfe;
 }
 
-
 textarea:focus {
   outline-style: solid;
   outline-color: #3b94b8;
   outline-width: .2vh;
 }
-
 
 button {
   width: 85%;
@@ -814,7 +812,6 @@ button {
 }
 
 button:hover {
-  box-shadow: 0 0 .5vh #85DCFE;
   background-color: rgba(6, 220, 250, 0.4);
 }
 

@@ -30,7 +30,7 @@ const Landing = () => {
       <div className="land-intro" >
         <h1 className="land-h1-1">Hi, I'm Sam.</h1>
         <h1 className="land-h1-2">I build <span className="teal">equity-minded and accessible</span> technologies.</h1>
-        <p>I am a <span className="teal">{typewriter}</span> full-stack software engineer with a passion for frontend engineering and cloud development. Currently, I am focused on making awesomeness in my role as a <span className="teal">Web Developer Intern</span> with <span className="teal">Center Centre-UIE</span>. </p>
+        <p>I am a <span className="teal">{typewriter}</span> software engineer passionate about building a better, more inclusive world with technology. Currently, I'm enjoying applying Geospatial Information to build everything location as a <strong>Jr. Software Engineer</strong> @&nbsp;<a href="https://www.locana.co/" target="_blank" rel="noreferrer" className="teal">Locana</a>. </p>
       </div>
     </div>
   )
