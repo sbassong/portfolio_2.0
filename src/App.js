@@ -1,3 +1,6 @@
+// "react/jsx-uses-react": "off",
+// "react/react-in-jsx-scope": "off"
+
 import React, { useEffect, useState } from 'react';
 import './styles/App.scss';
 import Landing from './pages/Landing'
@@ -12,22 +15,22 @@ import TopNav from './components/TopNav';
 import BottomNav from './components/BottomNav';
 
 
-const overlay = (
-  <div>
-      <div className="landing-overlay">
-        <img src="https://i.ibb.co/8jwxM2c/Screen-Shot-2021-12-09-at-10-33-34-AM-copy.png" alt=""className="owl-overlay"/>
-      </div>
-  </div>
-)
-
-
 function App() {
+  const overlay = (
+    <div>
+        <div className="landing-overlay">
+          <img src="https://i.ibb.co/8jwxM2c/Screen-Shot-2021-12-09-at-10-33-34-AM-copy.png" alt=""className="owl-overlay"/>
+        </div>
+    </div>
+  )
+
   const [rendered, setRendered] = useState(overlay)
   const [windowDimension, detectHW] = useState({
-  winWidth: window.innerWidth,
-  winHeight: window.innerHeight,
-})
-
+    winWidth: window.innerWidth,
+    winHeight: window.innerHeight,
+  })
+  
+  
 const current = (
   <div className="App">
     <TopNav windowDimension={windowDimension}/>
