@@ -1,7 +1,8 @@
 // "react/jsx-uses-react": "off",
 // "react/react-in-jsx-scope": "off"
 
-import React, { useEffect, useState } from 'react';
+import React from 'react';
+import { useEffect, useState } from 'react';
 import './styles/App.scss';
 import Landing from './pages/Landing'
 import About from './pages/About'
