@@ -1,3 +1,5 @@
+import React from 'react';
+
 const SkillCard = ( {title, photo} ) => {
 
     return (

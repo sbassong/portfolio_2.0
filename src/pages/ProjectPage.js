@@ -1,3 +1,4 @@
+import React from 'react';
 
 const ProjectPage= ({title, description, link, subtitle, github, closeOverlay}) => {
 

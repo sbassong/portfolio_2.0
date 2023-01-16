@@ -1,3 +1,5 @@
+import React from 'react';
+
 const ExperienceCard = ({title, company, tenure, duties}) => {
 
     return (
