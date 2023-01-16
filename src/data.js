@@ -5,9 +5,11 @@ export const ExperienceData = [
         company: "Locana",
         tenure: "April 2022 - Present",
         duties: [
-            "Building innovative geospatial data-based applications to solve partners' location challenges",
-            "Leveraging modern technologies including React, Redux, Node.js, PostgreSQL, MongoDB, AWS, and multiple geolocation APIs",
-            "Developing solutions at the forefront of open source technologies"
+            "Collaborating within an Agile team to implement and maintain two React/Redux mapping applications, while leveraging MapBoxGL-JS as the mapping platform",
+            "Building and taking ownership of several core features engineered with frontend, backend, and data visualization technologies such as Node.js, MongoDB, PostgreSQL, Chart.js, and Express",
+            "Co-spearheading a growing DevOps initiative focused on implementing and promoting extensive testing practices and pipeline development within our open data engineering team",
+            "Improving app performance and codebase sustainability through code refactoring and optimization",
+            "Developed 2 map-layer widgets with extensive map styling and data visualization which amounted to significant contributions to the successful launch of a stakeholder’s application"
         ]
     },
     {
@@ -16,10 +18,10 @@ export const ExperienceData = [
         company: "Center Centre-UIE",
         tenure: "December 2021 - April 2022",
         duties: [
-            "Improved marketing efforts through independent web development projects, including the landing page for Intensive programs (GOALS, AGILE), sales pages for CCUXS and MCR programs), articles ads for UIE sites, etc...",
-            "Managed production of marketing email campaigns while leveraging HTML, CSS, and marketing platforms",
-            "Optimized web development operations by building a CSS framework and a library of modular HTML email templates",
-            "Increased web dev documentation by ~15% with high-quality video tutorials, detailed guides and templates, and a reimagined intern onboarding process",
+            "Improved company marketing efforts through independent and collaborative development of several responsive web pages, client-facing interactive sales pages, and article hosting for Center Centre-UIE's globally-reaching UX strategies seminars",
+            "Owned development of daily and weekly marketing communications using HTML, CSS, and CRM (Customer Relationship Management) software",
+            "Optimized company operations and email production through implementation of two internal HTML and CSS/SCSS libraries, improving current and future development practices",
+            "Boosted development team’s documentation by ~20% with high-quality video tutorials, detailed guide repositories, and a reimagined intern onboarding procedure",
         ]
     },
     {
@@ -28,10 +30,10 @@ export const ExperienceData = [
         company: "General Assembly",
         tenure: "July 2021 - December 2021",
         duties: [
-            "Developed 6+ full-stack, backend, and frontend platforms with modern and emerging JavaScript and Python technologies including React, Vue, Node.js, Flask, PostgreSQL, MongoDB, ORMs, etc...",
+            "Developed multiple full-stack, backend, and frontend platforms with modern and emerging JavaScript and Python technologies including React, Vue, Node.js, Flask, PostgreSQL, MongoDB, ORMs, etc...",
             "Applied engineering best practices including architectural modeling, testing, deployment, version control, code maintenance, documentation, and responsive design",
             "Led and collaborated with peers to pitch, devise, and build projects during Agile coding sprints",
-            "Participated in daily standups and additional self-development events"
+            "Completed immersive apprenticeship as one of the cohort’s highest achievers as demonstrated by assignment scores, instructor staff recommendations, and project outcomes"
         ]
     },
     {
