@@ -1,3 +1,4 @@
+import React from 'react';
 import { professionalProjectsData, personalProjectsData } from "../data"
 import ProjectCard from "../components/ProjectCard"
 

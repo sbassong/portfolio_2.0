@@ -1,3 +1,4 @@
+import React from 'react';
 import { skillsData } from "../data";
 import SkillCard from "../components/SkillCard";
 
