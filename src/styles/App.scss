@@ -244,9 +244,11 @@ h1 {
 // ---------
 // LANDING PAGE
 // --------- 
+
 .land-intro {
+  border:1px solid white;
   width: 100%;
-  margin: 5vh auto 20vh auto;
+  margin: 0vh auto 20vh auto;
   color: rgb(170, 165, 165)
 }
 .land-intro * {
@@ -259,13 +261,13 @@ h1 {
 }
 .land-h1-2 {
   font-family: 'Josefin Sans', sans-serif;
-  font-size: 4vw;
+  font-size: 3.5vw;
   text-align: right;
   margin: 4.5vh 0;
   color: rgb(170, 165, 165)
 }
 .land-h1-2 > span {
-  font-size: 4vw;
+  font-size: 3.5vw;
 }
 
 @media screen and (max-width: 1000px) {
