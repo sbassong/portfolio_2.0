@@ -9,7 +9,7 @@ export const ExperienceData = [
             "Building and taking ownership of several core features engineered with frontend, backend, and data visualization technologies such as Node.js, MongoDB, PostgreSQL, Chart.js, and Express",
             "Co-spearheading a growing DevOps initiative focused on implementing and promoting extensive testing practices and pipeline development within our open data engineering team",
             "Improving app performance and codebase sustainability through code refactoring and optimization",
-            "Developed 2 map-layer widgets with extensive map styling and data visualization which amounted to significant contributions to the successful launch of a stakeholder’s application"
+            "Developed 2 map-layer widgets with extensive map styling and data visualization which amounted to significant contributions to the successful launch of a stakeholder's application"
         ]
     },
     {
@@ -21,7 +21,7 @@ export const ExperienceData = [
             "Improved company marketing efforts through independent and collaborative development of several responsive web pages, client-facing interactive sales pages, and article hosting for Center Centre-UIE's globally-reaching UX strategies seminars",
             "Owned development of daily and weekly marketing communications using HTML, CSS, and CRM (Customer Relationship Management) software",
             "Optimized company operations and email production through implementation of two internal HTML and CSS/SCSS libraries, improving current and future development practices",
-            "Boosted development team’s documentation by ~20% with high-quality video tutorials, detailed guide repositories, and a reimagined intern onboarding procedure",
+            "Boosted development team's documentation by ~20% with high-quality video tutorials, detailed guide repositories, and a reimagined intern onboarding procedure",
         ]
     },
     {
@@ -33,7 +33,7 @@ export const ExperienceData = [
             "Developed multiple full-stack, backend, and frontend platforms with modern and emerging JavaScript and Python technologies including React, Vue, Node.js, Flask, PostgreSQL, MongoDB, ORMs, etc...",
             "Applied engineering best practices including architectural modeling, testing, deployment, version control, code maintenance, documentation, and responsive design",
             "Led and collaborated with peers to pitch, devise, and build projects during Agile coding sprints",
-            "Completed immersive apprenticeship as one of the cohort’s highest achievers as demonstrated by assignment scores, instructor staff recommendations, and project outcomes"
+            "Completed immersive apprenticeship as one of the cohort's highest achievers as demonstrated by assignment scores, instructor staff recommendations, and project outcomes"
         ]
     },
     {
@@ -147,28 +147,28 @@ export const professionalProjectsData = [
         description: "A sample page part of the user-workflow UX leaders use to navigate through their intensive experience enrollment. The page is built with a CRM, HTML, CSS, and JavaScript.",
         image: "https://i.imgur.com/QrsR2h1.png",
         link: "https://agilelearner.centercentre.com/uxlearner",
-        github: "https://github.com/sbassong",
+        github: "https://github.com/uie-com/intensiveAgile",
     },
 ];
 
 export const personalProjectsData = [
     {
         id: 1,
+        title: "G-verse",
+        subtitle: "PostgreSQL, Express.js, React, Node.js, JWT Auth, CSS, UI framework",
+        description: "A full-stack e-commerce platform for game enthusiasts. G-verse is a feature-packed and user-focused web application built using the PERN stack: a PostgreSQL database allowing for complex relational querying and an Express.js server built on Node.js which connects our database to a React.js frontend app responsively designed and implemented with a UI framework and CSS. Features authorization and session validation via Bcrypt and Json Web Token Auth to ensure the user's confidentiality.",
+        image: "https://i.imgur.com/4fcEFrd.jpg",
+        link: "https://gverse.herokuapp.com/",
+        github: "https://github.com/sbassong/g-verse"
+    },
+    {
+        id: 2,
         title: "Amphi",
         subtitle: "MongoDB, Express.js, React, Node.js, CSS",
         description: "A musical artists finder which enables users to search for their favorite artists or add them to a growing database. Amphi leverages the MERN stack to build an engaging and intuitive user experience. The platform was developed using a React app with modern routing and hooks as well as functional components. It leverages the document-oriented model of a MongoDB database to feature rapid querying served through Node and Express.js. The UI's styling and responsiveness is implemented entirely with CSS",
         image: "https://i.imgur.com/VFOix4s.png",
         link: "https://amphi.herokuapp.com/",
         github: "https://github.com/sbassong/amphi"
-    },
-    {
-        id: 2,
-        title: "GameStart",
-        subtitle: "PostgreSQL, Express.js, React, Node.js, JWT Auth, CSS, UI framework",
-        description: "A full-stack e-commerce platform for game enthusiasts. GameStart is a feature-packed and user-focused web application built using the PERN stack: a PostgreSQL database allowing for complex relational querying and an Express.js server built on Node.js which connects our database to a React.js frontend app responsively designed and implemented with a UI framework and CSS. Features authorization and session validation via Bcrypt and Json Web Token Auth to ensure the user’s confidentiality.",
-        image: "https://i.imgur.com/4fcEFrd.jpg",
-        link: "https://peaceful-everglades-79165.herokuapp.com/",
-        github: "https://github.com/sbassong/GameStart"
     },
     {
         id: 3,

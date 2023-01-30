@@ -1,20 +1,20 @@
 import React from 'react';
-import { useState } from "react"
-import { Route, Routes, Link } from "react-router-dom"
-import { ExperienceData } from '../data'
-import ExperienceCard from '../components/ExperienceCard'
+import { useState } from "react";
+import { Route, Routes, Link } from "react-router-dom";
+import { ExperienceData } from '../data';
+import ExperienceCard from '../components/ExperienceCard';
 
 const Experience = () => {
-    const [clickedJob, setClickedJob] = useState(ExperienceData[0])
-    const [clicked, toggleClicked] = useState(false)
+    const [clickedJob, setClickedJob] = useState(ExperienceData[0]);
+    const [clicked, toggleClicked] = useState(false);
     
-    const handleClick = async (e) => {
+    const handleClick = async (e) => {;
         await e 
         if (e.type === "click") {
-            setClickedJob(ExperienceData[e.target.id - 1])
-            toggleClicked(true)
+            setClickedJob(ExperienceData[e.target.id - 1]);
+            toggleClicked(true);
         }
-    }
+    };
 
     return (
         <div id="experience" className="page" >
@@ -52,7 +52,7 @@ const Experience = () => {
                 </div>
             </div>
         </div>
-    )
+    );
 }
 
-export default Experience
+export default Experience;

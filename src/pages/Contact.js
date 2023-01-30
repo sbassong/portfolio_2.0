@@ -1,21 +1,21 @@
 import React from 'react';
 import { useRef } from "react";
-import emailjs from 'emailjs-com'
+import emailjs from 'emailjs-com';
 
 const Contact = () => {
-  const form = useRef()
+  const form = useRef();
 
   const handleSubmit = async (e) => {
-    e.preventDefault()
+    e.preventDefault();
     emailjs.sendForm('service_ptzclcr', 'template_7y7ftfd', form.current, 'user_JuA2JWnC5u4koiSoQ48Rb')
       .then((result) => {
-          console.log(result.text)
+          console.log(result.text);
       }, (error) => {
-          console.log(error.text)
+          console.log(error.text);
       })
     
-    e.target.reset()
-  }
+    e.target.reset();
+  };
 
   return (
     <section className="contact page" id='contact'>
@@ -63,4 +63,4 @@ const Contact = () => {
   );
 }
 
-export default Contact
+export default Contact;

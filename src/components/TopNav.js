@@ -8,7 +8,7 @@ const TopNav = ({windowDimension}) => {
                 <a href="/">
                     <div className='top-left-nav'>
                         {
-                        windowDimension.winWidth >= 400 ?
+                        windowDimension.winWidth >= 600 ?
                         <img src="https://i.ibb.co/HPvd2c6/Screen-Shot-2021-12-09-at-10-29-23-AM-copy.png" alt="owl"/>
                         :
                         <img src="https://i.ibb.co/XSQRppT/Screen-Shot-2021-12-09-at-10-33-34-AM-copy-2.png" alt="owl"/>

@@ -1,16 +1,16 @@
 import React from "react";
-import Typewriter from 'typewriter-effect/'
+import Typewriter from 'typewriter-effect/';
 
 const typewriter = (
   <div className="landing-wrapper" >
       <div className="rolling-header">
           <Typewriter 
               options={{ strings: [
-              'mission-driven',
-              'collaborative',
-              'growth-minded',
-              'motivated',
-              'solution-oriented',
+                'mission-driven',
+                'collaborative',
+                'growth-minded',
+                'motivated',
+                'solution-oriented',
               ],
               autoStart: true,
               loop: true,
@@ -21,7 +21,7 @@ const typewriter = (
           />
       </div>          
   </div>
-)
+);
 
 const Landing = () => {
 
@@ -33,7 +33,7 @@ const Landing = () => {
         <p>I am a <span className="teal">{typewriter}</span> software engineer passionate about building a better, more inclusive world with technology. Currently, I'm enjoying applying Geospatial Information to build everything location as a <strong>Jr. Software Engineer</strong> @&nbsp;<a href="https://www.locana.co/" target="_blank" rel="noreferrer" className="teal">Locana</a>. </p>
       </div>
     </div>
-  )
+  );
 }
 
-export default Landing
+export default Landing;

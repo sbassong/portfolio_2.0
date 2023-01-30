@@ -36,8 +36,8 @@ const current = (
   <div className="App">
     <TopNav windowDimension={windowDimension}/>
     <div className="bottom-app">
-      { windowDimension.winWidth >= 400 &&  <LeftSideNav /> }
       <main id="main">
+      { windowDimension.winWidth >= 400 &&  <LeftSideNav /> }
         <Landing/>
         <About/>
         <Experience/>
