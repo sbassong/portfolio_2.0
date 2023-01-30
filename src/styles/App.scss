@@ -246,40 +246,37 @@ h1 {
 // --------- 
 .land-intro {
   width: 100%;
-  margin: 25vh auto;
+  margin: 5vh auto 20vh auto;
   color: rgb(170, 165, 165)
 }
 .land-intro * {
   text-align: left;
-  font-size: 1.5vw;
+  font-size: 1.3vw;
 }
 .land-h1-1 {
   font-family: 'Josefin Sans', sans-serif;
-  font-size: 2.5vw;
+  font-size: 2vw;
 }
 .land-h1-2 {
   font-family: 'Josefin Sans', sans-serif;
-  font-size: 4.5vw;
+  font-size: 4vw;
   text-align: right;
   margin: 4.5vh 0;
   color: rgb(170, 165, 165)
 }
 .land-h1-2 > span {
-  font-size: 4.5vw;
+  font-size: 4vw;
 }
 
 @media screen and (max-width: 1000px) {
   .land-intro * {
-    font-size: 2vw;
+    font-size: 1.9vw;
   }
   .land-h1-2 {
-      font-size: 4.5vw;
+      font-size: 4vw;
     }
-  .land-h1-2> span {
-    font-size: 4.5vw;
-  }
   .land-h1-1 {
-    font-size: 2.7vw;
+    font-size: 2.5vw;
   }
 }
 
@@ -287,9 +284,7 @@ h1 {
   .land-intro * {
     text-align: left;
   }
-  .land-h1-1 {
-    font-size: 2.8vw;
-  }
+
 }
 
 @media screen and (max-width: 400px) {
@@ -303,11 +298,11 @@ h1 {
     font-size: 2.7vw;
   }
   .land-h1-2 {
-    font-size: 4vw;
+    font-size: 3.5vw;
     margin: 3.5vh 0;
   }
   .land-h1-2 > span {
-    font-size: 4vw;
+    font-size: 3.5vw;
   }
 }
 
