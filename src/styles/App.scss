@@ -79,7 +79,6 @@ h1 {
   #main {
     font-size: 1.8vh;
   }
-
   #main > div > h1 { 
     font-size: 3vh;
   }
@@ -114,12 +113,6 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 2.5vw;
-}
-@media screen and (max-width: 600px) {
-  .top-left-nav {
-    margin-left: 5vw;
-  }
 }
 
 .top-left-nav img{
@@ -139,20 +132,18 @@ h1 {
   margin: 0 .3vw;
   color: #85DCFE;
   font-family: 'Roboto Slab', serif;
-  font-size: 1.5vw;
+  font-size: 1.3vw;
   padding: .7vh .8vh;
   padding-bottom: .8vh;
   border-radius: .5vh;
 }
-@media screen and (max-width: 1300px) {
-  .top-left-nav img{
-    width: 20vw;
-  }
-}
+
 @media screen and (max-width: 800px) {
   .top-right-nav * {
-    font-size: 1.5vh;
     margin: 0 .1vw;
+  }
+  .top-left-nav img{
+    width: 17vw;
   }
 }
 @media screen and (max-width: 600px) {
@@ -165,7 +156,7 @@ h1 {
 }
 @media screen and (max-width: 450px) {
   .top-right-nav * {
-    font-size: 2.5vw;
+    font-size: 2vw;
     margin: 0;
     padding: .4vh 1vw;
   }
@@ -206,8 +197,8 @@ h1 {
 .side-nav a {
   display: table;
   margin: 2vh auto;
-  width: 5vh;
-  height: 5vh;
+  width: 4.5vh;
+  height: 4.5vh;
 }
 
 @media screen and (max-width: 800px) {
@@ -246,39 +237,39 @@ h1 {
 // --------- 
 
 .land-intro {
-  border:1px solid white;
-  width: 100%;
-  margin: 0vh auto 20vh auto;
+  width: 60%;
+  margin: auto;
   color: rgb(170, 165, 165)
 }
 .land-intro * {
   text-align: left;
-  font-size: 1.3vw;
+  font-size: 1.1vw;
 }
 .land-h1-1 {
   font-family: 'Josefin Sans', sans-serif;
-  font-size: 2vw;
+  font-size: 1.5vw;
 }
 .land-h1-2 {
   font-family: 'Josefin Sans', sans-serif;
-  font-size: 3.5vw;
+  font-size: 2.2vw;
   text-align: right;
   margin: 4.5vh 0;
   color: rgb(170, 165, 165)
 }
 .land-h1-2 > span {
-  font-size: 3.5vw;
+  font-size: 2.2vw;
 }
 
 @media screen and (max-width: 1000px) {
   .land-intro * {
-    font-size: 1.9vw;
+    font-size: 1.3vw;
   }
-  .land-h1-2 {
-      font-size: 4vw;
-    }
   .land-h1-1 {
-    font-size: 2.5vw;
+    font-size: 1.8vw;
+  }
+  .land-h1-2,
+  .land-h1-2>span  {
+    font-size: 2.6vw;
   }
 }
 
@@ -286,41 +277,34 @@ h1 {
   .land-intro * {
     text-align: left;
   }
-
 }
 
 @media screen and (max-width: 400px) {
   .land-intro * {
-    font-size: 2.5vw;
-  }
-  .land-intro {
-    margin-bottom: 10vh;
+    font-size: 1vw;
   }
   .land-h1-1 {
-    font-size: 2.7vw;
+    font-size: 1.5vw;
   }
   .land-h1-2 {
-    font-size: 3.5vw;
-    margin: 3.5vh 0;
+    font-size: 2.5vw;
+    margin: 1.5vh 0;
   }
   .land-h1-2 > span {
-    font-size: 3.5vw;
+    font-size: 2.5vw;
   }
 }
 
 .teal {
   color: #85DCFE;
 }
-
 .land-intro p {
   width: 65%;
 } 
-
 .landing-wrapper {
   display: inline-block;
   min-width: 18vh;
 }
-
 .rolling-header {
   display: flex;
   justify-content: center;
@@ -330,17 +314,14 @@ h1 {
 
 @media screen and (max-width: 800px) {
   .land-intro p {
-    width: 90%;
+    width: 80%;
   }
-  
   .land-intro {
     width: 80%;
   }
-  
   .land-h1-2  {
     text-align: left;
   }
-  
   .landing-overlay img {
     width: 100%;
   }
@@ -355,29 +336,30 @@ h1 {
 // --------- 
 .about-container {
   display: flex;
-  width: 100%;
-  margin: 10vh auto;
+  margin: auto;
+  margin-bottom: 20vh;
   font-size: 1.5vw;
+  justify-content: center;
+  align-items: center;
 }
 
 .profile-container {
   margin: auto;
   border-radius: 1vh;
   flex-basis: 25%;
-  height: 100%;
-  position: relative;
+  height: auto;
+  width: 30%;
 }
 
 .avatar-div {
-  background-image: url(https://i.imgur.com/fwE1h5V.jpg);
+  background-image: url('./images/portfolio-portrait.jpeg');
   border: 4px solid #85DCFE;
   border-radius: 1vh;
-  position: sticky;
   z-index: 10;
-  margin-top: -.5vh;
-  margin-left: -.5vw;
-  top: 0;
-  left: 0;
+  // margin-top: -.5vh;
+  // margin-left: -.5vw;
+  // top: 0;
+  // left: 0;
   width: 100%;
   padding-top: 100%;
   background-repeat: no-repeat;
@@ -385,68 +367,32 @@ h1 {
   background-size: cover;
 }
 
-.avatar-overlay {
-  border: 4px solid #85DCFE;
-  border-radius: 1vh;
-  position: absolute;
-  z-index: 10;
-  margin-top: -.5vh;
-  margin-left: -.5vw;
-  top:0;
-  left:0;
-  width: 100%;
-  padding-top: 100%;
-}
 .profile-container:hover .avatar-overlay {
   box-shadow: 0 0 1.5vh #85DCFE;
   background-color: rgba(6, 220, 250, 0.1);
 }
 
-.profile-info {
-  flex-basis: 75%;
-  padding-left: 5em;
-  font-size: 1.3vw;
-}
-
-.profile-info p {
-  display: inline-block;
-  text-align: left;
-}
-@media screen and (max-width: 1000px) {
-  .profile-info {
-    font-size: 2vw;
-  }
-}
-
-@media screen and (max-width: 800px) {
-  .about-container {
-    font-size: 2vw;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-  }
-
+@media screen and (max-width: 450px) {
+  // .about-container {
+  //   font-size: 2vw;
+  //   flex-direction: column;
+  //   align-items: center;
+  //   align-content: center;
+  //   margin-bottom: 15vh;
+  // }
   .profile-container {
-    margin: 2vh;
-    width: 30%;
-  }
-
-  .profile-info {
-    width: 100%;
-    margin: 2vh;
-    padding: 0;
-  }
-  
-  .profile-info p {
-    text-align: center;
-  }
-
-  @media screen and (max-width: 400px) {
-    .profile-info {
-      font-size: 2.5vw;
-    }
+    display: none;
   }
 }
+// @media screen and (max-width: 400px) {
+  // .about-container {
+  //   margin-top: 20vh;
+  //   // margin-bottom: 15vh;
+  // }
+  // .land-intro {
+  //   margin-bottom: 5vh;
+  // }
+// }
 
 // ---------
 // EXPERIENCE PAGE
@@ -601,7 +547,7 @@ h1 {
 }
 
 #projects > h1 {
-  font-size: 5vh;
+  font-size: 2vw;
 }
 
 #projects > h2 {

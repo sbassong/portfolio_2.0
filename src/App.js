@@ -5,12 +5,10 @@ import React from 'react';
 import { useEffect, useState } from 'react';
 import './styles/App.scss';
 import Landing from './pages/Landing'
-import About from './pages/About'
 import Experience from './pages/Experience'
 import Skills from './pages/Skills'
 import Projects from './pages/Projects'
 import Contact from './pages/Contact'
-
 import LeftSideNav from './components/LeftSideNav'
 import TopNav from './components/TopNav';
 import BottomNav from './components/BottomNav';
@@ -39,7 +37,6 @@ const current = (
       <main id="main">
       { windowDimension.winWidth >= 400 &&  <LeftSideNav /> }
         <Landing/>
-        <About/>
         <Experience/>
         <Projects/>
         <Skills/>

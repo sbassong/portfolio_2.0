@@ -16,7 +16,7 @@ const TopNav = ({windowDimension}) => {
                     </div>
                 </a>
                 <nav className='top-right-nav'>
-                    <a href="#about">About</a>
+                    {/* <a href="#about">About</a> */}
                     <a href="#experience">Experience</a>
                     <a href="#projects">Projects</a>
                     <a href="#skills">Stack</a>
