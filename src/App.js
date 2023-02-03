@@ -29,6 +29,8 @@ function App() {
       winHeight: window.innerHeight,
     })
   }
+
+  // on scroll. display a small floating arrow up and down, 
   
   const current = (
     <div className="App">
