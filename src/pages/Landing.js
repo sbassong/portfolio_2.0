@@ -12,8 +12,7 @@ const Landing = () => {
         </div>
         <div className='profile-container'>
           <div className="avatar-div">
-
-          <div className='avatar-overlay' />
+            <div className='avatar-overlay' />
           </div>
         </div>
       </div>

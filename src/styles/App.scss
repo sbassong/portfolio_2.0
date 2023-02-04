@@ -52,7 +52,6 @@ a { text-decoration: none; }
   height: 100vh;
   width: 100%;
   font-family: 'Open Sans', sans-serif;
-  font-size: 1vw;
   color: rgb(170, 165, 165);
   overflow-x: auto;
   overflow-y: auto;
@@ -103,14 +102,15 @@ a { text-decoration: none; }
     display: flex;
     align-items: center;
     justify-content: center;
+    font-weight: 500;
+      // font-family: 'Roboto Slab', serif;
     * {
       margin: 0 .3vw;
-      color: #85DCFE;
-      font-family: 'Roboto Slab', serif;
-      font-size: 1.3vw;
+      color: #52cdfe;
       padding: .7vh .8vh;
       padding-bottom: .8vh;
       border-radius: 3px;
+      font-size: 1.2vw;
     }
   }
   
@@ -124,16 +124,14 @@ a { text-decoration: none; }
   }
   @media screen and (max-width: 450px) {
     .top-right-nav * {
-      font-size: 2vw;
       margin: 0;
       padding: .4vh 1vw;
     }
   }
-  .top-right-nav *:hover { background-color: rgba(6, 220, 250, 0.1); }
+  .top-right-nav *:hover { background-color: rgba(6, 220, 250, 0.1); color: #85DCFE !important;}
   .top-right-nav :last-child { border: 1px solid #52cdfe; }
   .top-right-nav :last-child :hover { font-size: bold; }
 }
-
 
 // ---------
 // SIDENAV
@@ -149,12 +147,12 @@ a { text-decoration: none; }
   a {
     display: table;
     margin: 2vh auto;
-    width: 2vw;
+    width: 2.1vw;
     min-width: 20px;
-    max-width: 50px;
-    height: 2vw;
+    max-width: 40px;
+    height: 2.1vw;
     min-height: 20px;
-    max-height: 50px;
+    max-height: 40px;
   }
 
   a * {
@@ -174,7 +172,7 @@ a { text-decoration: none; }
 
 @media screen and (max-width: 800px) {
   .side-nav {
-    left: 2vw;
+    left: 1.5vw;
     a {
       width: 3vw;
       height: 3vw;
@@ -190,17 +188,12 @@ a { text-decoration: none; }
   margin: auto;
   color: rgb(170, 165, 165)
 }
-.land-intro * {
-  text-align: left;
-  p { width: 65%; }
-}
-.land-h1-1 {
-  font-family: 'Josefin Sans', sans-serif;
-}
+.land-intro * { text-align: left; }
+.land-intro > p { width: 80% !important; }
+
 .land-h1-2 {
-  font-family: 'Josefin Sans', sans-serif;
   text-align: right;
-  margin: 4vh 0;
+  margin: 3vh 0;
   margin-left: 20%;
   color: rgb(170, 165, 165);
 }
@@ -220,7 +213,8 @@ a { text-decoration: none; }
       width: 60%;
     }
   }
-
+  
+  .land-intro > p { width: 100% !important; }
   .land-intro * { text-align: center; }
   .land-h1-2 { margin: 1.5vh 0; }
   .landing-overlay img { width: 100%; }
@@ -244,7 +238,7 @@ a { text-decoration: none; }
 
 .profile-container {
   margin: auto;
-  border-radius: 1vh;
+  // border-radius: 1vh;
   width: 30%;
 }
 
@@ -471,7 +465,7 @@ a { text-decoration: none; }
 // ---------
 // SKILLS PAGE
 // --------- 
-#skills { padding-bottom: 5vh; }
+#skills { padding-bottom: 3vh; }
 #skills > h1 { margin-top: 0; }
 #skills > h2 {
   color: #52cdfe;
@@ -483,7 +477,7 @@ a { text-decoration: none; }
   width: 100%;
   display: grid;  
   grid-gap: 3vh;  
-  grid-template-columns: repeat(auto-fit, minmax(15px, 5%));
+  grid-template-columns: repeat(auto-fit, minmax(15px, 4%));
   grid-template-rows: auto;
   border-radius: .7vh;
   padding: .9vh .7vh .7vh .7vh;
@@ -772,9 +766,9 @@ button:hover { background-color: rgba(6, 220, 250, 0.4); }
 
 // font guidelines
 #main * {
-  font-size: .9vw !important;
-  h2, .land-h1-1 { font-size: 1.2vw !important; }
-  h1, .land-h1-2 > span { font-size: 1.4vw !important; }
+  font-size: .8vw !important;
+  h2, .land-h1-1 { font-size: 1vw !important; }
+  h1, .land-h1-2 > span, .top-right-nav > a { font-size: 1.2vw !important; }
 }
 .profile-container { width: 20% !important; }
 
@@ -782,42 +776,46 @@ button:hover { background-color: rgba(6, 220, 250, 0.4); }
   #main * {
     font-size: 1vw !important;
     h2, .land-h1-1 { font-size: 1.4vw !important; }
-    h1, .land-h1-2 > span { font-size: 1.7vw !important; }
+    h1, .land-h1-2 > span, .top-right-nav > a { font-size: 1.7vw !important; }
   }
   .App .page {width: 80% !important; }
 }
+
 @media screen and (max-width: 1000px) {
   #main * {
     font-size: 1.2vw !important;
     h2, .land-h1-1 { font-size: 1.5vw !important; }
-    h1, .land-h1-2 > span { font-size: 1.8vw !important; }
+    h1, .land-h1-2 > span, .top-right-nav > a { font-size: 1.8vw !important; }
   }
   .App .page {width: 80% !important; }
   .profile-container { width: 25% !important; }
 }
+
 @media screen and (max-width: 800px) {
   #main * {
     font-size: 1.5vw !important;
     h2, .land-h1-1 { font-size: 1.6vw !important; }
-    h1, .land-h1-2 > span { font-size: 2vw !important; }
+    h1, .land-h1-2 > span, .top-right-nav > a { font-size: 2vw !important; }
   }
   .App .page {width: 85% !important; }
   .profile-container { width: 30% !important; }
 }
+
 @media screen and (max-width: 600px) {
   #main * {
     font-size: 1.8vw !important;
     h2, .land-h1-1 { font-size: 1.8vw !important; }
-    h1, .land-h1-2 > span { font-size: 2vw !important; }
+    h1, .land-h1-2 > span, .top-right-nav > a { font-size: 2vw !important; }
   }
   .App .page {width: 90% !important; }
   .profile-container { margin-top: -5vh; width: 35% !important; }
 }
+
 @media screen and (max-width: 400px) {
   #main * {
     font-size: 2.5vw !important;
     h2, .land-h1-1 { font-size: 2.8vw !important; }
-    h1, .land-h1-2 > span { font-size: 3vw !important; }
+    h1, .land-h1-2 > span, .top-right-nav > a { font-size: 3vw !important; }
   }
   .App .page {width: 95% !important; }
   .profile-container { width: 40% !important; }

@@ -213,7 +213,7 @@ export const skillsData = [
         type: "languages"
     },
     {
-        title: "ReactJS",
+        title: "React.js",
         photo: "https://i.imgur.com/WlkyT3e.png",
         type: "frontend"
     },
@@ -223,22 +223,12 @@ export const skillsData = [
         type: "frontend"
     },
     {
-        title: "VueJS",
+        title: "Vue.js",
         photo: "https://i.imgur.com/9Bg1NJB.png",
         type: "frontend"
     },
     {
-        title: "Vuex",
-        photo: "https://i.imgur.com/XJYFF37.png",
-        type: "frontend"
-    },
-    {
-        title: "Vuetify",
-        photo: "https://i.imgur.com/fOcjEPM.png",
-        type: "frontend"
-    },
-    {
-        title: "Tailwind CSS",
+        title: "Tailwind",
         photo: "https://i.imgur.com/T9Q7a86.png",
         type: "frontend"
     },
@@ -247,13 +237,18 @@ export const skillsData = [
         photo: "https://i.imgur.com/cgV9eEc.png",
         type: "frontend"
     },
+		{
+				title: "Cypress",
+				photo: "https://i.imgur.com/8zO6Pcu.png",
+				type: "frontend"
+		},
     {
-        title: "NodeJS",
+        title: "Node.js",
         photo: "https://i.imgur.com/GJrnwtm.png",
         type: "backend"
     },
     {
-        title: "ExpressJS",
+        title: "Express.js",
         photo: "https://i.imgur.com/4edoBxS.png",
         type: "backend"
     },
@@ -263,7 +258,7 @@ export const skillsData = [
         type: "backend"
     },
     {
-        title: "PostgreSQL",
+        title: "Postgres",
         photo: "https://i.imgur.com/JI955nx.png",
         type: "backend"
     },
@@ -273,43 +268,8 @@ export const skillsData = [
         type: "backend"
     },
     {
-        title: "WordPress",
-        photo: "https://i.imgur.com/CPFx7cW.png",
-        type: "other"
-    },
-    {
-        title: "Github",
-        photo: "https://i.imgur.com/ZjHBxKw.png",
-        type: "other"
-    },
-    {
         title: "AWS S3",
         photo: "https://i.imgur.com/xgkTZS0.jpg",
-        type: "other"
-    },
-    {
-        title: "REST APIs",
-        photo: "https://i.imgur.com/YB1qxfI.png",
-        type: "other"
-    },
-    {
-        title: "API Integration",
-        photo: "https://i.imgur.com/Md2rRRN.png",
-        type: "other"
-    },
-    {
-        title: "Heroku",
-        photo: "https://i.imgur.com/OwEKvMR.png",
-        type: "other"
-    },
-    {
-        title: "Vercel",
-        photo: "https://i.imgur.com/2eY0NH1.png",
-        type: "other"
-    },
-    {
-        title: "Netlify",
-        photo: "https://i.imgur.com/EAdqHYd.png",
-        type: "other"
+        type: "backend"
     },
 ]
