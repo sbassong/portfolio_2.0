@@ -2,7 +2,7 @@ import React from 'react';
 import { useRef } from "react";
 import emailjs from 'emailjs-com';
 
-const Contact = () => {
+const Contact = ({closeOverlay}) => {
   const form = useRef();
 
   const handleSubmit = async (e) => {
@@ -13,53 +13,44 @@ const Contact = () => {
       }, (error) => {
           console.log(error.text);
       })
-    
     e.target.reset();
   };
 
   return (
-    <section className="contact page" id='contact'>
-      <h1>Let's chat!</h1>
-      <p>Send me an email and I'll get back to you shortly.</p>
-      <div className='form-container'>
-        <form ref={form} onSubmit={handleSubmit} name="contact">
-          <div >
-            <label htmlFor="name">
-              Name
-            </label>
+
+      <section className="contact  emailOverlayWrapper" id='contact' onKeyDown={(e) => e.key === "Escape" && closeOverlay}>
+        <div className="backdrop"></div>
+        <div className='form-container emailOverlayContent'>
+          <img src="https://i.imgur.com/cdUyJgN.png" alt="close-x" role="button" onClick={closeOverlay} className="overlay-close" />
+          <h1>Let's chat!</h1>
+          <p>Send me an email and I'll get back to you promptly</p>
+          <form ref={form} onSubmit={handleSubmit} name="contact">
             <textarea 
               className="input"
               type="text"
               id="name"
               name="name"
+              placeholder='NAME'
             />
-          </div>
-          <div >
-            <label htmlFor="email">
-              Email
-            </label>
             <textarea 
               className="input"
               type="email"
               id="email"
               name="email"
+              placeholder='EMAIL'
             />
-          </div>
-          <div>
-            <label htmlFor="message">
-              Message
-            </label>
             <textarea
               id="message"
               name="message"
+              placeholder="MESSAGE"
             />
-          </div>
-          <button type="submit">
-            Submit
-          </button>
-        </form>
-      </div>
-    </section>
+            <button type="submit" id='sendEmailButton'>
+              Submit
+            </button>
+          </form>
+        </div>
+      </section>
+    // </Overlay>
   );
 }
 

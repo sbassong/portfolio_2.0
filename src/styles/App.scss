@@ -144,7 +144,7 @@ a { text-decoration: none; }
   flex-direction: column;
   width: 6%;
 
-  a {
+  a, .a-tag {
     display: table;
     margin: 2vh auto;
     width: 2.1vw;
@@ -155,7 +155,8 @@ a { text-decoration: none; }
     max-height: 40px;
   }
 
-  a * {
+  a *,
+  .a-tag * {
       text-align: center;
       vertical-align: middle;
       width: 90%;
@@ -163,7 +164,8 @@ a { text-decoration: none; }
       color: rgb(170, 165, 165);
     }
 
-  a:hover * {
+  a:hover *,
+  .a-tag:hover * {
     height: 100%;
     width: 100%;
     color: #52cdfe;
@@ -173,7 +175,7 @@ a { text-decoration: none; }
 @media screen and (max-width: 800px) {
   .side-nav {
     left: 1.5vw;
-    a {
+    a, .a-tag {
       width: 3vw;
       height: 3vw;
     }
@@ -273,6 +275,11 @@ a { text-decoration: none; }
 // ---------
 // EXPERIENCE PAGE
 // --------- 
+
+#experience {
+    height: 80vh !important;
+    padding-top: 10vh;
+}
 #experience > p {
   width: 100%;
   margin-right: auto;
@@ -282,10 +289,9 @@ a { text-decoration: none; }
 .experience-container {
   display: flex;
   justify-content: center;
-  // align-items: center;
-  margin: 5vh auto 5vh auto;
-  margin: 5vh auto 5vh auto;
+  margin: 2vh auto 5vh auto;
   padding: 2vh;
+  height: 60vh !important;
 } 
 .experience-container h1 {
   text-align: left;
@@ -297,7 +303,7 @@ a { text-decoration: none; }
 
 .experience-container > nav {
   margin-right: 2vw;
-  width: 35%;
+  width: 25%;
 }
 
 .experience-container p,li {
@@ -307,7 +313,6 @@ a { text-decoration: none; }
   width: auto;
   padding: .2vh 0 .2vh 0.4vh;
 }
-
 .experience-container li { margin: .5vh; }
 
 .experience-container nav p:hover {
@@ -317,7 +322,7 @@ a { text-decoration: none; }
 }
 
 .exp-cards-container {
-  width: 65%;
+  width: 75% !important;
   border-radius: .7vh;
   padding: 2vh 3vh;
   background-color: rgba(143, 221, 252, 0.1);
@@ -328,6 +333,8 @@ a { text-decoration: none; }
   padding: 0;
   list-style: none;
   display: grid;
+  overflow: auto !important;
+  height: 100%;
 }
 
 .experience-card-wrapper ul li {
@@ -385,13 +392,17 @@ a { text-decoration: none; }
 // PROJECTS PAGE
 // --------- 
 #projects {
-  padding-bottom: 5vh;
+  padding-bottom: 20vh;
+}
+
+#projects h1 {
+  margin-top: -5vh;
 }
 
 #projects > h2 {
   color: #52cdfe;
-  width: 100%;
   text-align: left;
+  width: 100%;
   margin-bottom: .5em;
 }
 
@@ -411,9 +422,9 @@ a { text-decoration: none; }
 .project-card {
   background-color: rgb(207, 196, 130, 0.3);
   border-radius: .7vh;
-  width: 30%;
+  width: 20%;
   height: auto;
-  margin: 1em 2em;
+  margin: 1em 3em;
   padding: .3em;
 }
 
@@ -480,7 +491,7 @@ a { text-decoration: none; }
 .skills-container {
   width: 75%;
   display: grid;  
-  grid-gap: 3vh;  
+  grid-gap: 4vw;  
   grid-template-columns: repeat(auto-fit, minmax(15px, 4%));
   grid-template-rows: auto;
   border-radius: .7vh;
@@ -495,7 +506,6 @@ a { text-decoration: none; }
     padding: .7vh .7vh .3vh .7vh;
   }
 }
-
 
 .skills-container > div {
   width: 75%;
@@ -519,80 +529,103 @@ a { text-decoration: none; }
   border-radius: .7vh;
 }
 
-
-
-/* Contact page styles */
-
-#contact > h1 { margin-top: 0; }
-#contact > p {
-  width: 85%;
-  margin: 0 auto;
+/* Contact Modal styles */
+.emailOverlayWrapper {
+  background: rgb(20, 20, 53) !important;
+  border-radius: 10px;
+  p { color: white; margin-bottom: 4vh; }
 }
-.form-container {
-  width: 60%;
-  margin: 7vh auto 10vh auto;
-  color: #52cdfe;
-}
-@media screen and (max-width: 800px) {
-  .form-container { width: 100%; }
-}
-.form-container form {
-  width: 100%;
-  height: 100%;
-}
-.form-container form div {
-  margin: 1.5vh auto;
-  width: 85%;
-  text-align: left;
-}
-.form-container form label { color: rgb(170, 165, 165); }
-
-.input {
-  margin-top: .5vh;
-  text-align: left;
-  border-radius: .5vh;
-  background: rgba(170, 165, 165, .3);
-  outline-style: none;
-  padding-top: .7vh;
+.emailOverlayWrapper > div[role=button] {
+  display: none !important;
 }
 
-textarea {
-  margin-top: .5vh;
-  text-align: left;
-  height: 20vh;
-  border-radius: .5vh;
-  background: rgba(170, 165, 165, .3);
-  resize: none;
-}
-
-.input,textarea{ 
-  width: 100%;
-  color: #52cdfe;
-}
-
-textarea:focus {
-  outline-style: solid;
-  outline-color: #3b94b8;
-  outline-width: .2vh;
-}
-
-button {
-  width: 85%;
+.emailOverlayContent {
+  padding: 5vh 3vw 3vh 3vw;
+  position: relative;
   margin: auto;
-  padding: .9vh;
-  color: #85DCFE;
+  transition: opacity 0.85s;
+
+  .overlay-close {
+    top: -15px;
+    right: -10px;
+    position: absolute;
+    cursor: pointer;
+    width: 4vh;
+    height: 4vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: 1vh;
+    }
+}
+
+#contact {
+  input, textarea {
+    font-family: 'Open Sans', sans-serif;
+    display: block;
+    height: 40px;
+    width: 100%;
+    margin: 20px auto;
+    border: 0 !important;
+    text-align: left;
+    outline-style: none !important;
+    padding-top: 10px;
+    color: rgb(20, 20, 53) !important;
+    background-color: whitesmoke !important;
+
+    &::placeholder {
+      -webkit-transform: translateY(0px);
+      transform: translateY(0px);
+      -webkit-transition: .5s;
+      transition: .5s;
+    }
+
+    &:hover,
+    &:focus,
+    &:active:focus {
+      color: rgb(20, 20, 53) !important;;
+      outline: none;
+      &::placeholder {
+        color: #52cdfe;
+        position: relative;
+        -webkit-transform: translateY(-30px);
+        transform: translateY(-30px);
+      }
+    }
+  }
+}
+
+#sendEmailButton {
+  width: 40%;
+  margin: auto;
+  margin-right: 0 !important;
+  padding: 1vh;
+  color: #52cdfe;
   border-radius: .5vh;
   background: transparent;
   border-style: solid;
   font-weight: bold;
 }
-button:hover { background-color: rgba(6, 220, 250, 0.4); }
+#sendEmailButton:hover { background-color: rgba(6, 220, 250, 0.1) !important; }
 
-@media screen and (max-width: 800px) {
-  .form-container form div { width: 100%; }
-  button { width: 100%; }
+#name, #message, #email {
+  position: relative;
+  z-index: 1;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: #858585;
+  -webkit-transition: .5s;
+  transition: .5s;
+  font-weight: 500 !important;
 }
 
+#message {
+  height: 150px !important;
+}
+
+
+// landing-overlay
 .landing-overlay {
   width: 100%;
   height: 100vh;
@@ -685,11 +718,12 @@ button:hover { background-color: rgba(6, 220, 250, 0.4); }
 
   .overlay-content {
     background: rgb(20, 20, 53);
-    padding: 4vh;
+    padding: 10vh 3vw 4vh 3vw;
     position: relative;
     margin: auto;
     transition: opacity 0.85s;
-    border-radius: .7vh;
+    border-radius: 10px;
+    height: fit-content;
 
     &.with-outline:focus {
       outline: 2px solid #0366d6;
@@ -701,8 +735,8 @@ button:hover { background-color: rgba(6, 220, 250, 0.4); }
       right: 0;
       position: absolute;
       cursor: pointer;
-      width: 5vh;
-      height: 5vh;
+      width: 4vh;
+      height: 4vh;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -770,27 +804,40 @@ button:hover { background-color: rgba(6, 220, 250, 0.4); }
 
 // font guidelines
 #main * {
-  font-size: .8vw !important;
-  h2, .land-h1-1 { font-size: 1vw !important; }
-  h1, .land-h1-2 > span, .top-right-nav > a { font-size: 1.2vw !important; }
+  font-size: 1vw !important;
+  h2, .land-h1-1 { font-size: 1.1vw !important; }
+  h1, .land-h1-2 > span{ font-size: 1.3vw !important; }
+}
+.top-right-nav >a {
+  font-size: 1.3vw !important;
 }
 .profile-container { width: 20% !important; }
 
 @media screen and (max-width: 1200px) {
   #main * {
-    font-size: 1vw !important;
+    font-size: 1.1vw !important;
     h2, .land-h1-1 { font-size: 1.4vw !important; }
-    h1, .land-h1-2 > span, .top-right-nav > a { font-size: 1.7vw !important; }
+    h1, .land-h1-2 > span{ font-size: 1.7vw !important; }
   }
+    .top-right-nav>a {
+      font-size: 1.3vw !important;
+    }
   .App .page {width: 80% !important; }
+  .contact-modal {
+    width: 40vw;
+    height: 60vh;
+  }
 }
 
 @media screen and (max-width: 1000px) {
   #main * {
     font-size: 1.2vw !important;
     h2, .land-h1-1 { font-size: 1.5vw !important; }
-    h1, .land-h1-2 > span, .top-right-nav > a { font-size: 1.8vw !important; }
+    h1, .land-h1-2 > span{ font-size: 1.8vw !important; }
   }
+    .top-right-nav>a {
+      font-size: 1.8vw !important;
+    }
   .App .page {width: 80% !important; }
   .profile-container { width: 25% !important; }
 }
@@ -799,28 +846,45 @@ button:hover { background-color: rgba(6, 220, 250, 0.4); }
   #main * {
     font-size: 1.5vw !important;
     h2, .land-h1-1 { font-size: 1.6vw !important; }
-    h1, .land-h1-2 > span, .top-right-nav > a { font-size: 2vw !important; }
+    h1, .land-h1-2 > span { font-size: 2vw !important; }
   }
+    .top-right-nav>a {
+      font-size: 2vw !important;
+    }
   .App .page {width: 85% !important; }
   .profile-container { width: 30% !important; }
+  .contact-modal {
+    width: 45vw;
+    height: 60vh;
+  }
 }
 
 @media screen and (max-width: 600px) {
   #main * {
     font-size: 1.8vw !important;
     h2, .land-h1-1 { font-size: 1.8vw !important; }
-    h1, .land-h1-2 > span, .top-right-nav > a { font-size: 2vw !important; }
+    h1, .land-h1-2 > span { font-size: 2vw !important; }
   }
+    .top-right-nav>a {
+      font-size: 2vw !important;
+    }
   .App .page {width: 90% !important; }
   .profile-container { margin-top: -5vh; width: 35% !important; }
+  .contact-modal {
+    width: 55vw;
+    height: 60vh;
+  }
 }
 
 @media screen and (max-width: 400px) {
   #main * {
     font-size: 2.5vw !important;
     h2, .land-h1-1 { font-size: 2.8vw !important; }
-    h1, .land-h1-2 > span, .top-right-nav > a { font-size: 3vw !important; }
+    h1, .land-h1-2 > span { font-size: 3vw !important; }
   }
+    .top-right-nav>a {
+      font-size: 3vw !important;
+    }
   .App .page {width: 95% !important; }
   .profile-container { width: 40% !important; }
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
 import { Route, Routes } from 'react-router-dom';
+import Overlay from "react-overlay-component";
 import './styles/App.scss';
 import Landing from './pages/Landing';
 import Experience from './pages/Experience';
@@ -18,17 +19,26 @@ const overlay = (
 
 function App() {
   const [rendered, setRendered] = useState(overlay);
+  const [isContactForm, toggleContactForm] = useState(false);
+  const [isOpen, toggleIsOpen] = useState(false);
+
   const [windowDimension, detectHW] = useState({
     winWidth: window.innerWidth,
     winHeight: window.innerHeight,
   });
-
+  const configs = {
+		animate: true,
+		clickDismiss: true,
+		escapeDismiss: true,
+		contentClass: "emailOverlayWrapper"
+	}
   const detectSize = () => {
     detectHW({
       winWidth: window.innerWidth,
       winHeight: window.innerHeight,
     })
   }
+  const closeOverlay = () => toggleIsOpen(false);
 
   // on scroll. display a small floating arrow up and down, 
   
@@ -41,10 +51,14 @@ function App() {
           <Route exact path='/projects' element={<Projects/>} />
           <Route exact path='/experience/*' element={<Experience/>} />
           <Route exact path='/skills' element={<Skills/>} />
-          <Route exact path='/contact' element={<Contact/>} />
         </Routes>
       </main>
-      <LeftSideNav />
+      <LeftSideNav isOpen={isOpen} toggleIsOpen={toggleIsOpen}/>
+
+      <Overlay  configs={configs} isOpen={isOpen}  closeOverlay={closeOverlay}>
+        <Contact isContactForm={isContactForm} toggleContactForm={toggleContactForm} closeOverlay={closeOverlay} />
+      </Overlay>
+
     </div>
   );
 
