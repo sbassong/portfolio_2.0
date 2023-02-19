@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 
 
@@ -13,10 +13,10 @@ const TopNav = ({windowDimension}) => {
 					</div>
 				</NavLink>
 				<nav className='top-right-nav'>
-						<NavLink to='/'>Home</NavLink>
-						<NavLink to='/projects'>Projects</NavLink>
-						<NavLink to='/experience'>Experience</NavLink>
-						<NavLink to='/skills'>Skills</NavLink>
+						<NavLink to='/' activeClassName="active">Home</NavLink>
+						<NavLink to='/projects' activeClassName="active">Projects</NavLink>
+						<NavLink to='/experience' activeClassName="active">Experience</NavLink>
+						<NavLink to='/skills' activeClassName="active">Skills</NavLink>
 						<a href="https://drive.google.com/file/d/1KGL9tYGPJXXDZDP1IHXL2VhRHknnCzWZ/view?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</a>
 				</nav>
 			</div>

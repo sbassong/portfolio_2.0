@@ -106,7 +106,8 @@ a { text-decoration: none; }
       // font-family: 'Roboto Slab', serif;
     * {
       margin: 0 .3vw;
-      color: #52cdfe;
+      color: rgb(170, 165, 165);
+      // color: #52cdfe;
       padding: .7vh .8vh;
       padding-bottom: .8vh;
       border-radius: 3px;
@@ -128,7 +129,19 @@ a { text-decoration: none; }
       padding: .4vh 1vw;
     }
   }
-  .top-right-nav *:hover { background-color: rgba(6, 220, 250, 0.1); color: #85DCFE !important;}
+  .active:target,
+  .active:focus,
+  .active:visited,
+  .active:hover,
+  .active:active {
+    border-bottom: #52cdfe 2px solid !important; 
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    color: #52cdfe !important;
+  }
+    .top-right-nav a:hover {
+    color: #52cdfe !important;
+  }
   .top-right-nav :last-child { border: 1px solid #52cdfe; }
   .top-right-nav :last-child :hover { font-size: bold; }
 }
@@ -200,11 +213,18 @@ a { text-decoration: none; }
   color: rgb(170, 165, 165);
 }
 
+.about-container {
+  height: 90%;
+  margin-top: 0 !important ;
+}
+
 @media screen and (max-width: 800px) {
   .about-container {
     flex-direction: column;
     align-items: center;
     align-content: center;
+    height: auto;
+    margin-top: auto !important ;
     
     .profile-container {
       order: 0;
@@ -240,7 +260,6 @@ a { text-decoration: none; }
 
 .profile-container {
   margin: auto;
-  // border-radius: 1vh;
   width: 30%;
 }
 
@@ -469,14 +488,18 @@ a { text-decoration: none; }
 
 @media screen and (max-width: 800px) {
   #projects > div {
-    flex-direction: column;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 40vw 40vw !important;
+    grid-gap: auto;
   }
-  .project-card { width: 35%; }
-    #projects>h2 {width: 40%}
+  .project-card { width: 50%; }
+  #projects>h2 {width: 80%}
 }
 
-
+@media screen and (max-width: 600px) {
+  .project-card { width: 60%; }
+}
+  
 // ---------
 // SKILLS PAGE
 // --------- 
