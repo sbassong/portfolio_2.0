@@ -826,26 +826,20 @@ a { text-decoration: none; }
   background-color: rgba(6, 220, 250, 0.4);
 }
 
+// about section column, justify evenly
+
 // font guidelines
 #main * {
-  font-size: 1vw !important;
-  h2, .land-h1-1 { font-size: 1.1vw !important; }
-  h1, .land-h1-2 > span{ font-size: 1.3vw !important; }
+  font-size: clamp(.7rem, 1.1vw, 1.4rem) !important;
+  h2, .land-h1-1 { font-size: clamp(.8rem, 1.3vw, 1.5rem) !important; }
+  h1, .land-h1-2 > span{ font-size: clamp(.9rem, 1.4vw, 1.6rem) !important; }
 }
-.top-right-nav >a {
-  font-size: 1.3vw !important;
+.top-right-nav>a {
+  font-size: clamp(.9rem, 1.5vw, 1.6rem) !important;
 }
 .profile-container { width: 20% !important; }
 
 @media screen and (max-width: 1200px) {
-  #main * {
-    font-size: 1.2vw !important;
-    h2, .land-h1-1 { font-size: 1.4vw !important; }
-    h1, .land-h1-2 > span{ font-size: 1.7vw !important; }
-  }
-    .top-right-nav>a {
-      font-size: 1.3vw !important;
-    }
   .App .page {width: 80% !important; }
   .contact-modal {
     width: 40vw;
@@ -854,27 +848,11 @@ a { text-decoration: none; }
 }
 
 @media screen and (max-width: 1000px) {
-  #main * {
-    font-size: 1.3vw !important;
-    h2, .land-h1-1 { font-size: 1.5vw !important; }
-    h1, .land-h1-2 > span{ font-size: 1.8vw !important; }
-  }
-    .top-right-nav>a {
-      font-size: 1.8vw !important;
-    }
   .App .page {width: 80% !important; }
   .profile-container { width: 25% !important; }
 }
 
 @media screen and (max-width: 800px) {
-  #main * {
-    font-size: 1.6vw !important;
-    h2, .land-h1-1 { font-size: 1.8vw !important; }
-    h1, .land-h1-2 > span { font-size: 2vw !important; }
-  }
-    .top-right-nav>a {
-      font-size: 2vw !important;
-    }
   .App .page {width: 85% !important; }
   .profile-container { width: 30% !important; }
   .contact-modal {
@@ -884,14 +862,6 @@ a { text-decoration: none; }
 }
 
 @media screen and (max-width: 600px) {
-  #main * {
-    font-size: 2vw !important;
-    h2, .land-h1-1 { font-size: 2.1vw !important; }
-    h1, .land-h1-2 > span { font-size: 2.3vw !important; }
-  }
-    .top-right-nav>a {
-      font-size: 2vw !important;
-    }
   .App .page {width: 90% !important; }
   .profile-container { margin-top: -5vh; }
   .contact-modal {
@@ -901,14 +871,6 @@ a { text-decoration: none; }
 }
 
 @media screen and (max-width: 400px) {
-  #main * {
-    font-size: 2.9vw !important;
-    h2, .land-h1-1 { font-size: 3vw !important; }
-    h1, .land-h1-2 > span { font-size: 3.2vw !important; }
-  }
-    .top-right-nav>a {
-      font-size: 3.1vw !important;
-    }
   .App .page {width: 95% !important; }
   .profile-container { width: 40% !important; }
 }
