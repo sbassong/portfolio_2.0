@@ -36,7 +36,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 75% ;
+    width: clamp(350px, 80%, 1500px);
     margin: 0 auto;
   }
 }
@@ -296,8 +296,8 @@ a { text-decoration: none; }
 // --------- 
 
 #experience {
-    height: 80vh !important;
-    padding-top: 10vh;
+  height: 80vh !important;
+  padding-top: 10vh;
 }
 #experience > p {
   width: 100%;
@@ -309,7 +309,6 @@ a { text-decoration: none; }
   display: flex;
   justify-content: center;
   margin: 2vh auto 5vh auto;
-  padding: 2vh;
   height: 60vh !important;
 } 
 .experience-container h1 {
@@ -320,21 +319,21 @@ a { text-decoration: none; }
   text-align: left;
 }
 
-.experience-container > nav {
-  margin-right: 2vw;
-  width: 25%;
+.positions-container {
+  margin-right: 2rem;
+  width: 30%;
 }
 
 .experience-container p,li {
   margin: .3vh;
   text-align: left;
   color: white;
-  width: auto;
+  // width: auto;
   padding: .2vh 0 .2vh 0.4vh;
 }
 .experience-container li { margin: .5vh; }
 
-.experience-container nav p:hover {
+.experience-container .positions-container nav p:hover {
   color: #52cdfe;
   border-radius: .5vh;
   background-color: rgba(143, 221, 252, 0.1);
@@ -343,8 +342,13 @@ a { text-decoration: none; }
 .exp-cards-container {
   width: 75% !important;
   border-radius: .7vh;
-  padding: 2vh 3vh;
+  // padding: 2vh 3vh;
   background-color: rgba(143, 221, 252, 0.1);
+  padding-top: .5rem;
+  padding-bottom: 1rem;
+  padding-right: 1.2rem;
+  padding-left: 1rem;
+  overflow-y: scroll;
 }
 
 .experience-card-wrapper ul {
@@ -387,7 +391,7 @@ a { text-decoration: none; }
   .experience-container p,li {
     margin: .1vh;
   }
-  .exp-cards-container { padding: 1vh 1.5vh; }
+
   .experience-card-wrapper ul li {
     gap: 1.1em;
     align-items: start;
@@ -398,7 +402,7 @@ a { text-decoration: none; }
 
 @media screen and (max-width: 450px) {
   .experience-container p,li { margin: .1vh; }
-  .exp-cards-container { padding: .8vh 1; }
+
   .experience-card-wrapper ul li {
     gap: 1.3em;
     align-items: start;
@@ -834,43 +838,12 @@ a { text-decoration: none; }
   h2, .land-h1-1 { font-size: clamp(.8rem, 1.3vw, 1.5rem) !important; }
   h1, .land-h1-2 > span{ font-size: clamp(.9rem, 1.4vw, 1.6rem) !important; }
 }
-.top-right-nav>a {
-  font-size: clamp(.9rem, 1.5vw, 1.6rem) !important;
-}
-.profile-container { width: 20% !important; }
+.top-right-nav > a { font-size: clamp(.9rem, 1.5vw, 1.6rem) !important }
 
-@media screen and (max-width: 1200px) {
-  .App .page {width: 80% !important; }
-  .contact-modal {
-    width: 40vw;
-    height: 60vh;
-  }
-}
+// container sizing
+.profile-container { width: clamp(175px, 35%, 300px) !important; }
 
-@media screen and (max-width: 1000px) {
-  .App .page {width: 80% !important; }
-  .profile-container { width: 25% !important; }
-}
-
-@media screen and (max-width: 800px) {
-  .App .page {width: 85% !important; }
-  .profile-container { width: 30% !important; }
-  .contact-modal {
-    width: 45vw;
-    height: 60vh;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .App .page {width: 90% !important; }
-  .profile-container { margin-top: -5vh; }
-  .contact-modal {
-    width: 55vw;
-    height: 60vh;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .App .page {width: 95% !important; }
-  .profile-container { width: 40% !important; }
+.contact-modal {
+  width: clamp(200px, 40vw, 1000px) !important;
+  height: clamp(250px, 50vw, 600px) !important;
 }
