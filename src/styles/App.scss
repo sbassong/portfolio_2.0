@@ -98,37 +98,32 @@ a { text-decoration: none; }
   }
 
   .top-right-nav {
-    margin-right: 0;
     display: flex;
     align-items: center;
     justify-content: center;
     font-weight: 500;
-      // font-family: 'Roboto Slab', serif;
+
     * {
       margin: 0 .3vw;
-      color: rgb(170, 165, 165);
-      // color: #52cdfe;
+      color: rgb(170, 165, 165);;
       padding: .7vh .8vh;
       padding-bottom: .8vh;
       border-radius: 3px;
       font-size: 1.2vw;
     }
   }
-  
-  @media screen and (max-width: 800px) {
-    .top-right-nav * { margin: 0 .1vw; }
-    .top-left-nav img { width: 17vw; }
+
+  @media screen and (max-width: 650px) {
+    .top-left-nav { display: none; }
   }
-  @media screen and (max-width: 600px) {
-    .top-right-nav { justify-content: initial;}
-    .top-left-nav img { width: 5vw; }
-  }
+
   @media screen and (max-width: 450px) {
     .top-right-nav * {
-      margin: 0;
+      margin: 0 .2rem;
       padding: .4vh 1vw;
     }
   }
+
   .active:target,
   .active:focus,
   .active:visited,
@@ -146,6 +141,9 @@ a { text-decoration: none; }
   .top-right-nav :last-child :hover { font-size: bold; }
 }
 
+@media screen and (max-width: 650px) {
+  .top-nav-wrap { justify-content: space-around;}
+}
 // ---------
 // SIDENAV
 // --------- 
@@ -160,12 +158,8 @@ a { text-decoration: none; }
   a, .a-tag {
     display: table;
     margin: 2vh auto;
-    width: 2.1vw;
-    min-width: 20px;
-    max-width: 40px;
-    height: 2.1vw;
-    min-height: 20px;
-    max-height: 40px;
+    width: clamp(1.5rem, 2.3vw, 2.5rem);
+    height: clamp(1.5rem, 2.3vw, 2.5rem);
   }
 
   a *,
@@ -185,13 +179,15 @@ a { text-decoration: none; }
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 650px) {
   .side-nav {
-    left: 1.5vw;
-    a, .a-tag {
-      width: 3vw;
-      height: 3vw;
-    }
+    bottom: 1rem;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-right: 3rem;
+    padding-left: 3rem;
   }
 }
 
@@ -326,11 +322,12 @@ a { text-decoration: none; }
 
 .positions-container {
   margin-right: 2rem;
+  padding-top: 1.5rem;
   width: 30%;
 }
 
 .positions-container nav {
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 .prev-icon, .eng-icon {
@@ -356,10 +353,10 @@ a { text-decoration: none; }
   width: 75% !important;
   border-radius: .7vh;
   background-color: rgba(143, 221, 252, 0.1);
-  padding-top: .5rem;
+  padding-top: 1.5rem;
   padding-bottom: 1rem;
-  padding-right: 1.2rem;
-  padding-left: 1rem;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
   overflow-y: scroll;
 }
 

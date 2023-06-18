@@ -110,6 +110,7 @@ const Experience = () => {
                     </nav>
                 </div>       
                 
+                {/* { (isEngineering || isPreviousWork) && <nav className='exp-cards-container'> */}
                 <nav className='exp-cards-container'>
                     {
                         !clicked
