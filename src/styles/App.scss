@@ -315,23 +315,36 @@ a { text-decoration: none; }
   text-align: left;
   margin-bottom: 1vh;
 }
+
 .experience-container h2 {
   text-align: left;
+  display: flex;
+  justify-content: space-between;
 }
+
+
 
 .positions-container {
   margin-right: 2rem;
   width: 30%;
 }
 
+.positions-container nav {
+  margin-bottom: 2rem;
+}
+
+.prev-icon, .eng-icon {
+  margin-right: .5rem;
+}
+
+
 .experience-container p,li {
-  margin: .3vh;
+  margin: 1rem;
   text-align: left;
   color: white;
-  // width: auto;
   padding: .2vh 0 .2vh 0.4vh;
 }
-.experience-container li { margin: .5vh; }
+.experience-container li { margin: .5rem; }
 
 .experience-container .positions-container nav p:hover {
   color: #52cdfe;
@@ -342,7 +355,6 @@ a { text-decoration: none; }
 .exp-cards-container {
   width: 75% !important;
   border-radius: .7vh;
-  // padding: 2vh 3vh;
   background-color: rgba(143, 221, 252, 0.1);
   padding-top: .5rem;
   padding-bottom: 1rem;
@@ -846,4 +858,9 @@ a { text-decoration: none; }
 .contact-modal {
   width: clamp(200px, 40vw, 1000px) !important;
   height: clamp(250px, 50vw, 600px) !important;
+}
+
+svg, path {
+  width: clamp(.9rem, 1.4vw, 1.4rem);
+  height: clamp(1rem, 1.5vw, 1.5rem);
 }
