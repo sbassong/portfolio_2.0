@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ExperienceCard = ({title, company, tenure, duties}) => {
+const ExperienceCard = ({title, tenure, duties}) => {
 
 	return (
 		<div className="experience-card-wrapper">

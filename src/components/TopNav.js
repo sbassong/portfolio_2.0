@@ -22,4 +22,4 @@ const TopNav = ({windowDimension}) => {
 	)
 }
 
-export default TopNav
+export default TopNav;
