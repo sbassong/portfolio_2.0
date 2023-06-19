@@ -322,6 +322,11 @@ a { text-decoration: none; }
   margin-right: 2rem;
   padding-top: 1.5rem;
   width: 30%;
+    svg,
+    path {
+      width: clamp(.9rem, 1.4vw, 1.4rem);
+      height: clamp(1rem, 1.5vw, 1.5rem);
+    }
 }
 
 .positions-container nav {
@@ -331,6 +336,7 @@ a { text-decoration: none; }
 .prev-icon, .eng-icon {
   margin-right: 1rem;
   margin-left: 1rem;
+
 }
 
 .experience-container p,li {
@@ -513,44 +519,41 @@ a { text-decoration: none; }
 // SKILLS PAGE
 // --------- 
 #skills { padding-bottom: 5vh; }
-#skills > h1 { margin-top: -10vh !important; }
 #skills > h2 {
-  color: #52cdfe;
-  width: 75%;
+  color: rgba(143, 221, 252, 0.8);
+  width: 85%;
+  height: auto;
   text-align: left;
+  margin-bottom: .5rem;
+}
+
+#skills > .first-h2 {
+  margin-top: -3rem;
 }
 
 .skills-container {
-  width: 80%;
-  height: 15%;
-  // height: 15vh;
   display: flex;
-  align-items: center;
-  gap: 5rem;  
-  border-radius: .3rem;
-  padding: .3rem;
+  align-items: center; 
+  width: 80%;
+  padding-left: 1rem;
+  padding-right: 1rem;
   background-color: rgba(143, 221, 252, 0.1);
+  border-radius: .3rem;
   overflow-x: scroll;
-  border: 1px solid white;
 }
 
-
-.skills-container > div {
-  width: clamp(1.3rem, 2.7vw, 4rem);
-  height: clamp(1.3rem, 2.7vw, 4rem);
-  // height: clamp(1.3rem, 2.7vw, 4rem);
-  
+.skill-box {
+  width: clamp(3rem, 5vw, 4.3rem) !important;
+  height: clamp(3rem, 5vw, 4.3rem) !important;
+  margin: 1rem;
   display: flex;
   flex-direction: column;
-  // justify-content: center;
   align-items: center;
-  border: 1px solid red;
-}
 
-.skills-container >div >div {
-  border: 1px solid yellow;
-  width: 100%;
-  height: 100%;
+  svg, path {
+    margin-bottom: .2rem;
+    width: clamp(2.8rem, 4.5vw, 4.2rem) !important;
+  }
 }
 
 .skill-img {
@@ -566,6 +569,7 @@ a { text-decoration: none; }
   border-radius: 10px;
   p { color: white; margin-bottom: 4vh; }
 }
+
 .emailOverlayWrapper > div[role=button] {
   display: none !important;
 }
@@ -837,7 +841,8 @@ a { text-decoration: none; }
 
 // font guidelines
 #main * {
-  font-size: clamp(.7rem, 1.1vw, 1.4rem) !important;
+  font-size: clamp(.7rem, 1vw, 1.4rem) !important;
+  
   h2, .land-h1-1 { font-size: clamp(.8rem, 1.3vw, 1.5rem) !important; }
   h1, .land-h1-2 > span{ font-size: clamp(.9rem, 1.4vw, 1.6rem) !important; }
 }
@@ -851,7 +856,3 @@ a { text-decoration: none; }
   height: clamp(250px, 50vw, 600px) !important;
 }
 
-svg, path {
-  width: clamp(.9rem, 1.4vw, 1.4rem);
-  height: clamp(1rem, 1.5vw, 1.5rem);
-}
