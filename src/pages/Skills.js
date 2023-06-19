@@ -4,7 +4,6 @@ import React from 'react';
 import {ReactComponent as JavaScript} from '../../src/styles/samTechStack/JavaScript.svg';
 import {ReactComponent as Python} from '../../src/styles/samTechStack/Python.svg';
 
-
 // Frontend
 import {ReactComponent as ReactJS} from '../../src/styles/samTechStack/React.svg';
 import {ReactComponent as Redux} from '../../src/styles/samTechStack/Redux.svg';
@@ -20,7 +19,6 @@ import {ReactComponent as Vuetify} from '../../src/styles/samTechStack/Veutify.s
 import {ReactComponent as D3JS} from '../../src/styles/samTechStack/D3.js.svg';
 import {ReactComponent as Figma} from '../../src/styles/samTechStack/Figma.svg';
 
-
 // Backend
 import {ReactComponent as MongoDB} from '../../src/styles/samTechStack/MongoDB.svg';
 import {ReactComponent as NodeJS} from '../../src/styles/samTechStack/Node.js.svg';
@@ -33,7 +31,6 @@ import {ReactComponent as Express} from '../../src/styles/samTechStack/Express.s
 import {ReactComponent as Flask} from '../../src/styles/samTechStack/Flask.svg';
 import {ReactComponent as Pandas} from '../../src/styles/samTechStack/Pandas.svg';
 
-
 // databases, devops, testing...
 import {ReactComponent as Vercel} from '../../src/styles/samTechStack/Vercel.svg';
 import {ReactComponent as AWS} from '../../src/styles/samTechStack/AWS.svg';
@@ -45,7 +42,6 @@ import {ReactComponent as Heroku} from '../../src/styles/samTechStack/Heroku.svg
 const Skills = () => {
 	return (
 		<div id="skills" className="page">
-
 			{/* language */}
 			<h2 className='first-h2' >Languages</h2>
 			<div className="skills-container">
