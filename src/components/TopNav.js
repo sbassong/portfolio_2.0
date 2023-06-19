@@ -1,9 +1,7 @@
 import React, { } from 'react';
 import { NavLink } from 'react-router-dom';
 
-
-const TopNav = ({windowDimension}) => {
-    
+const TopNav = () => {
 	return (
 		<div className="top-nav">
 			<div className="top-nav-wrap">
