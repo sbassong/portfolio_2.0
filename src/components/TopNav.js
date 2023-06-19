@@ -15,7 +15,7 @@ const TopNav = ({windowDimension}) => {
 					<NavLink to='/projects' activeClassName="active">Projects</NavLink>
 					<NavLink to='/experience' activeClassName="active">Experience</NavLink>
 					<NavLink to='/skills' activeClassName="active">Skills</NavLink>
-					<a href="https://drive.google.com/file/d/1J122vv_P2wXVVKWlmMXXXcH8u0V9YSi8/view?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</a>
+					<a href="https://drive.google.com/file/d/1W_Wi-KsSsq-5V3e1QSN2E-kF--PSFv7z/view?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</a>
 				</nav>
 			</div>
 		</div>
