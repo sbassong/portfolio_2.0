@@ -43,13 +43,8 @@ const Experience = () => {
         }
     };
 
-    // optional guided tour? maybe with a lighter tone?
-
-
     return (
         <div id="experience" className="page" >
-            <h1>Experience</h1>
-            <p>Workplaces where I've made an impact</p>
             <div className='experience-container'>
                 <div className='positions-container'>
                     <nav>
