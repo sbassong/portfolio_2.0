@@ -2,6 +2,7 @@ import React from 'react';
 import { skillsData } from "../data";
 import SkillCard from "../components/SkillCard";
 
+
 const Skills = () => {
 	return (
 		<div id="skills" className="page">
@@ -15,6 +16,7 @@ const Skills = () => {
 					))
 				}
 			</div>
+
 			<h2>Frontend</h2>
 			<div className="skills-container">
 				{
@@ -23,6 +25,7 @@ const Skills = () => {
 					))
 				}
 			</div>
+
 			<h2>Backend &amp; Databases</h2>
 			<div className="skills-container">
 				{
