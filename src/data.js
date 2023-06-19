@@ -1,46 +1,46 @@
 export const ExperienceData = [
     {
         id: 1,
-        title: "Jr. Software Engineer",
+        title: "Software Engineer",
         company: "Locana",
         tenure: "April 2022 - Present",
         duties: [
-            "Collaborating within an Agile team to implement and maintain two React/Redux mapping applications, while leveraging MapBoxGL-JS as the mapping platform",
-            "Building and taking ownership of several core features engineered with frontend, backend, and data visualization technologies such as Node.js, MongoDB, PostgreSQL, Chart.js, and Express",
-            "Co-spearheading a growing DevOps initiative focused on implementing and promoting extensive testing practices and pipeline development within our open data engineering team",
-            "Improving app performance and codebase sustainability through code refactoring and optimization",
-            "Developed 2 map-layer widgets with extensive map styling and data visualization which amounted to significant contributions to the successful launch of a stakeholder's application"
+            "Earned promotion from Junior to Software Engineer II within 12 months due to excellent product delivery rates, strong performances exceeding benchmarks, demonstrable skills growth, and significant contributions integral to the early launch of a major stakeholder’s application",
+            "Collaborating within an Agile team to implement and maintain core features across two React/Redux mapping applications, both of which leverage Mapbox GL JS as the mapping platform",
+            "Developing geospatial-based solutions across the full stack using open-source technologies including React, Node.js, MongoDB, Express, AWS, Redux, Cypress, and other libraries",
+            "Synergizing with stakeholders to deliver performant, user-minded features within a cross-functional environment",
+            "Co-spearheaded a DevOps and quality assurance initiative focused on implementing and promoting automated testing practices and pipeline development with Cypress, Jest, and Gitlab CI/CD",
         ]
     },
     {
         id: 2,
-        title: "Web Developer and Email Specialist Intern",
-        company: "Center Centre-UIE",
+        title: "Web Developer and Email Specialist (contract)",
+        company: "Center Centre",
         tenure: "December 2021 - April 2022",
         duties: [
-            "Improved company marketing efforts through independent and collaborative development of several responsive web pages, client-facing interactive sales pages, and article hosting for Center Centre-UIE's globally-reaching UX strategies seminars",
-            "Owned development of daily and weekly marketing communications using HTML, CSS, and CRM (Customer Relationship Management) software",
+            "Improved company marketing efforts through independent and collaborative development of several responsive web pages, client-facing interactive sales pages, and article hosting for Center Centre's globally-reaching UX strategies seminars",
+            "Managed development of daily and weekly marketing communications using HTML, CSS, and CRM (Customer Relationship Management) software",
             "Optimized company operations and email production through implementation of two internal HTML and CSS/SCSS libraries, improving current and future development practices",
             "Boosted development team's documentation by ~20% with high-quality video tutorials, detailed guide repositories, and a reimagined intern onboarding procedure",
         ]
     },
     {
         id: 3,
-        title: "Software Engineer Apprentice",
-        company: "General Assembly",
-        tenure: "July 2021 - December 2021",
+        title: "8th Grade Science Teacher and Advisor",
+        company: "Rainier Prep Charter School",
+        tenure: "August 2018 - June 2021",
         duties: [
-            "Developed multiple full-stack, backend, and frontend platforms with modern and emerging JavaScript and Python technologies including React, Vue, Node.js, Flask, PostgreSQL, MongoDB, ORMs, etc...",
-            "Applied engineering best practices including architectural modeling, testing, deployment, version control, code maintenance, documentation, and responsive design",
-            "Led and collaborated with peers to pitch, devise, and build projects during Agile coding sprints",
-            "Completed immersive apprenticeship as one of the cohort's highest achievers as demonstrated by assignment scores, instructor staff recommendations, and project outcomes"
+            "Designed, planned, and taught a stellar original projects-based curriculum to a yearly cohort of 80+ students while handling administrative responsibilities and attending an accelerated teaching certification program",
+            "Improved school's science mastery outcomes based on a 3 years-average 19% score increase on Washington State's standardized comprehensive assessment of sciences",
+            "Managed a diverse 80+ group of students' STEM innovation through collaborative hands-on projects that integrate data analysis/visualization, design thinking, and field studies",
+            "Demonstrated excellent growth and adaptability by earning a promotion and increased responsibilities from associate to full teacher within 3 months of a 6-month transition plan",
         ]
     },
     {
         id: 4,
-        title: "Research Assistant",
+        title: "Biomedical Research Assistant",
         company: "Washington State University",
-        tenure: "July 2016 - May 2018",
+        tenure: "July 2016 - June 2018",
         duties: [
             "Planned and conducted independent experiments to solve biomedical challenges including emerging infectious diseases and microbial antibiotic resistance",
             "Analyzed data and maintained documentation to troubleshoot and standardize procedures",
@@ -59,64 +59,6 @@ export const ExperienceData = [
             "Performed BSL 2 work including: DNA extraction, polymerase chain reactions (PCR), high throughput DNA sequencing",
             "Maintained, organized and preserved data in electronic formats and provided bi-weekly summaries of data in the form of tables, figures, and narratives to PI",
             "Established research program at Nevada State College as one of the 3-member cohort of undergraduate research",
-        ]
-    },
-    {
-        id: 6,
-        title: "8th Grade Science Teacher",
-        company: "Rainier Prep",
-        tenure: "January 2019 - June 2021",
-        duties: [
-            "Designed, planned, and taught a stellar original projects-based curriculum to a yearly cohort of 80+ students while handling administrative responsibilities and attending an accelerated teaching certification program",
-            "Improved school's science mastery outcomes based on a 3 years-average 19% score increase on Washington State's standardized comprehensive assessment of sciences",
-            "Managed a diverse 80+ group of students' STEM innovation through collaborative hands-on projects that integrate data analysis/visualization, design thinking, and field studies",
-            "Demonstrated excellent growth and adaptability by earning a promotion and increased responsibilities from associate to full teacher within 3 months of a 6-month transition plan",
-        ]
-    },
-    {
-        id: 7,
-        title: "Associate Teacher",
-        company: "Rainier Prep",
-        tenure: "August 2018 - January 2019",
-        duties: [
-            "Co-planned and developed lessons plans and activity",
-            "Assisted with class management, lab activities, and student support",
-            "Performed administrative duties including attendance, grading, data entry, projects proofreading and editing, and lab supplies purchasing",
-        ]
-    },
-    {
-        id: 8,
-        title: "Teaching Assistant",
-        company: "University of Nevada, Reno",
-        tenure: "August 2015 - June 2016",
-        duties: [
-            "Co-lead 2 semesters of advanced lab techniques in genetics and molecular biology",
-            "Supervised lab activities for 30+ students via demonstrations and hands-on training",
-            "Planned and delivered introductory lessons",
-        ]
-    },
-    {
-        id: 9,
-        title: "Course Assistant",
-        company: "Nevada State College",
-        tenure: "August 2014 - May 2015",
-        duties: [
-            "Assisted course instructor for 2 semesters of an introductory hybrid lecture and laboratory course on the principles of modern biology (BIOL 197)",
-            "Significantly contributed to design and set up of practical exams",
-            "Collaborated with peers and instructors to successfully exceed program outcomes as demonstrated by a 16% increased retention rate compared to previous years",
-            "Designed, organized, and led weekly group and individual supplementary instruction sessions which successfully improved students, understanding of course concepts and grades as reflected in year-end statistical evaluations",
-        ]
-    },
-    {
-        id: 10,
-        title: "Recreation Assistant",
-        company: "City of Henderson - Parks and Recreation Dept.",
-        tenure: "October 2012 - May 2014",
-        duties: [
-            "Collaborated with school administrative and departmental staff to facilitate recreation programs for school children in grade K-5",
-            "Upheld school and state safety standards for the safety and wellbeing of students",
-            "Provided meaningful and essential tutoring sessions and mentorship to students",
-            "Effectively communicated student's progress with families on a need basis",
         ]
     },
 ]
@@ -202,18 +144,9 @@ export const skillsData = [
         photo: "https://i.imgur.com/j0NoZ95.png",
         type: "languages"
     },
+
     {
-        title: "SQL",
-        photo: "https://logodix.com/logo/542135.jpg",
-        type: "languages"
-    },
-    {
-        title: "NoSQL",
-        photo: "https://i.imgur.com/duR0hTQ.png",
-        type: "languages"
-    },
-    {
-        title: "React.js",
+        title: "React",
         photo: "https://i.imgur.com/WlkyT3e.png",
         type: "frontend"
     },
@@ -223,8 +156,18 @@ export const skillsData = [
         type: "frontend"
     },
     {
-        title: "Vue.js",
+        title: "Vue",
         photo: "https://i.imgur.com/9Bg1NJB.png",
+        type: "frontend"
+    },
+    {
+        title: "Mapbox-GL",
+        photo: "https://i.imgur.com/9Bg1NJB.png",
+        type: "frontend"
+    },
+    {
+        title: "MUI",
+        photo: "https://i.imgur.com/T9Q7a86.png",
         type: "frontend"
     },
     {
@@ -237,18 +180,14 @@ export const skillsData = [
         photo: "https://i.imgur.com/cgV9eEc.png",
         type: "frontend"
     },
-		{
-				title: "Cypress",
-				photo: "https://i.imgur.com/8zO6Pcu.png",
-				type: "frontend"
-		},
+    
     {
-        title: "Node.js",
+        title: "NodeJS",
         photo: "https://i.imgur.com/GJrnwtm.png",
         type: "backend"
     },
     {
-        title: "Express.js",
+        title: "ExpressJS",
         photo: "https://i.imgur.com/4edoBxS.png",
         type: "backend"
     },
@@ -258,18 +197,49 @@ export const skillsData = [
         type: "backend"
     },
     {
-        title: "Postgres",
-        photo: "https://i.imgur.com/JI955nx.png",
-        type: "backend"
-    },
-    {
         title: "MongoDB",
         photo: "https://i.imgur.com/RJASm12.png",
         type: "backend"
     },
     {
-        title: "AWS S3",
+        title: "Mongoose",
+        photo: "https://i.imgur.com/duR0hTQ.png",
+        type: "languages"
+    },
+    {
+        title: "PostgreSQL",
+        photo: "https://i.imgur.com/JI955nx.png",
+        type: "backend"
+    },
+    {
+        title: "Sequelize",
+        photo: "https://i.imgur.com/JI955nx.png",
+        type: "backend"
+    },
+    {
+        title: "SQL",
+        photo: "https://logodix.com/logo/542135.jpg",
+        type: "languages"
+    },
+    {
+        title: "Pandas",
+        photo: "https://logodix.com/logo/542135.jpg",
+        type: "languages"
+    },
+
+    {
+        title: "AWS",
         photo: "https://i.imgur.com/xgkTZS0.jpg",
         type: "backend"
+    },
+    {
+        title: "Cypress",
+        photo: "https://i.imgur.com/8zO6Pcu.png",
+        type: "frontend"
+    },
+    {
+        title: "Jest",
+        photo: "https://i.imgur.com/8zO6Pcu.png",
+        type: "frontend"
     },
 ]

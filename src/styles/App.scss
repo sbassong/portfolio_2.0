@@ -318,8 +318,6 @@ a { text-decoration: none; }
   justify-content: space-between;
 }
 
-
-
 .positions-container {
   margin-right: 2rem;
   padding-top: 1.5rem;
@@ -338,16 +336,13 @@ a { text-decoration: none; }
 .experience-container p,li {
   margin: 1rem;
   text-align: left;
-  // color: white;
   color: rgb(170, 165, 165);
   padding: .2vh 0 .2vh 0.4vh;
 }
 .experience-container li { margin: .5rem; }
 
 .experience-container .positions-container nav p:hover {
-  color: #52cdfe;
-  border-radius: .5vh;
-  background-color: rgba(143, 221, 252, 0.1);
+  color: #52cdfe !important;
 }
 
 .exp-cards-container {
@@ -376,7 +371,7 @@ a { text-decoration: none; }
   gap: 1.65em;
   align-items: start;
   line-height: 1.35;
-  color: white;
+  color: rgb(223, 219, 219);
 }
 
 .experience-card-wrapper ul li:before { 
@@ -527,9 +522,9 @@ a { text-decoration: none; }
 
 .skills-container {
   width: 75%;
-  display: grid;  
-  grid-gap: 4vw;  
-  grid-template-columns: repeat(auto-fit, minmax(15px, 4%));
+  display: grid;
+  grid-gap: 2rem;  
+  grid-template-columns: repeat(auto-fit, minmax(1.5rem, 5%));
   grid-template-rows: auto;
   border-radius: .7vh;
   padding: .9vh .7vh .7vh .7vh;
@@ -540,7 +535,7 @@ a { text-decoration: none; }
 
 @media screen and (max-width: 800px) {
   .skills-container {
-    padding: .7vh .7vh .3vh .7vh;
+    padding: .3rem .2rem;
     width: 85%;
   }
 }
@@ -564,7 +559,7 @@ a { text-decoration: none; }
   flex-shrink: 0;
   max-width: 100%;
   min-height: 100%;
-  border-radius: .7vh;
+  border-radius: .1rem;
 }
 
 /* Contact Modal styles */
