@@ -67,7 +67,7 @@ export const professionalProjectsData = [
     {
         id: 1,
         title: "Agile UX Intensive - landing page",
-        subtitle: "HTML, CSS",
+        subtitle: "JavaScript, HTML, CSS",
         description: "Built with HTML and CSS, this landing page is used by hundreds of monthly UX leaders seeking to transform their Agile UX strategy through programs led by UX Guru, Jared Spool. Fully responsive, the page's careful design and development was driven by the desire to provide an excellent user experience.",
         image: "https://i.imgur.com/i9JvZvr.png",
         link: "https://agile.centercentre.com/",
@@ -75,27 +75,6 @@ export const professionalProjectsData = [
     },
     {
         id: 2,
-        title: "CCUXS MCR program - Checkout",
-        subtitle: "HTML, GoHighLevel CRM, CSS, JavaScript",
-        description: "A sample of many sales page I built for Center Centre's UX Strategy program, this checkout page enables UX leaders and their team enroll in limited UX strategy programs offered by Dr Leslie Jansen-Inman and Jared Spool. The page is implemented with customer relationship management tool and some custom HTML, CSS, and JavaScript code.",
-        image: "https://i.imgur.com/gQOp8wz.png",
-        link: "https://strategyprogram.centercentre.com/ccuxs-program-mcr-8495",
-        github: "https://github.com/sbassong", 
-    },
-    {
-        id: 3,
-        title: "Agile UX Intensive - Learner program sign up",
-        subtitle: "HTML, CRM, CSS, JavaScript",
-        description: "A sample page part of the user-workflow UX leaders use to navigate through their intensive experience enrollment. The page is built with a CRM, HTML, CSS, and JavaScript.",
-        image: "https://i.imgur.com/QrsR2h1.png",
-        link: "https://agilelearner.centercentre.com/uxlearner",
-        github: "https://github.com/uie-com/intensiveAgile",
-    },
-];
-
-export const personalProjectsData = [
-    {
-        id: 1,
         title: "G-verse",
         subtitle: "PostgreSQL, Express.js, React, Node.js, JWT Auth, CSS, UI framework",
         description: "A full-stack e-commerce platform for game enthusiasts. G-verse is a feature-packed and user-focused web application built using the PERN stack: a PostgreSQL database allowing for complex relational querying and an Express.js server built on Node.js which connects our database to a React.js frontend app responsively designed and implemented with a UI framework and CSS. Features authorization and session validation via Bcrypt and Json Web Token Auth to ensure the user's confidentiality.",
@@ -104,7 +83,7 @@ export const personalProjectsData = [
         github: "https://github.com/sbassong/g-verse"
     },
     {
-        id: 2,
+        id: 3,
         title: "Amphi",
         subtitle: "MongoDB, Express.js, React, Node.js, CSS",
         description: "A musical artists finder which enables users to search for their favorite artists or add them to a growing database. Amphi leverages the MERN stack to build an engaging and intuitive user experience. The platform was developed using a React app with modern routing and hooks as well as functional components. It leverages the document-oriented model of a MongoDB database to feature rapid querying served through Node and Express.js. The UI's styling and responsiveness is implemented entirely with CSS",
@@ -113,7 +92,7 @@ export const personalProjectsData = [
         github: "https://github.com/sbassong/amphi"
     },
     {
-        id: 3,
+        id: 4,
         title: "Scienteer",
         subtitle: "Vue, Vuex, Flask, PostgreSQL, AWS S3, JWT Auth",
         description: "A citizen science management platform, Scienteer connects researchers with science enthusiasts looking to get involved and volunteer in the scientific community. Volunteer scientists (scienteers) can find and contribute to research projects throughout the world. The frontend is built as a Vue app and features Vuex for state management. The Flask backend integrates AWS S3 for image and file storage, JWT and botocore libraries for Auth, and a PostgreSQL database. Scienteer will only get better!",

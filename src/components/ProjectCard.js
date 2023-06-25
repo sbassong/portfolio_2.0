@@ -17,12 +17,18 @@ const ProjectCard = ({project}) => {
 		<div className="project-card">
 			<div className="project-wrapper" onClick={() => toggleIsOpen(true)}>
 				<img src={project.image} alt="project screenshot" />
-				<div className="project-details"></div> 
 			</div>
 
-			<Overlay configs={configs} isOpen={isOpen} closeOverlay={() => toggleIsOpen(false)}>
-				<ProjectPage closeOverlay={() => toggleIsOpen(false)} title={project.title} description={project.description} github={project.github} link={project.link} technologies={project.technologies} subtitle={project.subtitle}/> 
-			</Overlay>
+				<div id='project-card-title'>{project.title}</div>
+			<div className="project-details" onClick={() => toggleIsOpen(true)}>
+				<div id="project-card-description">{project.description}</div>
+				<div id="project-card-techs">{project.technologies}</div> 
+			</div>
+
+			<div className="links-cont">
+				<a href={project.link} rel="noreferrer" target="_blank" className="">Demo</a>
+				<a href={project.github} rel="noreferrer" target="_blank" className="">Github</a>
+			</div>
 		</div>
 	)
 }

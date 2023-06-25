@@ -456,40 +456,55 @@ a { text-decoration: none; }
   justify-content: center;
 }
 
-
+// 
+// projectCard styles
+// 
 .project-card {
-  background-color: rgb(207, 196, 130, 0.3);
-  border-radius: .7vh;
-  width: 22%;
-  height: auto;
-  margin: 1em 3em;
-  padding: .3em;
-}
-
-.project-wrapper {
+  width: 500px;
+  height: 550px;
+  margin: 1rem 1rem;
+  padding: 1.5rem;
+  background-color: rgba(143, 221, 252, .1);
+  border-radius: 5px;
   position: relative;
-  display: flex;
-  width: 100%;
-  height: 100%;
 }
 
 .project-wrapper img {
-  position: sticky;
-  height: 100%;
+  height: 250px;
   width: 100%;
-  border-radius: .7vh;
-  inset: 0;
-  top: 0;
-  left: 0;
+  border-radius: 5px;
 }
 
 .project-wrapper > a {
   height: 100%;
   width: 100%;
-  border-radius: .7vh;
+  border-radius: .5rem;
 }
 
 .project-details {
+  width: 100%;
+  height: 100px;
+  overflow-y: scroll;
+  
+  
+  #project-card-techs,
+  #project-card-description {
+    text-align: left;
+    margin-top: .5rem;
+  }
+  
+}
+
+.project-card #project-card-title {
+  font-size: clamp(.9rem, 1.3vw, 1.5rem) !important;
+  font-weight: 600;
+  font-family: 'Open Sans', sans-serif;
+  text-align: left;
+  color: white;
+  padding: .7rem 0rem;
+}
+
+.project-card-overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -500,7 +515,7 @@ a { text-decoration: none; }
   opacity: 0;
 }
 
-.project-details:hover {
+.project-card-overlay:hover {
   opacity: 1;
   background-color: rgba(6, 220, 250, 0.3);
 }
@@ -801,16 +816,7 @@ a { text-decoration: none; }
   0% {  opacity: 1; }
   100% { opacity: 0; }
 }
-.description {
-  width: 85%;
-  margin: 0 auto;
-}
-.technologies {
-  width: 60%;
-  margin-right: auto;
-  margin-left: auto;
-  color: white;
-}
+
 .details-cont {
   display: flex;
   flex-direction: column;
@@ -818,7 +824,9 @@ a { text-decoration: none; }
   align-items: center;
 }
 .links-cont {
-  margin-top: 5vh;
+  position: absolute;
+  bottom: 2rem;
+  right: 1rem;
 }
 .links-cont a {
   margin: 2vh 1vh;
@@ -839,9 +847,10 @@ a { text-decoration: none; }
   font-size: clamp(.7rem, 1vw, 1.4rem) !important;
   
   h2, .land-h1-1 { font-size: clamp(.8rem, 1.2vw, 1.5rem) !important; }
-  h1, .land-h1-2 > span{ font-size: clamp(.9rem, 1.3vw, 1.5rem) !important; }
+  h1, .land-h1-2 > span { font-size: clamp(.9rem, 1.3vw, 1.5rem) !important; }
 }
-.top-right-nav > a { font-size: clamp(.9rem, 1.5vw, 1.6rem) !important }
+.top-right-nav > a,
+.project-card-title { font-size: clamp(.9rem, 1.5vw, 1.6rem) !important }
 
 // container sizing
 .profile-container { width: clamp(175px, 35%, 300px) !important; }
