@@ -14,18 +14,16 @@ import {ReactComponent as AWS} from '../../src/styles/samTechStack/AWS.svg';
 
 const Scienteer = () => {
 	return (
-		<div id="skills" className="page">
-			<div className="skills-container">
-					<JavaScript />
-					<Python />
-					<CSS3 />
-					<Vue />
-					<NodeJS />
-					<Express />
-					<PostgreSQL />
-					<Flask />
-					<AWS />
-				</div>
+		<div className="tech-container">
+			<JavaScript className='tech-item'/>
+			<Python className='tech-item'/>
+			<CSS3 className='tech-item'/>
+			<Vue className='tech-item'/>
+			<NodeJS className='tech-item'/>
+			<Express className='tech-item'/>
+			<PostgreSQL className='tech-item'/>
+			<Flask className='tech-item'/>
+			<AWS className='tech-item'/>
 		</div>
 	)
 }

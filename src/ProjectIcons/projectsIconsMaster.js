@@ -41,58 +41,56 @@ import {ReactComponent as Heroku} from '../../src/styles/samTechStack/Heroku.svg
 
 const Skills = () => {
 	return (
-		<div id="skills" className="page">
-			<div className="skills-container">
-					<JavaScript />
+		<div className="tech-container">
+				<JavaScript />
 
-					<Python />
+				<Python />
 
-					<CSS3 />
-					<HTML5 />
-					<ReactJS />
-					<Redux />
+				<CSS3 />
+				<HTML5 />
+				<ReactJS />
+				<Redux />
 
-					<MaterialUI />
+				<MaterialUI />
 
-					<Materialize />
+				<Materialize />
 
-					<Bootstrap />
+				<Bootstrap />
 
-					<TailwindCSS />
+				<TailwindCSS />
 
-					<Vue />
-					<Vuetify />
+				<Vue />
+				<Vuetify />
 
-					<D3JS />
-					<Figma />
-					<Sass />
+				<D3JS />
+				<Figma />
+				<Sass />
+
+				<Express />
+
+				<MongoDB />
 	
-					<Express />
-	
-					<MongoDB />
+				<MongooseJS />
 		
-					<MongooseJS />
-			
-					<PostgreSQL />
-					
-					<Sequelize />
+				<PostgreSQL />
 				
-					<Flask />
+				<Sequelize />
+			
+				<Flask />
 
-					<SQLAlchemy />
-					
-					<Postman />
-		
-					<Pandas />
+				<SQLAlchemy />
+				
+				<Postman />
 	
-					<AWS />
-					<Cypress />
-		
-					<Jest />
-					<Heroku />
+				<Pandas />
+
+				<AWS />
+				<Cypress />
 	
-					<Vercel />
-				</div>
+				<Jest />
+				<Heroku />
+
+				<Vercel />
 		</div>
 	)
 }

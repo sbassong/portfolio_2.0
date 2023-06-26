@@ -10,13 +10,13 @@ import {ReactComponent as Express} from '../../src/styles/samTechStack/Express.s
 
 const Gverse = () => {
 	return (
-		<div className="skills-container">
-			<JavaScript />
-			<CSS3 />
-			<NodeJS />
-			<ReactJS />
-			<Express />
-			<PostgreSQL />
+		<div className="tech-container">
+			<JavaScript className='tech-item'/>
+			<CSS3 className='tech-item'/>
+			<NodeJS className='tech-item'/>
+			<ReactJS className='tech-item'/>
+			<Express className='tech-item'/>
+			<PostgreSQL className='tech-item'/>
 		</div>
 	)
 }

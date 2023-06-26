@@ -291,7 +291,7 @@ a { text-decoration: none; }
 // --------- 
 
 #experience {
-  width: clamp(350px, 70%, 1500px);
+  width: clamp(400px, 70%, 1500px);
   height: 80vh !important;
   margin-top: 2rem;
 }
@@ -367,6 +367,20 @@ a { text-decoration: none; }
   overflow-y: scroll;
 }
 
+@media screen and (max-width: 600px) {
+  .positions-container {
+    width: 20%;
+  }
+
+  .exp-cards-container {
+    width: 80% !important;
+    padding-top: .7rem;
+    padding-bottom: .7rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+}
+
 .experience-card-wrapper ul {
   margin: 0;
   padding: 0;
@@ -432,6 +446,8 @@ a { text-decoration: none; }
 // --------- 
 #projects {
   padding-bottom: 20vh;
+    display: flex;
+      justify-content: center;
 }
 
 #projects h1 {
@@ -450,8 +466,34 @@ a { text-decoration: none; }
   margin-right: auto;
 }
 
-#projects > div {
-  margin: 0 auto;
+.projects-carousel {
+  width: 100%;
+  
+  .css-1m9128y {
+    margin-top: 3rem;
+  }
+
+    div > button {
+      svg,
+      path {
+        width: clamp(1.1rem, 1.7vw, 1.7rem) !important;;
+        height: clamp(1.1rem, 1.7vw, 1.7rem) !important;;
+      }
+    }
+    
+    .css-1m9128y > button {
+      margin-left: .5rem;
+      margin-right: .5rem;
+      font-size: clamp(.9rem, 1.3vw, 1.4rem) !important;
+
+      svg, path {
+        width: clamp(.9rem, 1.3vw, 1.4rem) !important;;
+        height: clamp(.9rem, 1.3vw, 1.4rem) !important;;
+      }
+  }
+}
+
+.projects-carousel > div > div {
   display: flex;
   justify-content: center;
 }
@@ -460,17 +502,21 @@ a { text-decoration: none; }
 // projectCard styles
 // 
 .project-card {
-  width: 500px;
-  height: 550px;
+  width: clamp(350px, 45vw, 500px);
+  height: clamp(400px, 60vh, 600px);
   margin: 1rem 1rem;
-  padding: 1.5rem;
+  padding: 1rem;
   background-color: rgba(143, 221, 252, .1);
   border-radius: 5px;
   position: relative;
 }
 
+.project-wrapper {
+  height: 50%;
+}
+
 .project-wrapper img {
-  height: 250px;
+  height: 100%;
   width: 100%;
   border-radius: 5px;
 }
@@ -490,8 +536,12 @@ a { text-decoration: none; }
   #project-card-techs,
   #project-card-description {
     text-align: left;
-    margin-top: .5rem;
   }
+
+    #project-card-techs {
+      margin-top: 1rem;
+      margin-bottom: 2rem;
+    }
   
 }
 
@@ -501,38 +551,23 @@ a { text-decoration: none; }
   font-family: 'Open Sans', sans-serif;
   text-align: left;
   color: white;
-  padding: .7rem 0rem;
+  padding: 1rem 0rem;
 }
 
-.project-card-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 10;
-  border-radius: .7vh;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
+
+.tech-container {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: .5rem;
 }
 
-.project-card-overlay:hover {
-  opacity: 1;
-  background-color: rgba(6, 220, 250, 0.3);
+.tech-container .tech-item {
+  width: clamp(.9rem, 1.5vw, 1.7rem) !important;
+  height: clamp(.9rem, 1.5vw, 1.7rem) !important;
+  margin-right: .5rem;
 }
 
-@media screen and (max-width: 800px) {
-  #projects > div {
-    display: grid;
-    grid-template-columns: 40vw 40vw !important;
-    grid-gap: auto;
-  }
-  .project-card { width: 50%; }
-  #projects>h2 {width: 80%}
-}
-
-@media screen and (max-width: 600px) {
-  .project-card { width: 60%; }
-}
   
 // ---------
 // SKILLS PAGE
@@ -844,10 +879,10 @@ a { text-decoration: none; }
 
 // font guidelines
 #main * {
-  font-size: clamp(.7rem, 1vw, 1.4rem) !important;
+  font-size: clamp(.7rem, 1vw, 1.1rem) !important;
   
-  h2, .land-h1-1 { font-size: clamp(.8rem, 1.2vw, 1.5rem) !important; }
-  h1, .land-h1-2 > span { font-size: clamp(.9rem, 1.3vw, 1.5rem) !important; }
+  h2, .land-h1-1 { font-size: clamp(.8rem, 1.2vw, 1.4rem) !important; }
+  h1, .land-h1-2 > span { font-size: clamp(.9rem, 1.3vw, 1.4rem) !important; }
 }
 .top-right-nav > a,
 .project-card-title { font-size: clamp(.9rem, 1.5vw, 1.6rem) !important }

@@ -6,10 +6,10 @@ import {ReactComponent as CSS3} from '../../src/styles/samTechStack/CSS3.svg';
 
 const AgileUX = () => {
 	return (
-		<div className="skills-container">
-			<JavaScript />
-			<CSS3 />
-			<HTML5 />
+		<div className="tech-container">
+			<JavaScript className='tech-item'/>
+			<CSS3 className='tech-item'/>
+			<HTML5 className='tech-item'/>
 		</div>
 	)
 }

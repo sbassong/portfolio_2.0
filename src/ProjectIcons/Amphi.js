@@ -12,14 +12,14 @@ import {ReactComponent as Express} from '../../src/styles/samTechStack/Express.s
 
 const Amphi = () => {
 	return (
-		<div className="skills-container">
-			<JavaScript />
-			<NodeJS />
-			<CSS3 />
-			<ReactJS />
-			<Express />
-			<MongoDB />
-			<MongooseJS />
+		<div className="tech-container">
+			<JavaScript className='tech-item'/>
+			<NodeJS className='tech-item'/>
+			<CSS3 className='tech-item'/>
+			<ReactJS className='tech-item'/>
+			<Express className='tech-item'/>
+			<MongoDB className='tech-item'/>
+			<MongooseJS className='tech-item' />
 		</div>
 	)
 }
