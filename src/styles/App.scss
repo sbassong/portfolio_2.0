@@ -39,6 +39,7 @@ body {
     width: clamp(350px, 75%, 1500px);
     margin-right: auto;
     margin-left: auto;
+    overflow-y: hidden;
   }
 }
 
