@@ -15,7 +15,7 @@ html::-webkit-scrollbar { display: none; }
 html {
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
-  overflow-y: hidden !important;
+  // overflow-y: hidden !important;
 }
 * {
   box-sizing: border-box;
@@ -24,7 +24,7 @@ html {
 body {
   width: 100%;
   height: 100vh;
-  overflow: hidden !important;
+  // overflow: hidden !important;
 }
 
 .App {
@@ -603,7 +603,7 @@ a { text-decoration: none; }
   padding: 1rem;
   background-color: rgba(143, 221, 252, .1);
   border-radius: 5px;
-  position: relative;
+  // position: relative;
 }
 
 .project-wrapper {
@@ -654,7 +654,7 @@ a { text-decoration: none; }
   display: flex;
   align-items: center;
   margin-top: 1rem;
-  margin-bottom: .5rem;
+  // margin-bottom: .5rem;
 }
 
 .tech-container .tech-item {
@@ -956,8 +956,8 @@ a { text-decoration: none; }
 }
 .links-cont {
   position: absolute;
-  bottom: 2rem;
-  right: 1rem;
+  bottom: 1rem;
+  right: 2rem;
 }
 .links-cont a {
   margin: 2vh 1vh;
