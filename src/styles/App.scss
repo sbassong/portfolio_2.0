@@ -32,7 +32,7 @@ body {
   width: 100vw;
   height: 100vh;
   overflow-y: hidden !important;
-  
+
   .page {
     display: flex;
     flex-direction: column;
@@ -42,13 +42,13 @@ body {
     margin-right: auto;
     margin-left: auto;
     overflow-y: hidden !important;
-    margin-top: 10vh;
+    margin-top: 5vh;
   }
 }
 
 @media screen and (max-width: 650px) {
   .App .page {
-    margin-top: 5vh;
+    margin-top: 1vh;
   }
 }
 
