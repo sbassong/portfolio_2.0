@@ -2,12 +2,10 @@ import './styles/App.scss';
 import React from 'react';
 import { useEffect, useState } from 'react';
 import { Route, Routes } from 'react-router-dom';
-import Overlay from "react-overlay-component";
 import Landing from './pages/Landing';
 import Experience from './pages/Experience';
 import Skills from './pages/Skills';
 import Projects from './pages/Projects';
-import Contact from './pages/Contact';
 import LeftSideNav from './components/LeftSideNav';
 import TopNav from './components/TopNav';
 
@@ -44,11 +42,6 @@ function App() {
         </Routes>
       </main>
       <LeftSideNav toggleIsOpen={toggleIsOpen}/>
-
-      <Overlay  configs={configs} isOpen={isOpen}  closeOverlay={closeOverlay}>
-        <Contact isContactForm={isContactForm} toggleContactForm={toggleContactForm} closeOverlay={closeOverlay} />
-      </Overlay>
-
     </div>
   );
 

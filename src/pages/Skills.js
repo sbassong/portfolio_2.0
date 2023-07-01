@@ -113,7 +113,7 @@ const Skills = () => {
 			</div>
 
 			{/* backend */}
-			<h2>Backend</h2>
+			<h2>Backend & Databases</h2>
 			<div className="skills-container">
 				<div className="skill-box">
 					<NodeJS />
@@ -158,7 +158,7 @@ const Skills = () => {
 			</div>
 
 			{/* databases, devops, testing... */}
-			<h2>Database, testing, DevOps. etc...</h2>
+			<h2>DevOps, Testing, etc...</h2>
 			<div className="skills-container">
 				<div className="skill-box">
 					<AWS />
