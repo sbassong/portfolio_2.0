@@ -15,6 +15,7 @@ html::-webkit-scrollbar { display: none; }
 html {
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
+  overflow-y: hidden !important;
 }
 * {
   box-sizing: border-box;
@@ -23,14 +24,15 @@ html {
 body {
   width: 100%;
   height: 100vh;
+  overflow: hidden !important;
 }
 
 .App {
   position: relative;
   width: 100vw;
   height: 100vh;
-  overflow-x: hidden !important;
   overflow-y: hidden !important;
+  
   .page {
     display: flex;
     flex-direction: column;
@@ -40,6 +42,13 @@ body {
     margin-right: auto;
     margin-left: auto;
     overflow-y: hidden !important;
+    margin-top: 10vh;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .App .page {
+    margin-top: 5vh;
   }
 }
 
@@ -55,8 +64,7 @@ a { text-decoration: none; }
   width: 100%;
   font-family: 'Open Sans', sans-serif;
   color: rgb(170, 165, 165);
-  overflow-x: hidden !important;
-  overflow-y: hidden !important;
+  overflow: hidden !important;
 
   > div {
     height: 100%;
@@ -160,7 +168,7 @@ a { text-decoration: none; }
 
 .side-nav {
   position: absolute;
-  bottom: 5vh;
+  bottom: 7vh;
   left: 4vw;
   display: flex;
   flex-direction: column;
@@ -321,10 +329,6 @@ a { text-decoration: none; }
   align-items: center;
 }
 
-@media screen and (max-width: 650px) {
-  .about-container { padding-top: 10vh}
-}
-
 @media screen and (max-width: 600px) {
   .land-h1-2 { margin: 1.5vh 0; }
 }
@@ -370,10 +374,6 @@ a { text-decoration: none; }
 // ---------
 // EXPERIENCE PAGE
 // --------- 
-
-#experience {
-    margin-top: 8vh;
-}
 
 .exp-header {
   margin-bottom: 1vh;
@@ -531,7 +531,6 @@ a { text-decoration: none; }
   justify-content: center;
   align-items: center;
   height: 100%;
-  margin-top: 5vh;
 }
 
 #projects > h2 {
@@ -662,7 +661,6 @@ a { text-decoration: none; }
 // SKILLS PAGE
 // --------- 
 #skills { 
-  margin-top: 8vh;
   height: 100%;
 }
 #skills > h2 {
