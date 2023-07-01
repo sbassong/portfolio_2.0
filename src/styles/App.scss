@@ -586,6 +586,13 @@ a { text-decoration: none; }
   }
 }
 
+@media screen and (max-width: 650px) {
+  .projects-carousel .css-1abc02a > button,
+  .projects-carousel .css-hn784z > button {
+    margin-top: -12rem !important;
+  }
+}
+
 // 
 // PROJECT CARD
 // 

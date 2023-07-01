@@ -7,7 +7,7 @@ const Projects = () => {
 
     return (
         <div id="projects" className="page">
-            <Carousel 
+            <Carousel
                 className='projects-carousel'
                 direction='1500'
                 navButtonsAlwaysVisible={true}
