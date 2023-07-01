@@ -1,8 +1,8 @@
+import './styles/App.scss';
 import React from 'react';
 import { useEffect, useState } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import Overlay from "react-overlay-component";
-import './styles/App.scss';
 import Landing from './pages/Landing';
 import Experience from './pages/Experience';
 import Skills from './pages/Skills';
@@ -17,34 +17,24 @@ const overlay = (
   </div>
 );
 
+const configs = {
+  animate: true,
+  clickDismiss: true,
+  escapeDismiss: true,
+  contentClass: "emailOverlayWrapper"
+}
+
 function App() {
   const [rendered, setRendered] = useState(overlay);
   const [isContactForm, toggleContactForm] = useState(false);
   const [isOpen, toggleIsOpen] = useState(false);
 
-  const [windowDimension, detectHW] = useState({
-    winWidth: window.innerWidth,
-    winHeight: window.innerHeight,
-  });
-  const configs = {
-		animate: true,
-		clickDismiss: true,
-		escapeDismiss: true,
-		contentClass: "emailOverlayWrapper"
-	}
-  const detectSize = () => {
-    detectHW({
-      winWidth: window.innerWidth,
-      winHeight: window.innerHeight,
-    })
-  }
-  const closeOverlay = () => toggleIsOpen(false);
 
-  // on scroll. display a small floating arrow up and down, 
+  const closeOverlay = () => toggleIsOpen(false);
   
   const current = (
     <div className="App">
-      <TopNav windowDimension={windowDimension}/>
+      <TopNav />
       <main id="main">
         <Routes>
           <Route exact path='/' element={<Landing/>} />
@@ -53,7 +43,7 @@ function App() {
           <Route exact path='/skills' element={<Skills/>} />
         </Routes>
       </main>
-      <LeftSideNav isOpen={isOpen} toggleIsOpen={toggleIsOpen}/>
+      <LeftSideNav toggleIsOpen={toggleIsOpen}/>
 
       <Overlay  configs={configs} isOpen={isOpen}  closeOverlay={closeOverlay}>
         <Contact isContactForm={isContactForm} toggleContactForm={toggleContactForm} closeOverlay={closeOverlay} />
@@ -61,12 +51,6 @@ function App() {
 
     </div>
   );
-
-  // handles setting viewport state on resizing
-  useEffect(() => {
-      window.addEventListener('resize', detectSize);
-      return () => window.removeEventListener('resize', detectSize);
-  }, [windowDimension])
 
   // for landing animation
   useEffect(() => {

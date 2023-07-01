@@ -13,7 +13,11 @@
     "react-overlay-component": "^1.0.6",
     "react-router-dom": "^6.0.2",
     "react-scripts": "^5.0.1",
-    "sass": "^1.57.1"
+    "sass": "^1.57.1",
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.11.16",
+    "@mui/material": "^5.13.6"
   },
   "scripts": {
     "start": "react-scripts start",
