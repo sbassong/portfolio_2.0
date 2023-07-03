@@ -67,8 +67,7 @@ export const professionalProjectsData = [
     {
         id: 1,
         title: "Agile UX Intensive - landing page",
-        subtitle: "JavaScript, HTML, CSS",
-        description: "Built with HTML and CSS, this landing page is used by hundreds of monthly UX leaders seeking to transform their Agile UX strategy through programs led by UX Guru, Jared Spool. Fully responsive, the page's careful design and development was driven by the desire to provide an excellent user experience.",
+        description: "Responsive landing webpage built with HTML and CSS for Center Center-UIE with a careful design to deliver an excellent user experience. This commercial page is used by hundreds of monthly UX leaders seeking to transform their UX strategies through programs led by UX Guru Jared Spool.",
         image: "https://i.imgur.com/i9JvZvr.png",
         link: "https://agile.centercentre.com/",
         github: "https://github.com/uie-com/intensiveAgile",
@@ -76,8 +75,7 @@ export const professionalProjectsData = [
     {
         id: 2,
         title: "G-verse",
-        subtitle: "PostgreSQL, Express.js, React, Node.js, JWT Auth, CSS, UI framework",
-        description: "A full-stack e-commerce platform for game enthusiasts. G-verse is a feature-packed and user-focused web application built using the PERN stack: a PostgreSQL database allowing for complex relational querying and an Express.js server built on Node.js which connects our database to a React.js frontend app responsively designed and implemented with a UI framework and CSS. Features authorization and session validation via Bcrypt and Json Web Token Auth to ensure the user's confidentiality.",
+        description: "A full-stack mock platform for game enthusiasts, G-verse is a responsive web app focused on user actions. G-verse is supported by a relational database and built on a Express.js server. The React client/UI is built with both custom reusable components and Material UI and features JWT user authentication to provide a unique user experience.",
         image: "https://i.imgur.com/4fcEFrd.jpg",
         link: "https://gverse.herokuapp.com/",
         github: "https://github.com/sbassong/g-verse"
@@ -85,8 +83,7 @@ export const professionalProjectsData = [
     {
         id: 3,
         title: "Amphi",
-        subtitle: "MongoDB, Express.js, React, Node.js, CSS",
-        description: "A musical artists finder which enables users to search for their favorite artists or add them to a growing database. Amphi leverages the MERN stack to build an engaging and intuitive user experience. The platform was developed using a React app with modern routing and hooks as well as functional components. It leverages the document-oriented model of a MongoDB database to feature rapid querying served through Node and Express.js. The UI's styling and responsiveness is implemented entirely with CSS",
+        description: "Amphi is a full-stack mock-site that enables users to search their favorite artists. The app leverages the MERN stack to provide an engaging and intuitive user experience. This React app leverages MongoDB's document-oriented model to provide faster querying and features a responsive and stylish UI implemented entirely via plain CSS.",
         image: "https://i.imgur.com/VFOix4s.png",
         link: "https://amphi.herokuapp.com/",
         github: "https://github.com/sbassong/amphi"
@@ -94,8 +91,7 @@ export const professionalProjectsData = [
     {
         id: 4,
         title: "Scienteer",
-        subtitle: "Vue, Vuex, Flask, PostgreSQL, AWS S3, JWT Auth",
-        description: "A citizen science management platform, Scienteer connects researchers with science enthusiasts looking to get involved and volunteer in the scientific community. Volunteer scientists (scienteers) can find and contribute to research projects throughout the world. The frontend is built as a Vue app and features Vuex for state management. The Flask backend integrates AWS S3 for image and file storage, JWT and botocore libraries for Auth, and a PostgreSQL database. Scienteer will only get better!",
+        description: "An ongoing personal project, Scienteer is a citizen science management platform that aims to connects researchers with science volunteers (scienteers!) looking to contribute to ongoing academic research. Users will interact through a Vue app backed by a Flask server that currently features AWS S3 for scalable storage, JWT Auth, and a PostgreSQL database.",
         image: "https://i.imgur.com/49u9nhh.png",
         link: "https://scienteer-sbassong.vercel.app/",
         github: "https://github.com/sbassong/Scienteer"

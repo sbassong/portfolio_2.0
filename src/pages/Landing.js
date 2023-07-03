@@ -5,15 +5,21 @@ const Landing = () => {
   return (
     <div id='landing' className="page">
       <div className="about-container">
-        <div className="land-intro" >
-          <h1 className="land-h1-1">Hello there, I'm Sam.</h1>
-          <h1 className="land-h1-2">I build <span className="teal">scalable, ux-minded</span> applications that bring your vision to life.</h1>
-          <p>A full-stack software engineer passionate about building inclusive and accessible technologies. I'm currently enjoying applying Geospatial Information Systems to build everything location as a <strong>Software Engineer</strong> @&nbsp;<a href="https://www.locana.co/" target="_blank" rel="noreferrer" className="teal">Locana</a>. </p>
-        </div>
         <div className='profile-container'>
           <div className="avatar-div">
             <div className='avatar-overlay' />
           </div>
+        </div>
+        <div className="land-intro" >
+          <p className="landing-greeting teal">
+            Sam Bassong <br/><span style={{color: 'rgb(170, 165, 165)'}}>Software Engineer</span>
+          </p>
+          <p className="landing-brand">
+            I turn great ideas into <span className="teal">scalable, </span><br/><span className="teal"> market-ready </span>solutions that deliver<br/><span className="teal"> secure, user-minded </span>digital experiences. 
+          </p>
+          <p className="landing-blurb">
+            A scientist turned developer, I use polished professional skills <br/>and technical proficiency to positively impact teams' delivery goals. <br/>Currently, I'm enjoying building GIS and mapping-based apps at<a href="https://www.locana.co/" target="_blank" rel="noreferrer" className="teal"> Locana </a><br/> but I'm always open to new challenges. Let's chat, we just might be a great fit!
+          </p>
         </div>
       </div>
     </div>

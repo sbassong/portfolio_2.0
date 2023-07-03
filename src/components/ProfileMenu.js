@@ -1,31 +1,16 @@
-// import '../styles/profileMenu.css'
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom'
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
-import { ThemeProvider, createTheme } from '@mui/material/styles';
 import { GiHamburgerMenu } from "react-icons/gi";
 
-
-const menuTheme = createTheme({
-  palette: {
-    background: {
-      // default: "#52cdfe"
-    }
-  }
-});
 
 const ProfileMenu = () => {
   const [anchorEl, setAnchorEl] = useState(null);
   const open = Boolean(anchorEl);
 
-  const handleClick = (event) => {
-    setAnchorEl(event.currentTarget);
-  };
-
-  const handleClose = () => {
-    setAnchorEl(null);
-  };
+  const handleClick = (event) => setAnchorEl(event.currentTarget);
+  const handleClose = () => setAnchorEl(null);
 
   const HomeItem = () => <NavLink to='/'>Home</NavLink>
   const ProjectsItem = () => <NavLink to='/projects' >Projects</NavLink>
@@ -33,13 +18,12 @@ const ProfileMenu = () => {
   const SkillsItem = () => <NavLink to='/skills' >Skills</NavLink>
 
   return (
-    <React.Fragment>
+    <>
       <GiHamburgerMenu 
         className='menu-item title login-icon no-display'
         onClick={handleClick}
       />
 
-      <ThemeProvider theme={menuTheme}>
         <Menu
           anchorEl={anchorEl}
           id="account-menu"
@@ -80,9 +64,7 @@ const ProfileMenu = () => {
             <SkillsItem />
           </MenuItem>
         </Menu>
-        
-      </ThemeProvider>
-    </React.Fragment>
+    </>
   );
 }
 

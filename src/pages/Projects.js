@@ -9,7 +9,7 @@ const Projects = () => {
         <div id="projects" className="page">
             <Carousel
                 className='projects-carousel'
-                direction='1500'
+                direction='10000'
                 navButtonsAlwaysVisible={true}
                 activeIndicatorIconButtonProps={{ style: { backgroundColor: '#52cdfe' }}}
                 navButtonsProps={{style: {height:  '2.5rem', width: '2.5rem', marginTop: '-2rem'}}}

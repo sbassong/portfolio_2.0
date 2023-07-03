@@ -12,7 +12,6 @@ import {ReactComponent as HTML5} from '../../src/styles/samTechStack/HTML5.svg';
 import {ReactComponent as CSS3} from '../../src/styles/samTechStack/CSS3.svg';
 import {ReactComponent as MaterialUI} from '../../src/styles/samTechStack/Material-UI.svg';
 import {ReactComponent as Materialize} from '../../src/styles/samTechStack/Materialize.svg';
-import {ReactComponent as Bootstrap} from '../../src/styles/samTechStack/Bootstrap.svg';
 import {ReactComponent as TailwindCSS} from '../../src/styles/samTechStack/Tailwind-CSS.svg';
 import {ReactComponent as Vue} from '../../src/styles/samTechStack/Vue.js.svg';
 import {ReactComponent as Vuetify} from '../../src/styles/samTechStack/Veutify.svg';
@@ -75,6 +74,14 @@ const Skills = () => {
 					Redux
 				</div>
 				<div className="skill-box">
+					<Vue />
+					Vue
+				</div>
+				<div className="skill-box">
+					<D3JS />
+					D3.js
+				</div>
+				<div className="skill-box">
 					<MaterialUI />
 					MaterialUI
 				</div>
@@ -83,24 +90,12 @@ const Skills = () => {
 					Materialize
 				</div>
 				<div className="skill-box">
-					<Bootstrap />
-					Bootstrap
-				</div>
-				<div className="skill-box">
 					<TailwindCSS />
 					TailwindCSS
 				</div>
 				<div className="skill-box">
-					<Vue />
-					Vue
-				</div>
-				<div className="skill-box">
 					<Vuetify />
 					Vuetify
-				</div>
-				<div className="skill-box">
-					<D3JS />
-					D3.js
 				</div>
 				<div className="skill-box">
 					<Figma />

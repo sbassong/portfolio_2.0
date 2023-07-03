@@ -15,20 +15,8 @@ const overlay = (
   </div>
 );
 
-const configs = {
-  animate: true,
-  clickDismiss: true,
-  escapeDismiss: true,
-  contentClass: "emailOverlayWrapper"
-}
-
 function App() {
   const [rendered, setRendered] = useState(overlay);
-  const [isContactForm, toggleContactForm] = useState(false);
-  const [isOpen, toggleIsOpen] = useState(false);
-
-
-  const closeOverlay = () => toggleIsOpen(false);
   
   const current = (
     <div className="App">
@@ -41,11 +29,11 @@ function App() {
           <Route exact path='/skills' element={<Skills/>} />
         </Routes>
       </main>
-      <LeftSideNav toggleIsOpen={toggleIsOpen}/>
+      <LeftSideNav/>
     </div>
   );
 
-  // for landing animation
+  // for onload animation
   useEffect(() => {
     const timer = setTimeout(() => setRendered(current), 1000);
     return () => clearTimeout(timer);
