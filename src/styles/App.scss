@@ -370,7 +370,6 @@ a { text-decoration: none; }
     flex-direction: column;
     justify-content: center;
     padding-top: 5vh !important;
-    border: 1px solid red;
     
     .profile-container {
       order: 0;
@@ -391,7 +390,11 @@ a { text-decoration: none; }
     }
   }
   
-  .land-intro > .landing-blurb { width: 100% !important; }
+  .land-intro > .landing-blurb { 
+    width: 85% !important; 
+    margin-left: auto;
+    margin-right: auto;
+  }
   .landing-brand { margin: 2vh 0; }
   .landing-overlay img { width: 100%; }
   .landing-overlay { width: 50vh; }
@@ -456,66 +459,12 @@ a { text-decoration: none; }
   }
 }
 
-// PROJECT CAROUSEL
-.projects-carousel {
-  width: 80%;
-  
-  div > button {
-    svg,
-    path {
-      width: clamp(1.8rem, 2vw, 2rem) !important;;
-      height: clamp(1.8rem, 2vw, 2rem) !important;;
-    }
-  }
-  
-  .css-1m9128y > button {
-    margin-left: .3rem;
-    margin-right: .3rem;
-    margin-top: 1.5rem !important;
-    font-size: clamp(.9rem, 1.3vw, 1.4rem) !important;
-    
-    svg, path {
-      width: clamp(.9rem, 1.3vw, 1.4rem) !important;;
-      height: clamp(.9rem, 1.3vw, 1.4rem) !important;;
-    }
-  }
-  
-  > div > div {
-    display: flex;
-    justify-content: center;
-  }
-}
-
-@media screen and (max-width: 1000px) {
-  .projects-carousel { width: 90%; }
-}
-
-@media screen and (max-width: 800px) {
-  .projects-carousel { width: 100%; }
-}
-
-@media screen and (max-width: 650px) {
-  .projects-carousel .css-1abc02a > button,
-  .projects-carousel .css-hn784z > button {
-    margin-top: -12rem !important;
-    background-color: rgba(73, 73, 73, .5) !important;
-  }
-  
-  .projects-carousel .css-1abc02a:hover > button,
-  .projects-carousel .css-hn784z:hover > button {
-    background-color: rgba(0, 0, 0) !important;
-  }
-}
-
 // PROJECT CARD AND CONTAINER
 .project-cards-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 40px 35px;
-  overflow-y: auto;
-  // height: 80%;
-  // border: solid 1px white;
 
   .project-card {
     display: flex;
@@ -597,9 +546,19 @@ a { text-decoration: none; }
   }
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 1425px) {
+  .project-cards-container {
+      overflow-y: auto;
+      margin-top: 5vh;
+      margin-bottom: 5vh;
+      padding-top: 5vh;
+      padding-bottom: 5vh;
+  }
+}
 
 // PROJECT CARD AND CONTAINER
+@media screen and (max-width: 650px) {
+
   .project-cards-container {
     display: flex;
     flex-wrap: wrap;
@@ -686,92 +645,6 @@ a { text-decoration: none; }
           }
         }
       }
-    }
-  }
-}
-
-
-
-
-
-// PROJECT MODAL
-.project-modal {
-  width: clamp(350px, 45vw, 500px);
-  height: clamp(500px, 65vw, 650px);
-  margin: 1rem;
-  padding: .7rem;
-  background-color: rgba(143, 221, 252, .1);
-  border-radius: .5rem;
-  
-  .project-wrapper {
-    height: 50%;
-    
-    img {
-      height: 100%;
-      width: 100%;
-      border-radius: .5rem;
-    }
-    
-    > a {
-      height: 100%;
-      width: 100%;
-      border-radius: .5rem;
-    }
-  }
-
-  #project-card-title {
-    font-size: clamp(1.1rem, 1.4vw, 1.4rem) !important;
-    font-weight: 600;
-    // font-family: 'Open Sans', sans-serif;
-    text-align: left;
-    color: white;
-    margin: 1.5rem .5rem 1rem .5rem;
-  }
-  
-  .project-details {
-    width: 100%;
-    height: clamp(100px, 20vh, 150px);
-    overflow-y: scroll;
-    padding-left: .5rem;
-    padding-right: .5rem;
-    
-    #project-card-description {
-      text-align: left;
-    }
-  }
-  
-  // PROJECT SKILLS CONTAINER
-  .tech-container {
-    display: flex;
-    align-items: center;
-    margin-top: 1rem;
-    padding: 0 .5rem 1rem .5rem;
-  }
-  
-  .tech-container .tech-item {
-    width: clamp(.9rem, 1.5vw, 1.7rem) !important;
-    height: clamp(.9rem, 1.5vw, 1.7rem) !important;
-    margin-right: .7rem;
-  }
-  
-  .project-card-buttons {
-    position: absolute;
-    bottom: 1.5rem;
-    right: 2rem;
-    
-    a {
-      margin: 2vh 1vh;
-      color: #52cdfe;
-      font-family: 'Roboto Slab', serif;
-      font-weight: bold;
-      padding: .7vh .8vh;
-      border-radius: 5px;
-      border: 1px solid rgba(6, 220, 250, 0.5);
-    }
-
-    a:hover {
-      color: #52cdfe !important;
-      background-color: rgba(6, 220, 250, 0.1);
     }
   }
 }
