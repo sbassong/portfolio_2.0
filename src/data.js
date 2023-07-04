@@ -66,7 +66,7 @@ export const ExperienceData = [
 export const professionalProjectsData = [
     {
         id: 1,
-        title: "Agile UX Intensive - landing page",
+        title: "Agile UX Intensive",
         description: "Responsive landing webpage built with HTML and CSS for Center Center-UIE with a careful design to deliver an excellent user experience. This commercial page is used by hundreds of monthly UX leaders seeking to transform their UX strategies through programs led by UX Guru Jared Spool.",
         image: "https://i.imgur.com/i9JvZvr.png",
         link: "https://agile.centercentre.com/",

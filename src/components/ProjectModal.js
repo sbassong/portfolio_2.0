@@ -1,14 +1,14 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { useState } from "react";
 import AgileUX from '../ProjectIcons/AgileUX';
 import Amphi from '../ProjectIcons/Amphi';
 import Gverse from '../ProjectIcons/Gverse';
 import Scienteer from '../ProjectIcons/Scienteer';
 
-const ProjectCard = ({project}) => {
+const ProjectModal = ({project}) => {
 	const [stack, setStack] = useState(null);
 
-	useEffect(() => {
+	useState(() => {
 		if (project.id === 1) setStack(<AgileUX id="project-card-techs" />);
 		else if (project.id === 2) setStack(<Gverse id="project-card-techs" />);
 		else if (project.id === 3) setStack(<Amphi id="project-card-techs" />);
@@ -16,22 +16,20 @@ const ProjectCard = ({project}) => {
 	}, [])
 
 	return (
-		<div className="project-card">
-			<div className="project-img-wrapper">
+		<div className="project-modal">
+			<div className="project-wrapper">
 				<img src={project.image} alt="project screenshot" />
 			</div>
-
+			<div id='project-card-title'>{project.title}</div>
+			{stack}
 			<div className="project-details">
-				<div id='project-card-title'>{project.title}</div>
-				{stack}
 				<div id="project-card-description">{project.description}</div>
-
-				<div className="project-card-buttons">
-					<a href={project.link} rel="noreferrer" target="_blank" className="">Demo</a>
-					<a href={project.github} rel="noreferrer" target="_blank" className="">Github</a>
-				</div>
+			</div>
+			<div className="project-card-buttons">
+				<a href={project.link} rel="noreferrer" target="_blank" className="">Demo</a>
+				<a href={project.github} rel="noreferrer" target="_blank" className="">Github</a>
 			</div>
 		</div>
 	)
 }
-export default ProjectCard
+export default ProjectModal
