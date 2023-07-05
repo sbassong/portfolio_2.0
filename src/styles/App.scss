@@ -50,14 +50,12 @@ body {
 
 @media screen and (max-width: 650px) {
   .App .page {
-    margin-top: 1vh;
     width: clamp(350px, 90%, 1500px);
   }
 }
 
 @media screen and (max-width: 400px) {
   .App .page {
-    margin-top: 1vh;
     width: clamp(350px, 95%, 1500px);
   }
 }
@@ -216,8 +214,8 @@ a { text-decoration: none; }
   a, .a-tag {
     display: table;
     margin: 2vh auto;
-    width: clamp(1.5rem, 2.5vw, 2.5rem);
-    height: clamp(1.5rem, 2.5vw, 2.5rem);
+    width: clamp(1.5rem, 4vw, 2.5rem);
+    height: clamp(1.5rem, 4vw, 2.5rem);
   }
 
   a *,
@@ -268,21 +266,13 @@ a { text-decoration: none; }
     
     a *,
     .a-tag * {
-      height: 100%;
       width: auto;
       color: rgb(170, 165, 165);
     }
 
-    
-    a:nth-child(2) {
-      margin-top: auto;
-      margin-bottom: auto;
-      height: 80%;
-    }
-    a:nth-child(3){
-      height: 105%;
-      margin-top: auto;
-      margin-bottom: auto;
+    a:hover *{
+      color: #52cdfe;
+
     }
   }
 }
@@ -293,9 +283,17 @@ a { text-decoration: none; }
 // --------- 
 
 .login-icon {
-  height: 2rem !important;
-  width: auto;
-  fill: rgb(170, 165, 165);
+  display: none !important;
+  display: none !important;
+  height: 3rem !important;
+  width: 3rem !important;
+  
+  svg, path {
+    height: 3rem !important;
+    width: 3rem !important;
+    fill: rgb(170, 165, 165);
+
+  }
 }
 
 #account-menu>.MuiPopover-paper,
@@ -312,9 +310,9 @@ a { text-decoration: none; }
   background-color: rgba(6, 220, 250, 0.3);
 }
 
-@media screen and (min-width: 651px) {
-  .login-icon {
-    display: none;
+@media screen and (max-width: 650px) {
+  .top-nav-wrap .login-icon {
+    display: initial !important;
   }
 }
 

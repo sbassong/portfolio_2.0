@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom'
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
-import { GiHamburgerMenu } from "react-icons/gi";
+import MenuIcon from '@mui/icons-material/Menu';
 
 
 const ProfileMenu = () => {
@@ -19,8 +19,8 @@ const ProfileMenu = () => {
 
   return (
     <>
-      <GiHamburgerMenu 
-        className='menu-item title login-icon no-display'
+      <MenuIcon 
+        className='menu-item title login-icon'
         onClick={handleClick}
       />
 
@@ -48,7 +48,7 @@ const ProfileMenu = () => {
           transformOrigin={{ horizontal: 'left', vertical: 'top' }}
           anchorOrigin={{ horizontal: 'left', vertical: 'bottom' }}
         >
-          <MenuItem  onClick={handleClose}>
+          <MenuItem  onClick={handleClose} >
             <HomeItem />
           </MenuItem>
 

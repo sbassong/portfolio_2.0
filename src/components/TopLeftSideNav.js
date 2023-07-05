@@ -1,13 +1,15 @@
 import React  from 'react';
-import { VscGithubAlt } from "react-icons/vsc";
-import { AiOutlineLinkedin} from "react-icons/ai";
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import EmailIcon from '@mui/icons-material/Email';
 
 const TopLeftSideNav = () => {
 
 	return (
 		<nav className='top-left-side-nav'>
-			<a href="https://www.linkedin.com/in/sambassong/" rel="noreferrer" target="_blank"><AiOutlineLinkedin /></a>
-			<a href="https://github.com/sbassong" rel="noreferrer" target="_blank"><VscGithubAlt /></a>
+			<a href="https://linkedin.com/in/sambassong/" rel="noreferrer" target="_blank"><LinkedInIcon /></a>
+			<a href="https://github.com/sbassong" rel="noreferrer" target="_blank"><GitHubIcon /></a>
+			<a href="mailto:sam.bassong.com?subject=New opportunity!"><EmailIcon /></a>
 		</nav>
 	)
 }

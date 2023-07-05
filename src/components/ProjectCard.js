@@ -28,15 +28,15 @@ const ProjectCard = ({project}) => {
 					<div className='inner'>
 						{project.description}
 						{ <div className="project-card-buttons">
-							<a href={project.link} rel="noreferrer" target="_blank" className="">Demo</a>
 							<a href={project.github} rel="noreferrer" target="_blank" className="">Github</a>
+							<a href={project.link} rel="noreferrer" target="_blank" className="">Demo</a>
 						</div>}
 					</div>
 				</div>}
 
 				{ <div className="project-card-buttons">
-					<a href={project.link} rel="noreferrer" target="_blank" className="">Demo</a>
 					<a href={project.github} rel="noreferrer" target="_blank" className="">Github</a>
+					<a href={project.link} rel="noreferrer" target="_blank" className="">Demo</a>
 				</div>}
 			</div>
 		</div>
