@@ -7,6 +7,7 @@ import {ReactComponent as CSS3} from '../../src/styles/samTechStack/CSS3.svg';
 import {ReactComponent as NodeJS} from '../../src/styles/samTechStack/Node.js.svg';
 import {ReactComponent as PostgreSQL} from '../../src/styles/samTechStack/PostgresSQL.svg';
 import {ReactComponent as Express} from '../../src/styles/samTechStack/Express.svg';
+import {ReactComponent as Sequelize} from '../../src/styles/samTechStack/Sequelize.svg';
 
 const Gverse = () => {
 	return (
@@ -17,6 +18,8 @@ const Gverse = () => {
 			<ReactJS className='tech-item'/>
 			<Express className='tech-item'/>
 			<PostgreSQL className='tech-item'/>
+			<Sequelize className='tech-item'/>
+			
 		</div>
 	)
 }

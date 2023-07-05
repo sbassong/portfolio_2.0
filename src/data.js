@@ -67,10 +67,10 @@ export const professionalProjectsData = [
     {
         id: 1,
         title: "Agile UX Intensive",
-        description: "Responsive landing webpage built with HTML and CSS for Center Center-UIE with a careful design to deliver an excellent user experience. This commercial page is used by hundreds of monthly UX leaders seeking to transform their UX strategies through programs led by UX Guru Jared Spool.",
+        description: "Responsive landing webpage built with JavaScript, HTML and CSS for Center Center-UIE with a careful design to deliver an excellent user experience. This commercial page is used by hundreds of monthly UX leaders seeking to transform their UX strategies through programs led by UX Guru Jared Spool.",
         image: "https://i.imgur.com/i9JvZvr.png",
-        link: "https://agile.centercentre.com/",
-        github: "https://github.com/uie-com/intensiveAgile",
+        link: "https://agile-intensive-landing.vercel.app/",
+        github: "https://github.com/sbassong/agile-intensive-landing",
     },
     {
         id: 2,
@@ -90,11 +90,27 @@ export const professionalProjectsData = [
     },
     {
         id: 4,
+        title: "Portfolio 1.0",
+        description: "First version of my personal website built from scratch with ReactJS and styled with TailwindCSS. Left untouched as a reference to my growth when compared with Portfolio 3.0 which you are currently exploring.",
+        image: "https://i.imgur.com/7eSEfJh.png",
+        link: "https://portfolio-sbassong.vercel.app/",
+        github: "https://github.com/sbassong/portfolio"
+    },
+    {
+        id:5,
         title: "Scienteer",
         description: "An ongoing personal project, Scienteer is a citizen science management platform that aims to connects researchers with science volunteers (scienteers!) looking to contribute to ongoing academic research. Users will interact through a Vue app backed by a Flask server that currently features AWS S3 for scalable storage, JWT Auth, and a PostgreSQL database.",
         image: "https://i.imgur.com/49u9nhh.png",
         link: "https://scienteer-sbassong.vercel.app/",
         github: "https://github.com/sbassong/Scienteer"
+    },
+    {
+        id:6,
+        title: "CRUD API",
+        description: "CRUD Express API app built as for a tech challenge at Shopify. The app's github features extensive documentation to complement a clean, performant server. Data served with PostgreSQL.",
+        image: "https://i.imgur.com/y1vttAe.png",
+        link: "https://github.com/sbassong/shopify-crud-challenge/tree/main",
+        github: "https://github.com/sbassong/shopify-crud-challenge/tree/main"
     },
 ];
 
