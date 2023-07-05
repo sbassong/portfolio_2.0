@@ -190,6 +190,7 @@ a { text-decoration: none; }
   .top-right-nav .resume-link{ 
     border: 1.5px solid rgba(6, 220, 250, 0.5);
     color: rgba(6, 220, 250, 0.7);
+    margin-left: .5rem;
   }
   
   .top-right-nav .resume-link:hover { 
@@ -231,7 +232,7 @@ a { text-decoration: none; }
   .a-tag:hover * {
     height: 100%;
     width: 100%;
-    color: #52cdfe;
+    color: rgba(143, 221, 252, .9);
   }
 }
 
@@ -271,7 +272,7 @@ a { text-decoration: none; }
     }
 
     a:hover *{
-      color: #52cdfe;
+      color: rgba(143, 221, 252, .9);
 
     }
   }
@@ -287,18 +288,21 @@ a { text-decoration: none; }
   display: none !important;
   height: 3rem !important;
   width: 3rem !important;
+  padding: 2px;
+  border: 1px solid rgba(170, 165, 165, .3);
+  border-radius: 4px;
   
   svg, path {
     height: 3rem !important;
     width: 3rem !important;
     fill: rgb(170, 165, 165);
-
   }
 }
 
+
 #account-menu>.MuiPopover-paper,
 #account-menu .MuiMenu-list {
-  background-color: rgb(175, 175, 175, );
+  background-color: rgb(175, 175, 175);
   border-radius: 4px;
 }
 
@@ -313,6 +317,10 @@ a { text-decoration: none; }
 @media screen and (max-width: 650px) {
   .top-nav-wrap .login-icon {
     display: initial !important;
+  }
+  
+  .top-nav-wrap .login-icon:hover {
+    border-color: rgba(170, 165, 165, .6);
   }
 }
 
@@ -466,6 +474,7 @@ a { text-decoration: none; }
     padding: 10px 10px;
     border-radius: 5px;
     background-color: rgba(143, 221, 252, .1);
+    opacity: .7;
     
     .project-img-wrapper {
       width: 100%;
@@ -581,6 +590,11 @@ a { text-decoration: none; }
       }
       
     }
+
+  }
+  
+  .project-card:hover {
+    opacity: 1;
   }
 }
 
