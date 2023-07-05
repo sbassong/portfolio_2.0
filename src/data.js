@@ -167,11 +167,6 @@ export const skillsData = [
         type: "backend"
     },
     {
-        title: "Flask",
-        photo: "https://i.imgur.com/iPjgH6I.png",
-        type: "backend"
-    },
-    {
         title: "MongoDB",
         photo: "https://i.imgur.com/RJASm12.png",
         type: "backend"
@@ -180,6 +175,11 @@ export const skillsData = [
         title: "Mongoose",
         photo: "https://i.imgur.com/duR0hTQ.png",
         type: "languages"
+    },
+    {
+        title: "Flask",
+        photo: "https://i.imgur.com/iPjgH6I.png",
+        type: "backend"
     },
     {
         title: "PostgreSQL",

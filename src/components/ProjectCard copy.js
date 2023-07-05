@@ -3,7 +3,6 @@ import Tooltip, { tooltipClasses } from '@mui/material/Tooltip';
 import Fade from '@mui/material/Fade';
 import Zoom from '@mui/material/Zoom';
 import { styled } from '@mui/material/styles';
-// import { ThemeProvider } from '@emotion/react';
 import { muiOverrides } from '../styles/muiOverrides';
 import AgileUX from '../ProjectIcons/AgileUX';
 import Amphi from '../ProjectIcons/Amphi';
@@ -41,15 +40,16 @@ const ProjectCard = ({project}) => {
 			<div className="project-details">
 				<div id='project-card-title'>{project.title}</div>
 				{stack}
-				{<div id="project-card-description">
-					<div className='inner'>
-						<span>{project.description}</span>
-						{/* { <div className="project-card-buttons">
-							<a href={project.link} rel="noreferrer" target="_blank" className="">Demo</a>
-							<a href={project.github} rel="noreferrer" target="_blank" className="">Github</a>
-						</div>} */}
-					</div>
-				</div>}
+				<CustomWidthTooltip
+					title={<div id="project-card-description">{project.description}</div>}
+					open={open}
+					onClose={handleClose}
+					onOpen={handleOpen}
+					TransitionComponent={Fade}
+					TransitionProps={{ timeout: 200 }}
+				>
+					{<div id="project-card-description">{project.description}</div>}
+				</CustomWidthTooltip>
 
 				{ <div className="project-card-buttons">
 					<a href={project.link} rel="noreferrer" target="_blank" className="">Demo</a>

@@ -74,20 +74,20 @@ const Skills = () => {
 					Redux
 				</div>
 				<div className="skill-box">
-					<Vue />
-					Vue
+					<MaterialUI />
+					MaterialUI
 				</div>
 				<div className="skill-box">
 					<D3JS />
 					D3.js
 				</div>
 				<div className="skill-box">
-					<MaterialUI />
-					MaterialUI
-				</div>
-				<div className="skill-box">
 					<Materialize />
 					Materialize
+				</div>
+				<div className="skill-box">
+					<Vue />
+					Vue
 				</div>
 				<div className="skill-box">
 					<TailwindCSS />
@@ -119,12 +119,12 @@ const Skills = () => {
 					Express
 				</div>
 				<div className="skill-box">
-					<MongoDB />
-					MongoDB
-				</div>
-				<div className="skill-box">
 					<MongooseJS />
 					Mongoose
+				</div>
+				<div className="skill-box">
+					<MongoDB />
+					MongoDB
 				</div>
 				<div className="skill-box">
 					<PostgreSQL />
