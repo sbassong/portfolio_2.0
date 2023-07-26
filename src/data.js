@@ -66,19 +66,19 @@ export const ExperienceData = [
 export const professionalProjectsData = [
     {
         id: 1,
-        title: "Agile UX Intensive",
+        title: "G-verse",
+        description: "A full-stack mock platform for game enthusiasts, G-verse is a responsive web app focused on user actions. G-verse is supported by a relational database and built on a Express.js server. The React client/UI is built with both custom reusable components and Material UI and features JWT user authentication to provide a unique user experience.",
+        image: "https://i.imgur.com/EflUNcn.png",
+        link: "https://gverse.herokuapp.com/",
+        github: "https://github.com/sbassong/g-verse"
+    },
+    {
+        id: 2,
+        title: "Agile UX Landing",
         description: "Responsive landing webpage built with JavaScript, HTML and CSS for Center Center-UIE with a careful design to deliver an excellent user experience. This commercial page is used by hundreds of monthly UX leaders seeking to transform their UX strategies through programs led by UX Guru Jared Spool.",
         image: "https://i.imgur.com/i9JvZvr.png",
         link: "https://agile-intensive-landing.vercel.app/",
         github: "https://github.com/sbassong/agile-intensive-landing",
-    },
-    {
-        id: 2,
-        title: "G-verse",
-        description: "A full-stack mock platform for game enthusiasts, G-verse is a responsive web app focused on user actions. G-verse is supported by a relational database and built on a Express.js server. The React client/UI is built with both custom reusable components and Material UI and features JWT user authentication to provide a unique user experience.",
-        image: "https://i.imgur.com/4fcEFrd.jpg",
-        link: "https://gverse.herokuapp.com/",
-        github: "https://github.com/sbassong/g-verse"
     },
     {
         id: 3,
