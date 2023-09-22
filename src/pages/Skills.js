@@ -119,12 +119,12 @@ const Skills = () => {
 					Express
 				</div>
 				<div className="skill-box">
-					<MongooseJS />
-					Mongoose
-				</div>
-				<div className="skill-box">
 					<MongoDB />
 					MongoDB
+				</div>
+				<div className="skill-box">
+					<MongooseJS />
+					Mongoose
 				</div>
 				<div className="skill-box">
 					<PostgreSQL />
@@ -153,7 +153,7 @@ const Skills = () => {
 			</div>
 
 			{/* databases, devops, testing... */}
-			<h2>DevOps, Testing, etc...</h2>
+			<h2>Cloud, Testing, DevOps</h2>
 			<div className="skills-container">
 				<div className="skill-box">
 					<AWS />

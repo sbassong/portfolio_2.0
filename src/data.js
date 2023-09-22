@@ -98,7 +98,7 @@ export const professionalProjectsData = [
     },
     {
         id:5,
-        title: "Scienteer",
+        title: "Scienteer (in progress)",
         description: "An ongoing personal project, Scienteer is a citizen science management platform that aims to connects researchers with science volunteers (scienteers!) looking to contribute to ongoing academic research. Users will interact through a Vue app backed by a Flask server that currently features AWS S3 for scalable storage, JWT Auth, and a PostgreSQL database.",
         image: "https://i.imgur.com/49u9nhh.png",
         link: "https://scienteer-sbassong.vercel.app/",
