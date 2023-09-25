@@ -1,5 +1,5 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { styled } from '@mui/material/styles';
 import Tooltip, { tooltipClasses } from '@mui/material/Tooltip';
 
@@ -12,37 +12,21 @@ const CustomWidthTooltip = styled(({ className, ...props }) => (
     backgroundColor: 'transparent',
   },
 });
-  
-const mmjPopup = (
-  <div id='spotify'>
-    <iframe style={{borderRadius: '12px'}} title='My Morning Jacket' src="https://open.spotify.com/embed/artist/43O3c6wewpzPKwVaGEEtBM?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">x</iframe>
-  </div>
-);
 
 const catsPopup = <div className="cats-div" />;
 const catsTooltip = (
   <CustomWidthTooltip title={catsPopup} placement='top' >
-    <span className="teal">cats</span>
+    <span className="teal cat-span">cats</span>
   </CustomWidthTooltip>
 );
 
+const mmjLink = <a href="https://open.spotify.com/artist/43O3c6wewpzPKwVaGEEtBM?si=cKPkjxp_TKe9tsZp7iESOA" target="_blank" rel="noreferrer" className="teal">My Morning Jacket</a>
+const connectLink = <a href="https://www.linkedin.com/in/sambassong/" target="_blank" rel="noreferrer" className="teal">connect</a>
+const locanaLink = <a href="https://locana.us/" target="_blank" rel="noreferrer" className="teal">Locana</a>
+const centerLink = <a href="https://centercentre.com/" target="_blank" rel="noreferrer" className="teal">Center Centre</a>
 
 
 const Landing = () => {
-  const [mmjMounted, setMMJ] = useState(false);
-  const handleToggleMMJ = () => setMMJ(!mmjMounted)
-  
-  const handleSpotifyOnClick = () => {
-    window.addEventListener('click', (e) => {
-      mmjMounted && handleToggleMMJ()
-        // setMMJ(false)
-    })
-  }
-
-
-  useEffect(() => {
-    handleSpotifyOnClick();
-  }, [])
 
   return (
     <div id='landing' className="page">
@@ -52,25 +36,24 @@ const Landing = () => {
           </div>
         </div>
         <div className="land-intro" >
-          <p className="landing-title teal">
+          <div className="landing-title teal">
             Sam Bassong
-          </p>
-          <p className="landing-subtitle">
-            Software Engineer
-          </p>
-          <p className="landing-blurb">
+          </div>
+          <div className="landing-subtitle">
+            Software Developer
+          </div>
+          <div className="landing-blurb">
             Once upon a time, I investigated ways to neutralize tiny bugs in a lab. Now, I turn great ideas into user-friendly, scalable software solutions. I started coding four years ago. Two years later, I completed an immersive SWE bootcamp. Since then, I've continued to polish and expand my skills, whether delivering on stakeholder products or translating some of my thoughts into side projects.
-          </p>
-          <p className="landing-blurb">
-            As a software engineer at <a href="https://www.locana.co/" target="_blank" rel="noreferrer" className="teal"> Locana </a>, I collaborate across organizational levels and with customers to develop and maintain enterprise applications that leverage geospatial data and mapping technologies. Previously, I worked as a web developer at <a href="https://centercentre.com/" target="_blank" rel="noreferrer" className="teal">Center Centre</a>. I built client-facing landing and sales pages to support the company's UX programs.
-          </p>
-          <p className="landing-blurb">
-            When not making magic on my IDE, I'm goofing around with my spouse and two {catsTooltip && catsTooltip}. If not, I might be camping, kayaking, baking, or jamming at a <span onClick={handleToggleMMJ} className="teal mmj">My Morning Jacket</span> (enjoy, you're welcome) concert.
-          </p>
-          {mmjMounted && mmjPopup}
-          <p className="landing-blurb">
-            Always glad to <a href="https://www.linkedin.com/in/sambassong/" target="_blank" rel="noreferrer" className="teal">connect</a> with folks and discuss opportunities, code, science, or the human condition. Cheers!
-          </p>
+          </div>
+          <div className="landing-blurb">
+            As a software engineer at {locanaLink}, I collaborate across organizational levels and with customers to develop and maintain enterprise applications that leverage geospatial data and mapping technologies. Previously, I worked as a web developer at {centerLink}. I built client-facing landing and sales pages to support the company's UX programs.
+          </div>
+          <div className="landing-blurb">
+            When not making magic on my IDE, I'm goofing around with my spouse and two {catsTooltip && catsTooltip}. If not, I might be camping, kayaking, baking, or jamming at a {mmjLink} (enjoy, you're welcome) concert.
+          </div>
+          <div className="landing-blurb">
+            Always glad to {connectLink} with folks and discuss opportunities, code, science, or the human condition. Cheers!
+          </div>
         </div>
       </div>
     </div>

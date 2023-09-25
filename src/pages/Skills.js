@@ -41,6 +41,8 @@ import {ReactComponent as Heroku} from '../../src/styles/samTechStack/Heroku.svg
 const Skills = () => {
 	return (
 		<div id="skills" className="page">
+			<div className='skills-wrap'>
+
 			{/* language */}
 			<h2 className='first-h2' >Languages</h2>
 			<div className="skills-container">
@@ -176,6 +178,7 @@ const Skills = () => {
 					Vercel
 				</div>
 			</div>
+						</div>
 		</div>
 	)
 }

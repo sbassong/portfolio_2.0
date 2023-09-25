@@ -15,7 +15,6 @@ html::-webkit-scrollbar { display: none; }
 html {
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
-  // overflow-y: hidden !important;
 }
 
 * {
@@ -24,28 +23,14 @@ html {
 }
 
 body {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
-  // overflow: hidden !important;
+  overflow: hidden !important;
 }
 
 .App {
-  position: relative;
   width: 100vw;
   height: 100vh;
-  overflow-y: hidden !important;
-
-  .page {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: clamp(350px, 80%, 1500px);
-    margin-right: auto;
-    margin-left: auto;
-    overflow-y: hidden !important;
-    margin-top: 5vh;
-  }
 }
 
 @media screen and (max-width: 650px) {
@@ -70,11 +55,20 @@ a { text-decoration: none; }
 // --------- 
 
 #main {
-  height: 100vh;
+  height: 100%;
   width: 100%;
   font-family: 'Open Sans', sans-serif;
   color: rgb(170, 165, 165);
   overflow: hidden !important;
+
+  .page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: clamp(350px, 80%, 1500px);
+    height: 100%;
+    margin: 5vh auto 3vh auto;
+  }
 
   * {
     font-size: clamp(.8rem, 1vw, 1.1rem) !important;
@@ -97,7 +91,7 @@ a { text-decoration: none; }
   }
   
   > div {
-    height: 100%;
+    // height: 100%;
   
     > h1 {
       width: 100%;
@@ -112,10 +106,7 @@ a { text-decoration: none; }
 // --------- 
 
 .top-nav {
-  position: fixed;
   width: 100%;
-  z-index: 1000;
-  background: rgb(7,8,60);
   background: -moz-linear-gradient(180deg, rgba(7,8,60,1) 0%, rgba(20,20,53,1) 100%);
   background: -webkit-linear-gradient(180deg, rgba(7,8,60,1) 0%, rgba(20,20,53,1) 100%);
   background: linear-gradient(180deg, rgba(7,8,60,1) 0%, rgba(20,20,53,1) 100%);
@@ -273,7 +264,6 @@ a { text-decoration: none; }
 
     a:hover *{
       color: rgba(143, 221, 252, .9);
-
     }
   }
 }
@@ -330,8 +320,7 @@ a { text-decoration: none; }
 
 .about-container {
   width: 75%;
-  overflow-y: auto;
-  padding-bottom: 2rem !important;
+  height: 100%;
 }
 
 .profile-container {
@@ -352,11 +341,15 @@ a { text-decoration: none; }
   background-size: contain;
 }
 
+.cat-span {
+  cursor: default;
+}
+
 .land-intro {
   color: rgb(170, 165, 165);
   margin-bottom: 1rem !important;
 
-  p {
+  > div {
     margin-bottom: 1rem;
     margin-top: 1rem;
   }
@@ -386,10 +379,8 @@ a { text-decoration: none; }
 
 @media screen and (max-width: 800px) {
   .about-container {
-    padding-top: 5vh !important;
     width: 90%;
   }
-
 }
 
 .avatar-div {
@@ -434,8 +425,8 @@ a { text-decoration: none; }
   gap: 40px 35px;
   overflow-x: hidden;
   overflow-y: auto;
-  margin: 10vh 3rem ;
-  padding-top: 3vh;
+  margin: 5vh 3rem ;
+  padding-top: 2vh;
 
   .project-card {
     width: 300px;
@@ -585,7 +576,7 @@ a { text-decoration: none; }
 .experience-container {
   display: flex;
   justify-content: center;
-  margin: 2vh auto 5vh auto;
+  margin: 5vh auto 3vh auto;
   height: 65vh !important;
   overflow-y: hidden !important;
 
@@ -730,41 +721,45 @@ a { text-decoration: none; }
 // --------- 
 
 #skills { 
-  height: 100%;
+  overflow-y: auto !important;
+  padding-top: 3vh;
+  
 
-  > h2 {
+  > div > h2 {
     color: rgba(143, 221, 252, 0.8);
     width: 85%;
     text-align: left;
     margin-bottom: .5rem;
   }
-  
-  .first-h2 {
-    margin-top: -3rem;
-  }
 
-  .skills-container {
-    display: flex;
-    align-items: center; 
+  .skills-wrap {
     width: 85%;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    background-color: rgba(143, 221, 252, 0.1);
-    border-radius: .3rem;
-    overflow-x: scroll;
     margin-bottom: 1rem;
-
-    .skill-box {
-      width: clamp(2.7rem, 5vw, 3.5rem) !important;
-      height: clamp(2.7rem, 5vw, 3.5rem) !important;
-      margin: 1rem 1.5rem;
+    overflow-y: auto !important;
+  
+    .skills-container {
       display: flex;
-      flex-direction: column;
-      align-items: center;
-      
-      svg, path {
-        margin-bottom: .2rem;
-        width: clamp(2.5rem, 4.5vw, 3.5rem) !important;
+      align-items: center; 
+      width: 100%;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      background-color: rgba(143, 221, 252, 0.1);
+      border-radius: .3rem;
+      overflow-x: auto;
+      margin-bottom: 1rem;
+
+      .skill-box {
+        width: clamp(2.7rem, 5vw, 3.5rem) !important;
+        height: clamp(2.7rem, 5vw, 3.5rem) !important;
+        margin: 1rem 1.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        svg, path {
+          margin-bottom: .2rem;
+          width: clamp(2.5rem, 4.5vw, 3.5rem) !important;
+        }
       }
     }
   }
@@ -772,15 +767,14 @@ a { text-decoration: none; }
 
 
 @media screen and (max-width: 800px) {
-  #skills > h2,
+  #skills > div > h2,
   .skills-container { width: 90%; }
 }
 
 @media screen and (max-width: 650px) {
   #skills {
-    padding-top: 5vh;
     
-    > h2 { width: 95%; }
+    > div > h2 { width: 95%; }
     
     .skills-container {
       width: 95%;
