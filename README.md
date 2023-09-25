@@ -10,9 +10,9 @@
 ***
 
 ### ***Stack***
-* React
+- [React](https://reactjs.org/) (bootstrapped with [Create-react-app](https://create-react-app.dev/))
 * CSS
-* Vercel
+* [Vercel](https://vercel.com/)
 
 ***
 
