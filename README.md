@@ -1,41 +1,35 @@
-###  [Portfolio](https://www.sambassong.com/) | [Portfolio_1.0](portfolio-jkj4905x8-sbassong.vercel.app) | [GitHub](https://github.com/sbassong) | [LinkedIn](https://www.linkedin.com/in/sambassong/)
+###  [Live Portfolio](https://www.sambassong.com/) | [GitHub](https://github.com/sbassong) | [LinkedIn](https://www.linkedin.com/in/sambassong/)
 ### By: Sam Bassong
 
 ***
 
 ### ***Description***
 
-####  Second go at a personal website. I wanted to make this because feel like I haven't spent enough time understanding and working with CSS. I've heavily relied on CSS libraries and I wanted to build a web application that showcases my proficiency with pure CSS concepts. For the occasion I got into keyframe animations, shadow effects, and unusual css properties like `content`. It also features some nifty logic which I'm proud of, particularly rendering in the experiences section.
+####  Version 2 of previous personal/portfolio website. Components are customized and styled exclusively with CSS. Basically, a glorified practice board for UI ideas and CSS tricks.
 
 ***
 
-### ***Technologies Used***
-* React
+### ***Stack***
+- [React](https://reactjs.org/) (bootstrapped with [Create-react-app](https://create-react-app.dev/))
 * CSS
-* Emailjs
-* Vercel
+* [Vercel](https://vercel.com/)
 
 ***
 
 ### ***Getting Started***
 
 #### 
-1. Run `npm install` to install necessary dependencies in .
-2. Run `npm start` to start react app server
-3. Head to `http://localhost:3000/` on your favorite browser to check out the client
-
-4. alternatively, use the [deployed link](https://www.sambassong.com/)...
-***
-
-### ***Future Updates***
-
-- [x] implement full screen responsiveness
-- [] Improve overlay functionality
-- [] Replace skills with better icons.
+1. Run `npm install` to install the necessary dependencies
+2. Run `npm start` to start the react-app server
+3. Head to `http://localhost:3000/` on your favorite browser
 
 ***
 
-### ***Credits***
-#### Pictures: [DuckDuckGoSearch](https://duckduckgo.com), [Wallpapercave](https://wallpapercave.com/space-needle-wallpaper)
-#### Inspiration: [Brittany Chiang](https://brittanychiang.com/), [Sam Bassong](portfolio-jkj4905x8-sbassong.vercel.app), [Tran Le](https://tranle.dev/)
+### ***To do***
+
+- [x] Implement full-screen and mobile responsiveness
+- [x] Update Nav bar on mobile
+- [x] Iconize skills
+- [ ] Revise the UI for the experience page
+- [ ] New color palette?
 
