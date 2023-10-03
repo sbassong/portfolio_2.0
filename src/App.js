@@ -3,7 +3,7 @@ import React from 'react';
 import { useEffect, useState } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import Landing from './pages/Landing';
-import Experience from './pages/Experience';
+// import Experience from './pages/Experience';
 import Skills from './pages/Skills';
 import Projects from './pages/Projects';
 import LeftSideNav from './components/LeftSideNav';
@@ -25,8 +25,8 @@ function App() {
         <Routes>
           <Route exact path='/' element={<Landing/>} />
           <Route exact path='/projects' element={<Projects/>} />
-          <Route exact path='/experience/*' element={<Experience/>} />
-          <Route exact path='/skills' element={<Skills/>} />
+          {/* <Route exact path='/experience/*' element={<Experience/>} /> */}
+          <Route exact path='/stack' element={<Skills/>} />
         </Routes>
       </main>
       <LeftSideNav/>

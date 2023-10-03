@@ -9,6 +9,10 @@ import ShopifyCRUD from '../ProjectIcons/ShopifyCrud';
 
 const ProjectCard = ({project}) => {
 	const [stack, setStack] = useState(null);
+	const [isHovered, setIsHovered] = useState(false);
+
+	const onMouseEnter = () => setIsHovered(true);
+	const onMouseLeave = () => setIsHovered(false);
 
 	const goToDemo = () => `location.href='${project.link}'`
 
@@ -22,7 +26,7 @@ const ProjectCard = ({project}) => {
 	}, [project.id])
 
 	return (
-		<div className="project-card">
+		<div className={`project-card ${isHovered && 'project-hovered'}`} onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
 			<a href={project.link} rel="noreferrer" target="_blank">
 				<div className="project-img-wrapper" onClick={goToDemo}>
 					<img src={project.image} alt="project screenshot" />
@@ -35,10 +39,10 @@ const ProjectCard = ({project}) => {
 				{<div id="project-card-description">
 					<div className='inner'>
 						{project.description}
-						{ <div className="project-card-buttons">
+						{/* { <div className="project-card-buttons">
 							<a href={project.github} rel="noreferrer" target="_blank" className="">Github</a>
 							<a href={project.link} rel="noreferrer" target="_blank" className="">Demo</a>
-						</div>}
+						</div>} */}
 					</div>
 				</div>}
 

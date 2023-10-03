@@ -67,7 +67,7 @@ export const professionalProjectsData = [
     {
         id: 1,
         title: "G-verse",
-        description: "A full-stack mock platform for game enthusiasts, G-verse is a responsive web app focused on user actions. G-verse is supported by a relational database and built on a Express.js server. The React client/UI is built with both custom reusable components and Material UI and features JWT user authentication to provide a unique user experience.",
+        description: "Full-stack PERN application, featuring Auth with JSON Web Token.",
         image: "https://i.imgur.com/EflUNcn.png",
         link: "https://gverse.herokuapp.com/",
         github: "https://github.com/sbassong/g-verse"
@@ -75,7 +75,7 @@ export const professionalProjectsData = [
     {
         id: 2,
         title: "Agile UX Landing",
-        description: "Responsive landing webpage built with JavaScript, HTML and CSS for Center Center-UIE with a careful design to deliver an excellent user experience. This commercial page is used by hundreds of monthly UX leaders seeking to transform their UX strategies through programs led by UX Guru Jared Spool.",
+        description: "Landing webpage built with JS, HTML and CSS for Center Center-UIE.",
         image: "https://i.imgur.com/i9JvZvr.png",
         link: "https://agile-intensive-landing.vercel.app/",
         github: "https://github.com/sbassong/agile-intensive-landing",
@@ -83,7 +83,7 @@ export const professionalProjectsData = [
     {
         id: 3,
         title: "Amphi",
-        description: "Amphi is a full-stack mock-site that enables users to search their favorite artists. The app leverages the MERN stack to provide an engaging and intuitive user experience. This React app leverages MongoDB's document-oriented model to provide faster querying and features a responsive and stylish UI implemented entirely via plain CSS.",
+        description: "Full-stack MERN mock events search app. Deployed on Heroku.",
         image: "https://i.imgur.com/VFOix4s.png",
         link: "https://amphi.herokuapp.com/",
         github: "https://github.com/sbassong/amphi"
@@ -91,7 +91,7 @@ export const professionalProjectsData = [
     {
         id: 4,
         title: "Portfolio 1.0",
-        description: "First version of my personal website built from scratch with ReactJS and styled with TailwindCSS. Left untouched as a reference to my growth when compared with Portfolio 3.0 which you are currently exploring.",
+        description: "First iteration of portfolio website. Built with React and Tailwind CSS.",
         image: "https://i.imgur.com/7eSEfJh.png",
         link: "https://portfolio-sbassong.vercel.app/",
         github: "https://github.com/sbassong/portfolio"
@@ -99,7 +99,7 @@ export const professionalProjectsData = [
     {
         id:5,
         title: "Scienteer (in progress)",
-        description: "An ongoing personal project, Scienteer is a citizen science management platform that aims to connects researchers with science volunteers (scienteers!) looking to contribute to ongoing academic research. Users will interact through a Vue app backed by a Flask server that currently features AWS S3 for scalable storage, JWT Auth, and a PostgreSQL database.",
+        description: "Full-stack Citizen-Science management platform built with Vue, Flask, and AWS.",
         image: "https://i.imgur.com/49u9nhh.png",
         link: "https://scienteer-sbassong.vercel.app/",
         github: "https://github.com/sbassong/Scienteer"
@@ -107,7 +107,7 @@ export const professionalProjectsData = [
     {
         id:6,
         title: "CRUD API",
-        description: "CRUD Express API app built as for a tech challenge at Shopify. The app's github features extensive documentation to complement a clean, performant server. Data served with PostgreSQL.",
+        description: "CRUD Express API, supported with a PostgreSQL database.",
         image: "https://i.imgur.com/y1vttAe.png",
         link: "https://github.com/sbassong/shopify-crud-challenge/tree/main",
         github: "https://github.com/sbassong/shopify-crud-challenge/tree/main"

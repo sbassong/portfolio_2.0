@@ -15,8 +15,8 @@ const TopNav = () => {
 				<nav className='top-right-nav'>
 					<NavLink to='/' className='no-display' activeClassName="active">Home</NavLink>
 					<NavLink to='/projects' className='no-display' activeClassName="active">Projects</NavLink>
-					<NavLink to='/experience' className='no-display' activeClassName="active">Experience</NavLink>
-					<NavLink to='/skills' className='no-display' activeClassName="active">Skills</NavLink>
+					{/* <NavLink to='/experience' className='no-display' activeClassName="active">Experience</NavLink> */}
+					<NavLink to='/stack' className='no-display' activeClassName="active">Stack</NavLink>
 					<a className='resume-link' href="https://drive.google.com/file/d/1sjKevF0-MAs27QJgazPk8w9b6-HamqC1/view?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</a>
 				</nav>
 			</div>
