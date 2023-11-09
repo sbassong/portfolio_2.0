@@ -14,7 +14,6 @@ const ProfileMenu = () => {
 
   const HomeItem = () => <NavLink to='/'>Home</NavLink>
   const ProjectsItem = () => <NavLink to='/projects' >Projects</NavLink>
-  // const ExperienceItem = () => <NavLink to='/experience' >Experience</NavLink>
   const SkillsItem = () => <NavLink to='/stack' >Stack</NavLink>
 
   return (
