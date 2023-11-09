@@ -30,6 +30,7 @@ const Landing = () => {
 
   return (
     <div id='landing' className="page">
+      <div className="about-wrapper">
       <div className="about-container">
         <div className='profile-container'>
           <div className="avatar-div">
@@ -55,6 +56,7 @@ const Landing = () => {
             Always glad to {connectLink} with folks and discuss opportunities, code, science, or the human condition. Cheers!
           </div>
         </div>
+      </div>
       </div>
     </div>
   );

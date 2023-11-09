@@ -56,7 +56,6 @@ a { text-decoration: none; }
 // --------- 
 
 #main {
-  height: 100%;
   width: 100%;
   font-family: 'Open Sans', sans-serif;
   color: rgb(170, 165, 165);
@@ -64,8 +63,8 @@ a { text-decoration: none; }
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 90vh !important;
   
-
   .page {
     display: flex;
     flex-direction: column;
@@ -73,7 +72,6 @@ a { text-decoration: none; }
     justify-content: center;
     width: clamp(350px, 80%, 1500px);
     height: 100%;
-    margin: 5vh auto 3vh auto;
   }
 
   * {
@@ -111,10 +109,8 @@ a { text-decoration: none; }
 // --------- 
 
 .top-nav {
-  position: absolute;
-  top: 0;
   width: 100%;
-  z-index: 100;
+  height: 10vh !important;
   background: -moz-linear-gradient(180deg, rgba(7,8,60,1) 0%, rgba(20,20,53,1) 100%);
   background: -webkit-linear-gradient(180deg, rgba(7,8,60,1) 0%, rgba(20,20,53,1) 100%);
   background: linear-gradient(180deg, rgba(7,8,60,1) 0%, rgba(20,20,53,1) 100%);
@@ -327,13 +323,18 @@ a { text-decoration: none; }
 // --------- 
 
 #landing {
-  height: 85vh !important;
-  overflow-y: auto;
 }
+.about-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+
 .about-container {
-  margin-top: 10vh !important;
-  width: 75%;
-  height: 100%;
+  width: 80%;
 }
 
 .profile-container {
@@ -394,6 +395,10 @@ a { text-decoration: none; }
   .about-container {
     width: 90%;
   }
+
+  .about-wrapper {
+    margin-top: 3rem;
+  }
 }
 
 .avatar-div {
@@ -413,10 +418,6 @@ a { text-decoration: none; }
 // PROJECTS PAGE
 // --------- 
 #projects {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 90vh !important;
   
   > h2 {
     color: #52cdfe;
@@ -437,10 +438,11 @@ a { text-decoration: none; }
   flex-wrap: wrap;
   justify-content: center;
   gap: 40px 35px;
-  overflow-x: hidden;
+
+  width: 90%;
   overflow-y: auto;
-  margin: 8vh 3rem 1vh 3rem;
-  padding-top: 5vh;
+  margin-top: 5rem;
+  margin-bottom: 1rem;
 
   .project-card {
     width: 300px;
@@ -534,161 +536,9 @@ a { text-decoration: none; }
   }
 }
 
-
-
-// ---------
-// EXPERIENCE PAGE
-// --------- 
-
-.exp-header {
-  margin-bottom: 1vh;
-}
-
-#experience > p {
-  width: 100%;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.experience-container {
-  display: flex;
-  justify-content: center;
-  margin: 5vh auto 3vh auto;
-  height: 65vh !important;
-  overflow-y: hidden !important;
-
-} 
-.experience-container h1 {
-  text-align: left;
-  margin-bottom: 1vh;
-}
-
-.experience-container h2 {
-  text-align: left;
-  display: flex;
-  justify-content: space-between;
-}
-
-.positions-container {
-  margin-right: 2rem;
-  padding-top: 1rem;
-  width: 20%;
-    svg,
-    path {
-      width: clamp(.9rem, 1.4vw, 1.4rem);
-      height: clamp(1rem, 1.5vw, 1.5rem);
-    }
-}
-
-.positions-container nav {
-  margin-bottom: 3rem;
-}
-
-.prev-icon, .eng-icon {
-  margin-right: 1rem;
-  margin-left: 1rem;
-
-}
-
-.experience-container p,li {
-  margin: 1rem;
-  text-align: left;
-  color: rgb(170, 165, 165);
-  padding: .2vh 0 .2vh 0.4vh;
-}
-.experience-container li { margin: .5rem; }
-
-.experience-container .positions-container nav p:hover {
-  color: #52cdfe !important;
-}
-
-.exp-cards-container {
-  width: 65% !important;
-  border-radius: .7vh;
-  background-color: rgba(143, 221, 252, 0.1);
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  padding-right: 1.5rem;
-  padding-left: 1.5rem;
-  overflow-y: scroll;
-}
-
-@media screen and (max-width: 600px) {
-
-  .positions-container {
-    width: 20%;
-  }
-
-  .exp-cards-container {
-    width: 75% !important;
-    padding-top: .7rem;
-    padding-bottom: .7rem;
-    padding-right: .6rem;
-    padding-left: .6rem;
-  }
-}
-
-.experience-card-wrapper {
-
-  > p {
-    color: white;
-  }
-
-  ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display: grid;
-    overflow: auto !important;
-    height: 100%;
-
-    li {
-      display: grid;
-      grid-template-columns: 0 1fr;
-      gap: 1.65em;
-      align-items: start;
-      line-height: 1.35;
-    }
-  }
-}
-
-.experience-card-wrapper ul li:before { 
-  width: 1vw;
-  height: 1vw;
-  content: url(https://i.imgur.com/wrZRb2V.png?1); 
-}
-.experience-card-wrapper h1 { margin-bottom: 1vh; }
-.experience-card-wrapper p {
-  margin-bottom: 1.5vh;
-  margin-left: 0;
-}
-
 @media screen and (max-width: 800px) {
-  #experience > h1 {
-    margin: 0 auto;
-  }
-  .experience-container {
-    width: 95%;
-    padding: 1vh;
-  } 
-  .experience-container p,li {
-    margin: .1vh;
-  }
-
-  .experience-card-wrapper ul li {
-    gap: 1rem;
-    align-items: start;
-    line-height: 1.25;
-  }
-}
-
-@media screen and (max-width: 450px) {
-  .experience-container p,li { margin: .1vh; }
-  
-  .experience-card-wrapper ul li {
-    gap: 1.3em;
-    align-items: start;
-    color: rgb(170, 165, 165);
+  .project-cards-container {
+    margin-top: 4rem;
   }
 }
 
@@ -698,9 +548,9 @@ a { text-decoration: none; }
 // --------- 
 
 #skills { 
-  overflow-y: auto !important;
-  padding-top: 7vh;
-  height: 85vh !important;
+  // overflow-y: auto !important;
+  // padding-top: 7vh;
+  // height: 85vh !important;
   
 
   > div > h2 {
@@ -712,8 +562,9 @@ a { text-decoration: none; }
 
   .skills-wrap {
     width: 85%;
+    overflow-y: auto;
+    margin-top: 2rem;
     margin-bottom: 1rem;
-    overflow-y: auto !important;
   
     .skills-container {
       display: flex;
@@ -753,6 +604,10 @@ a { text-decoration: none; }
   #skills {
     
     > div > h2 { width: 95%; }
+
+    .skills-wrap {
+      margin-top: 4rem;
+    }
     
     .skills-container {
       width: 95%;
