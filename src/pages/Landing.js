@@ -22,7 +22,7 @@ const catsTooltip = (
 
 const mmjLink = <a href="https://open.spotify.com/artist/43O3c6wewpzPKwVaGEEtBM?si=cKPkjxp_TKe9tsZp7iESOA" target="_blank" rel="noreferrer" className="teal">My Morning Jacket</a>
 const connectLink = <a href="https://www.linkedin.com/in/sambassong/" target="_blank" rel="noreferrer" className="teal">connect</a>
-const locanaLink = <a href="https://locana.us/" target="_blank" rel="noreferrer" className="teal">Locana</a>
+const locanaLink = <a href="https://locana.co/" target="_blank" rel="noreferrer" className="teal">Locana</a>
 const centerLink = <a href="https://centercentre.com/" target="_blank" rel="noreferrer" className="teal">Center Centre</a>
 
 
