@@ -88,14 +88,14 @@ export const professionalProjectsData = [
         link: "https://amphi.herokuapp.com/",
         github: "https://github.com/sbassong/amphi"
     },
-    {
-        id: 4,
-        title: "Portfolio 1.0",
-        description: "First iteration of portfolio website. Built with React and Tailwind CSS.",
-        image: "https://i.imgur.com/7eSEfJh.png",
-        link: "https://portfolio-sbassong.vercel.app/",
-        github: "https://github.com/sbassong/portfolio"
-    },
+    // {
+    //     id: 4,
+    //     title: "Portfolio 1.0",
+    //     description: "First iteration of portfolio website. Built with React and Tailwind CSS.",
+    //     image: "https://i.imgur.com/7eSEfJh.png",
+    //     link: "https://portfolio-sbassong.vercel.app/",
+    //     github: "https://github.com/sbassong/portfolio"
+    // },
     {
         id:5,
         title: "Scienteer (in progress)",
