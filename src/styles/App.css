@@ -1,6 +1,3 @@
-$duration: 0.5s;
-$top: 0;
-
 html {
   background: rgb(20, 20, 53) no-repeat center center fixed; 
   -webkit-background-size: cover;
@@ -8,13 +5,14 @@ html {
   -o-background-size: cover;
   background-size: cover;
 }
-/* Hide scrollbar for Chrome, Safari and Opera */
-html::-webkit-scrollbar { display: none; }
 
-/* Hide scrollbar for IE, Edge and Firefox */
+/* Hide scrollbar */
 html {
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
+  ::-webkit-scrollbar { /* Chrome, Safari and Opera */
+      display: none;
+    }
 }
 
 * {
@@ -51,9 +49,9 @@ a { text-decoration: none; }
 .top-right-nav > a { font-size: clamp(1rem, 1.5vw, 1.5rem) !important }
 
 
-// ---------
+/* // ---------
 // MAIN PAGE BASE FONT STYLES
-// --------- 
+// ---------  */
 
 #main {
   width: 100%;
@@ -75,16 +73,16 @@ a { text-decoration: none; }
   }
 
   * {
-    font-size: clamp(.8rem, 1vw, 1.1rem) !important;
+    font-size: clamp(.9rem, 1.1vw, 1.2rem) !important;
     
     h1 { 
-      font-size: clamp(1rem, 1.3vw, 1.4rem) !important; 
+      font-size: clamp(1.1rem, 1.3vw, 1.4rem) !important; 
       font-family: 'Roboto Slab', serif;
       color: #52cdfe;
     }
   
     h2 { 
-      font-size: clamp(.9rem, 1.2vw, 1.4rem) !important; 
+      font-size: clamp(1rem, 1.2vw, 1.5rem) !important; 
       font-family: 'Roboto Slab', serif;
       color: #52cdfe;
     }
@@ -103,14 +101,13 @@ a { text-decoration: none; }
   }
 }
 
-
+/* 
 // ---------
 // TOPNAV
-// --------- 
+// ---------  */
 
 .top-nav {
   width: 100%;
-  height: 10vh !important;
   background: -moz-linear-gradient(180deg, rgba(7,8,60,1) 0%, rgba(20,20,53,1) 100%);
   background: -webkit-linear-gradient(180deg, rgba(7,8,60,1) 0%, rgba(20,20,53,1) 100%);
   background: linear-gradient(180deg, rgba(7,8,60,1) 0%, rgba(20,20,53,1) 100%);
@@ -155,7 +152,7 @@ a { text-decoration: none; }
 
     .active {
       border-radius: 0;
-      border-bottom: 2px solid rgba(6, 220, 250, .5);
+      border-bottom: 3px solid rgba(6, 220, 250, .5);
       color:  rgba(6, 220, 250, .7);
     }
     
@@ -195,9 +192,9 @@ a { text-decoration: none; }
 }
 
 
-// ---------
+/* // ---------
 // LEFT SIDENAV
-// --------- 
+// ---------  */
 
 .side-nav {
   position: absolute;
@@ -272,10 +269,10 @@ a { text-decoration: none; }
   }
 }
 
-
+/* 
 // ---------
 // PROFILE MENU
-// --------- 
+// ---------  */
 
 .login-icon {
   display: none !important;
@@ -318,12 +315,10 @@ a { text-decoration: none; }
 }
 
 
-// ---------
+/* // ---------
 // LANDING PAGE
-// --------- 
+// ---------  */
 
-#landing {
-}
 .about-wrapper {
   display: flex;
   flex-direction: column;
@@ -419,11 +414,15 @@ a { text-decoration: none; }
 }
 
 
-// ---------
+/* // ---------
 // PROJECTS PAGE
-// --------- 
+// ---------  */
 #projects {
-  
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
   > h2 {
     color: #52cdfe;
     text-align: left;
@@ -437,27 +436,29 @@ a { text-decoration: none; }
   }
 }
 
-// PROJECT CARD AND CONTAINER
+/* // PROJECT CARD AND CONTAINER */
 .project-cards-container {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 40px 35px;
-
+  flex-direction: column;
+  align-items: center;
+  gap: 25px 50px;
   width: 90%;
-  overflow-y: auto;
-  margin-top: 5rem;
-  margin-bottom: 1rem;
-
+  height: 100%;
+  overflow-y: scroll;
+  padding-bottom: 2rem;
+  padding-top: 4rem;
+  
   .project-card {
-    width: 300px;
+    display: flex;
+    width: 90%;
+    min-width: 270px;
     padding: 10px 10px;
     border-radius: 5px;
     background-color: rgba(143, 221, 252, .1);
-    transition: all .1s ease-in-out;
+    transition: all .2s ease-in-out;
     
     .project-img-wrapper {
-      width: 100%;
+      width: 250px;
       height: 175px;
       border: 3px solid rgba(170, 165, 165, .3);
       border-radius: 5px;
@@ -474,6 +475,7 @@ a { text-decoration: none; }
       width: 100%;
       height: auto;
       padding: 5px 10px;
+      margin-left: 5px;
   
       #project-card-title {
         font-size: clamp(1.1rem, 1.4vw, 1.3rem) !important;
@@ -535,32 +537,32 @@ a { text-decoration: none; }
       }
     }
   }
+  
+  @media screen and (max-width: 850px) {
+    .project-card {
+      flex-direction: column;
+      width: 270px;
+
+      .project-details {
+        margin-left: auto;
+      }
+    }
+  }
 
   .project-card:hover {
-    transform: scale(1.05);
+    transform: scale(1.02);
   }
 }
 
-@media screen and (max-width: 800px) {
-  .project-cards-container {
-    margin-top: 4rem;
-  }
-}
-
-
-// ---------
+/* // ---------
 // SKILLS PAGE
-// --------- 
+// ---------  */
 
 #skills { 
-  // overflow-y: auto !important;
-  // padding-top: 7vh;
-  // height: 85vh !important;
-  
 
   > div > h2 {
     color: rgba(143, 221, 252, 0.8);
-    width: 85%;
+    width: fit-content;
     text-align: left;
     margin-bottom: .5rem;
   }
@@ -568,24 +570,23 @@ a { text-decoration: none; }
   .skills-wrap {
     width: 85%;
     overflow-y: auto;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
   
     .skills-container {
       display: flex;
+      flex-wrap: wrap;
       align-items: center; 
       width: 100%;
-      padding-left: 1rem;
-      padding-right: 1rem;
+      padding: .8rem;
       background-color: rgba(143, 221, 252, 0.1);
       border-radius: .3rem;
-      overflow-x: auto;
       margin-bottom: 1rem;
 
       .skill-box {
-        width: clamp(2.7rem, 5vw, 3.5rem) !important;
-        height: clamp(2.7rem, 5vw, 3.5rem) !important;
-        margin: 1rem 1.5rem;
+        width: clamp(2.5rem, 5vw, 3.5rem) !important;
+        height: clamp(2.5rem, 5vw, 3.5rem) !important;
+        margin: .8rem 1rem;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -600,40 +601,16 @@ a { text-decoration: none; }
 }
 
 
-@media screen and (max-width: 800px) {
-  #skills > div > h2,
-  .skills-container { width: 90%; }
-}
-
-@media screen and (max-width: 650px) {
-  #skills {
-    
-    > div > h2 { width: 95%; }
-
-    .skills-wrap {
-      margin-top: 4rem;
-    }
-    
-    .skills-container {
-      width: 95%;
-      margin-bottom: 1.5rem;
-      
-      .skill-box { margin: 1rem .8rem;}
-    }
-  }
-}
-
-
-/// ---------
+/* /// ---------
 // LANDING OVERLAY
-// --------- 
+// ---------  */
 .landing-overlay {
   width: 100%;
   height: 100vh;
   position: fixed;
   top: 0;
   left: 0;
-  z-index:30;
+  z-index: 30;
   display: flex;
   align-items: center;
   justify-content: center;
