@@ -20,9 +20,8 @@ const ProjectCard = ({project}) => {
 		if (project.id === 1) setStack(<Gverse id="project-card-techs" />);
 		else if (project.id === 2) setStack(<AgileUX id="project-card-techs" />);
 		else if (project.id === 3) setStack(<Amphi id="project-card-techs" />);
-		else if (project.id === 4) setStack(<Portfolio1 id="project-card-techs" />);
-		else if (project.id === 5) setStack(<Scienteer id="project-card-techs" />);
-		else if (project.id === 6) setStack(<ShopifyCRUD id="project-card-techs" />);
+		else if (project.id === 4) setStack(<Scienteer id="project-card-techs" />);
+		else if (project.id === 5) setStack(<ShopifyCRUD id="project-card-techs" />);
 	}, [project.id])
 
 	return (
