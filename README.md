@@ -23,13 +23,3 @@
 2. Run `npm start` to start the react-app server
 3. Head to `http://localhost:3000/` on your favorite browser
 
-***
-
-### ***To do***
-
-- [x] Implement full-screen and mobile responsiveness
-- [x] Update Nav bar on mobile
-- [x] Iconize skills
-- [ ] Revise the UI for the experience page
-- [ ] New color palette?
-
