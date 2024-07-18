@@ -1,4 +1,4 @@
-import React, { } from 'react';
+import React from 'react';
 import { NavLink } from 'react-router-dom';
 import TopLeftSideNav from './TopLeftSideNav';
 import ProfileMenu from './ProfileMenu';
@@ -15,7 +15,6 @@ const TopNav = () => {
 				<nav className='top-right-nav'>
 					<NavLink to='/' className='no-display' activeClassName="active">Home</NavLink>
 					<NavLink to='/projects' className='no-display' activeClassName="active">Projects</NavLink>
-					{/* <NavLink to='/experience' className='no-display' activeClassName="active">Experience</NavLink> */}
 					<NavLink to='/stack' className='no-display' activeClassName="active">Stack</NavLink>
 					<a className='resume-link' href="https://drive.google.com/file/d/1dhW0c8XGQcZjFCdnmXCUZ8VX3BVATUzo/view?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</a>
 				</nav>
