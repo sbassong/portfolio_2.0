@@ -9,16 +9,7 @@
 
 ***
 
-### ***Stack***
-- [React](https://reactjs.org/) (bootstrapped with [Create-react-app](https://create-react-app.dev/))
-* CSS
-* [Vercel](https://vercel.com/)
-
-***
-
 ### ***Getting Started***
-
-#### 
 1. Run `npm install` to install the necessary dependencies
 2. Run `npm start` to start the react-app server
 3. Head to `http://localhost:3000/` on your favorite browser

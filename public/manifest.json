@@ -6,6 +6,11 @@
       "src": "https://i.ibb.co/XSQRppT/Screen-Shot-2021-12-09-at-10-33-34-AM-copy-2.png",
       "sizes": "64x64 32x32 24x24 16x16 138x138 192x192 512x512",
       "type": "image/x-icon"
+    },
+    {
+      "src": "https://i.ibb.co/XSQRppT/Screen-Shot-2021-12-09-at-10-33-34-AM-copy-2.png",
+      "sizes": "138x138",
+      "type": "image/png"
     }
   ],
   "start_url": ".",
