@@ -13,9 +13,9 @@ function App() {
       <TopNav />
       <main id="main">
         <Routes>
-          <Route exact path='/' element={<Landing />} />
-          <Route exact path='projects' element={<Projects />} />
-          <Route exact path='stack' element={<Skills />} />
+          <Route path='/' element={<Landing />} />
+          <Route path='projects' element={<Projects />} />
+          <Route path='stack' element={<Skills />} />
         </Routes>
       </main>
       <LeftSideNav/>
