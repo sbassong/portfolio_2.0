@@ -8,7 +8,7 @@
       "type": "image/png"
     }
   ],
-  "start_url": "/",
+  "start_url": "https://portfolio-2-0-git-main-sbassongs-projects.vercel.app/",
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff"
