@@ -5,10 +5,10 @@
     {
       "src": "https://i.ibb.co/XSQRppT/Screen-Shot-2021-12-09-at-10-33-34-AM-copy-2.png",
       "sizes": "64x64 32x32 24x24 16x16 138x138 192x192 512x512",
-      "type": "image/png"
+      "type": "image/x-icon"
     }
   ],
-  "start_url": "https://portfolio-2-0-git-main-sbassongs-projects.vercel.app/",
+  "start_url": ".",
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff"
