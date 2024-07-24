@@ -8,7 +8,7 @@ let container = document.getElementById('root');
 const root = createRoot(container);
 
 root.render(
-  <BrowserRouter>
+  <BrowserRouter basename="/index.html">
     <React.StrictMode>
       <App />
     </React.StrictMode>
