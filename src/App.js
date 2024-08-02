@@ -14,8 +14,8 @@ function App() {
       <main id="main">
         <Routes>
           <Route path='/' element={<Landing />} />
-          <Route path='projects' element={<Projects />} />
-          <Route path='stack' element={<Skills />} />
+          <Route path='/projects' element={<Projects />} />
+          <Route path='/stack' element={<Skills />} />
         </Routes>
       </main>
       <LeftSideNav/>
