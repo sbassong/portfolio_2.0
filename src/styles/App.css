@@ -87,9 +87,9 @@ a { text-decoration: none; }
       color: #52cdfe;
     }
     
-    .landing-title { font-size: clamp(1.5rem, 2.5vw, 2rem) !important; }
-    .landing-subtitle { font-size: clamp(1.2rem, 2vw, 1.6rem) !important; }
-    .landing-blurb { font-size: clamp(1.4rem, 2.3vw, 1.8rem) !important; }
+    .landing-title { font-size: clamp(1.5rem, 2vw, 2rem) !important; }
+    .landing-subtitle { font-size: clamp(1.1rem, 1.5vw, 1.3rem) !important; }
+    .landing-blurb { font-size: clamp(1.6rem, 2.5vw, 12.2rem) !important; }
   }
   
   > div {
@@ -317,95 +317,45 @@ a { text-decoration: none; }
 // ---------  */
 
 .about-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  overflow-y: auto;
   margin-bottom: 1.5rem;
-}
-
-.about-container {
-  width: 95%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.profile-container {
-  width: 100%;
-  height: 100%;
-  margin-top: 1.5rem;
-  margin-right: 1.5rem;
-  margin-bottom: 1rem;
-}
-
-.land-intro {
+  width: 70%;
   color: rgb(170, 165, 165);
-  margin-bottom: 1rem !important;
 
-  > div {
-    margin-bottom: 1rem;
+  p {
+    width: auto;
     margin-top: 1rem;
-  }
-  
-  * { 
-    text-align: left; 
-  }
-  
-  .landing-title {
+    margin-bottom: .5rem;
     font-weight: 600;
   }
-  
+  .left { 
+    text-align: start; 
+  }
+  .center {
+    text-align: center;
+  }
+  .right {
+    text-align: end;
+  }
   .landing-title {
-    margin-bottom: 0rem !important;
-    margin-top: 1.5rem !important;
+    font-weight: 500;
   }
 
   .landing-subtitle {
-    margin-top: .1rem;
-  }
-  .landing-brand {
-    font-family: Roboto Slab, serif;
-    font-weight: 600;
-    color: rgb(170, 165, 165);
+    margin-top: .5rem;
+    margin-bottom: 2rem
   }
 }
 
-@media screen and (max-width: 800px) {
-  .about-container {
+
+@media screen and (max-width: 600px) {
+  .about-wrapper {
     width: 90%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 1rem;
   }
-
-  .profile-container {
-    width: 150px;
-    height: 150px;
-  }
-
-  .about-wrapper {
-    margin-top: 3rem;
-  }
-}
-
-@media screen and (max-height: 600px) {
-  .about-wrapper {
-    margin-top: 3rem;
-  }
-}
-
-.avatar-div {
-  position: relative;
-  border: 1.5px solid #52cdfe;
-  border-radius: 4px;
-  width: 100%;
-  padding-top: 100%;
-  background-image: url('./images/portfolio-portrait.jpeg');
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
 }
 
 
@@ -563,7 +513,7 @@ a { text-decoration: none; }
   }
 
   .skills-wrap {
-    width: 85%;
+    width: 80%;
     overflow-y: auto;
     padding-top: 3rem;
     padding-bottom: 2rem;
