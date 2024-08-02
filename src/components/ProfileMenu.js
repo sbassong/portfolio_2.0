@@ -12,9 +12,6 @@ const ProfileMenu = () => {
   const handleClick = (event) => setAnchorEl(event.currentTarget);
   const handleClose = () => setAnchorEl(null);
 
-  const HomeItem = () => <NavLink to='/'>Home</NavLink>
-  const ProjectsItem = () => <NavLink to='/projects' >Projects</NavLink>
-  const SkillsItem = () => <NavLink to='/stack' >Stack</NavLink>
 
   return (
     <>
@@ -25,11 +22,11 @@ const ProfileMenu = () => {
 
         <Menu
           anchorEl={anchorEl}
-          id="account-menu"
+          id="profile-menu"
           open={open}
           onClose={handleClose}
           onClick={handleClose}
-          PaperProps={{
+          paper={{
             elevation: 0,
             sx: {
               overflow: 'visible',
@@ -47,21 +44,17 @@ const ProfileMenu = () => {
           transformOrigin={{ horizontal: 'left', vertical: 'top' }}
           anchorOrigin={{ horizontal: 'left', vertical: 'bottom' }}
         >
-          <MenuItem  onClick={handleClose} >
-            <HomeItem />
-          </MenuItem>
+        <NavLink to="/">
+          <MenuItem onClick={handleClose} >Home</MenuItem>
+        </NavLink>
 
-          <MenuItem onClick={handleClose}>
-            <ProjectsItem />
-          </MenuItem>
+        <NavLink to="/projects">
+          <MenuItem onClick={handleClose} >Projects</MenuItem>
+        </NavLink>
 
-          {/* <MenuItem  onClick={handleClose}>
-            <ExperienceItem />
-          </MenuItem> */}
-
-          <MenuItem onClick={handleClose}>
-            <SkillsItem />
-          </MenuItem>
+        <NavLink to="/stack">
+          <MenuItem onClick={handleClose} >Stack</MenuItem>
+        </NavLink>
         </Menu>
     </>
   );
