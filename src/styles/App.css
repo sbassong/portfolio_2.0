@@ -319,12 +319,13 @@ a { text-decoration: none; }
 .about-wrapper {
   margin-bottom: 1.5rem;
   width: 70%;
-
   color: rgb(170, 165, 165);
+
   p {
     width: auto;
     margin-top: 1rem;
     margin-bottom: .5rem;
+    font-weight: 600;
   }
   .left { 
     text-align: start; 
@@ -338,10 +339,7 @@ a { text-decoration: none; }
   .landing-title {
     font-weight: 500;
   }
-  .landing-title {
-    margin-bottom: 0rem !important;
-    margin-top: 1.5rem !important;
-  }
+
   .landing-subtitle {
     margin-top: .5rem;
     margin-bottom: 2rem
@@ -356,7 +354,7 @@ a { text-decoration: none; }
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 3rem;
+    margin-top: 1rem;
   }
 }
 
@@ -515,7 +513,7 @@ a { text-decoration: none; }
   }
 
   .skills-wrap {
-    width: 85%;
+    width: 80%;
     overflow-y: auto;
     padding-top: 3rem;
     padding-bottom: 2rem;
