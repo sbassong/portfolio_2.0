@@ -8,7 +8,7 @@ let container = document.getElementById('root');
 const root = createRoot(container);
 
 root.render(
-  <HashRouter basename='/'>
+  <HashRouter basename='/app'>
     <React.StrictMode>
       <App />
     </React.StrictMode>
