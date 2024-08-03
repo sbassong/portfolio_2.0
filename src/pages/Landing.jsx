@@ -10,9 +10,9 @@ const Landing = () => {
           <div className="landing-subtitle">
             Software Developer
           </div>
-          <p class="teal left landing-blurb">Innovative ideas.</p>
-          <p class="teal center landing-blurb">Scalable designs.</p>
-          <p class="teal right landing-blurb">Powerful solutions.</p>
+          <p className="teal left landing-blurb">Innovative ideas.</p>
+          <p className="teal center landing-blurb">Scalable designs.</p>
+          <p className="teal right landing-blurb">Powerful solutions.</p>
         </div>
     </div>
   );

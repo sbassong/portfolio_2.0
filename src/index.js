@@ -1,16 +1,16 @@
-import React from 'react';
-import { HashRouter } from 'react-router-dom';
-import { createRoot } from 'react-dom/client';
 import './styles/index.css';
 import App from './App';
+import { StrictMode } from 'react';
+import { createRoot } from 'react-dom/client';
+import { BrowserRouter } from 'react-router-dom';
 
 let container = document.getElementById('root');
 const root = createRoot(container);
 
 root.render(
-  <HashRouter basename='/app'>
-    <React.StrictMode>
+  <StrictMode>
+    <BrowserRouter basename="/">
       <App />
-    </React.StrictMode>
-  </HashRouter>
+    </BrowserRouter>
+  </StrictMode>
 );

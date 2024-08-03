@@ -7,13 +7,15 @@ import Projects from './pages/Projects';
 import LeftSideNav from './components/LeftSideNav';
 import TopNav from './components/TopNav';
 
+
 function App() {
+  console.log('running')
   return (
     <div className="App">
       <TopNav />
       <main id="main">
         <Routes>
-          <Route path='/' element={<Landing />} />
+          <Route path='/' exact element={<Landing />} />
           <Route path='/projects' element={<Projects />} />
           <Route path='/stack' element={<Skills />} />
         </Routes>
