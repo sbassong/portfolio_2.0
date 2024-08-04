@@ -4,7 +4,6 @@ import TopLeftSideNav from './TopLeftSideNav';
 import ProfileMenu from './ProfileMenu';
 
 const TopNav = () => {
-	console.log('topnav')
 	return (
 		<div className="top-nav">
 			<div className="top-nav-wrap">

@@ -9,15 +9,14 @@ import TopNav from './components/TopNav';
 
 
 function App() {
-  console.log('running')
   return (
     <div className="App">
       <TopNav />
       <main id="main">
         <Routes>
           <Route path='/' exact element={<Landing />} />
-          <Route path='/projects' element={<Projects />} />
-          <Route path='/stack' element={<Skills />} />
+          <Route path='/projects' exact element={<Projects />} />
+          <Route path='/stack' exact element={<Skills />} />
         </Routes>
       </main>
       <LeftSideNav/>
